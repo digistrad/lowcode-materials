@@ -80,5 +80,5 @@ module.exports = {
       defaultValue: 'file',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

@@ -595,5 +595,5 @@ module.exports = {
       events: ['onPressEnter', 'onClear', 'onChange', 'onKeyDown', 'onFocus', 'onBlur'],
     },
   },
-  category: '基础',
+  category: 'Base',
 };

@@ -4,5 +4,5 @@
     "@": "./src",
     "@components": "./src/components"
   },
-  "plugins": [["build-plugin-component"]]
+  "plugins": [["build-plugin-component-multiple"]]
 }

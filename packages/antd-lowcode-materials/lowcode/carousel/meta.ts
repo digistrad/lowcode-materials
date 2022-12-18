@@ -5,30 +5,30 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Carousel',
-  title: '走马灯',
-  category: '数据展示',
+  title: 'Carousel',
+  category: 'Data Display',
   props: [
     {
       name: 'afterChange',
-      title: { label: '切换面板的回调', tip: '切换面板的回调' },
+      title: { label: 'afterChange', tip: 'Callbacks for toggle panels' },
       propType: 'func',
     },
     {
       name: 'autoplay',
-      title: { label: '是否自动切换', tip: '是否自动切换' },
+      title: { label: 'autoplay', tip: 'Whether to switch automatically' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'beforeChange',
-      title: { label: '切换面板的回调', tip: '切换面板的回调' },
+      title: { label: 'beforeChange', tip: 'Callbacks for toggle panels' },
       propType: 'func',
     },
     {
       name: 'dotPosition',
       title: {
-        label: '指示点位置',
-        tip: '面板指示点位置，可选 `top` `bottom` `left` `right`',
+        label: 'dotPosition',
+        tip: 'The position of the panel indication point, optional `top` `bottom` `left` `right`',
       },
       propType: {
         type: 'oneOf',
@@ -38,24 +38,24 @@ export default {
     {
       name: 'dots',
       title: {
-        label: '显示指示点',
-        tip: '是否显示面板指示点',
+        label: 'dots',
+        tip: 'Whether to display panel indicator points',
       },
       propType: { type: 'oneOfType', value: ['bool', 'object'] },
     },
     {
       name: 'easing',
-      title: { label: '动画效果', tip: '动画效果' },
+      title: { label: 'easing', tip: 'animation effect' },
       propType: 'string',
     },
     {
       name: 'effect',
-      title: { label: '动画效果函数', tip: '动画效果函数' },
+      title: { label: 'effect', tip: 'animation effect function' },
       propType: { type: 'oneOf', value: ['scrollx', 'fade'] },
     },
     {
       name: 'items',
-      title: '折叠项',
+      title: 'items',
       setter: {
         componentName: 'ArraySetter',
         props: {

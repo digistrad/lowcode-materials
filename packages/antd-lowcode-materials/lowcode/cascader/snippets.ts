@@ -1,6 +1,6 @@
 export default [
   {
-    title: '级联选择',
+    title: 'Cascader',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/cascader-1.png',
     schema: {
       componentName: 'Cascader',
@@ -39,7 +39,7 @@ export default [
             ],
           },
         ],
-        placeholder: '请选择',
+        placeholder: 'please choose',
       },
     },
   },

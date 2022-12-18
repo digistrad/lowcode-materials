@@ -1,6 +1,6 @@
 export default [
   {
-    title: '侧边抽屉',
+    title: 'Side Drawer',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/drawer-1.png',
     schema: {
       componentName: 'Drawer',
@@ -19,7 +19,7 @@ export default [
     },
   },
   {
-    title: '底部抽屉',
+    title: 'Bottom Drawer',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/drawer-2.png',
     schema: {
       componentName: 'Drawer',

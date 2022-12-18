@@ -3,29 +3,29 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Drawer',
-  title: '抽屉',
-  category: '反馈',
+  title: 'Drawer',
+  category: 'Feedback',
   props: [
     {
-      title: '基础',
+      title: 'Base',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'visible',
-          title: { label: '是否可见', tip: 'visible | Drawer 是否可见' },
+          title: { label: 'visible', tip: 'visible' },
           propType: 'bool',
           setter: 'BoolSetter',
         },
         {
           name: 'title',
-          title: { label: '标题', tip: 'title | 标题' },
+          title: { label: 'Title', tip: 'title | 标题' },
           propType: { type: 'oneOfType', value: ['string', 'node'] },
           setter: [
             'StringSetter',
             {
               componentName: 'SlotSetter',
-              title: '标题插槽',
+              title: 'title slot',
               initialValue: {
                 type: 'JSSlot',
                 value: [],
@@ -37,13 +37,13 @@ export default {
       ],
     },
     {
-      title: '外观',
+      title: 'Exterior',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'placement',
-          title: { label: '位置', tip: 'placement | 抽屉的显示位置' },
+          title: { label: 'placement', tip: 'placement' },
           propType: {
             type: 'oneOf',
             value: ['top', 'right', 'bottom', 'left'],
@@ -54,19 +54,19 @@ export default {
             props: {
               options: [
                 {
-                  title: '上方',
+                  title: 'top',
                   value: 'top',
                 },
                 {
-                  title: '右侧',
+                  title: 'right',
                   value: 'right',
                 },
                 {
-                  title: '下方',
+                  title: 'bottom',
                   value: 'bottom',
                 },
                 {
-                  title: '左侧',
+                  title: 'left',
                   value: 'left',
                 },
               ],
@@ -75,7 +75,7 @@ export default {
         },
         {
           name: 'size',
-          title: { label: '大小', tip: 'size | 抽屉的大小' },
+          title: { label: 'size', tip: 'size' },
           propType: { type: 'oneOf', value: ['default', 'large'] },
           defaultValue: 'default',
           setter: {
@@ -83,11 +83,11 @@ export default {
             props: {
               options: [
                 {
-                  title: '默认',
+                  title: 'default',
                   value: 'default',
                 },
                 {
-                  title: '超大',
+                  title: 'large',
                   value: 'large',
                 },
               ],
@@ -96,15 +96,15 @@ export default {
         },
         {
           name: 'width',
-          title: { label: '宽度', tip: 'width | 宽度' },
+          title: { label: 'width', tip: 'width' },
           propType: { type: 'oneOfType', value: ['string', 'number'] },
           setter: ['StringSetter', 'NumberSetter', 'VariableSetter'],
         },
         {
           name: 'height',
           title: {
-            label: '高度',
-            tip: 'height | 高度, 在 placement 为 top 或 bottom 时使用',
+            label: 'height',
+            tip: 'height, used when placement is top or bottom',
           },
           propType: { type: 'oneOfType', value: ['string', 'number'] },
           setter: ['StringSetter', 'NumberSetter', 'VariableSetter'],
@@ -118,13 +118,13 @@ export default {
       ],
     },
     {
-      title: '功能',
+      title: 'Function',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'mask',
-          title: { label: '显示遮罩', tip: 'mask | 是否显示遮罩' },
+          title: { label: 'mask', tip: 'mask' },
           propType: 'bool',
           defaultValue: true,
           setter: 'BoolSetter',
@@ -132,8 +132,8 @@ export default {
         {
           name: 'maskClosable',
           title: {
-            label: '点击遮罩关闭',
-            tip: 'maskClosable | 点击遮罩是否关闭抽屉',
+            label: 'Click mask to close',
+            tip: 'maskClosable',
           },
           propType: 'bool',
           defaultValue: true,
@@ -142,8 +142,8 @@ export default {
         {
           name: 'autoFocus',
           title: {
-            label: '自动获得焦点',
-            tip: 'autoFocus | 抽屉展开后是否将焦点切换至其 Dom 节点',
+            label: 'autoFocus',
+            tip: 'Whether to switch the focus to its DOM node after the drawer is expanded',
           },
           propType: 'bool',
           defaultValue: true,
@@ -152,8 +152,8 @@ export default {
         {
           name: 'keyboard',
           title: {
-            label: '键盘Esc关闭',
-            tip: 'keyboard | 是否支持键盘按 Esc 关闭',
+            label: 'keyboard',
+            tip: "Whether to support the keyboard to press Esc to close",
           },
           propType: 'bool',
           defaultValue: true,
@@ -162,8 +162,8 @@ export default {
         {
           name: 'destroyOnClose',
           title: {
-            label: '关闭时销毁',
-            tip: 'destroyOnClose | 关闭时销毁 Drawer 里的子元素',
+            label: 'destroyOnClose',
+            tip: 'Destroy child elements in Drawer when closed',
           },
           propType: 'bool',
           defaultValue: false,
@@ -172,8 +172,8 @@ export default {
         {
           name: 'closable',
           title: {
-            label: '关闭按钮',
-            tip: 'closable | 是否显示左上角的关闭按钮',
+            label: 'closable',
+            tip: 'Whether to display the close button in the upper left corner',
           },
           propType: 'bool',
           defaultValue: true,
@@ -181,7 +181,7 @@ export default {
         },
         {
           name: 'forceRender',
-          title: { label: '预渲染', tip: 'forceRender | 预渲染 Drawer 内元素' },
+          title: { label: 'forceRender', tip: 'Pre-render elements inside the Drawer' },
           propType: 'bool',
           defaultValue: false,
           setter: 'BoolSetter',
@@ -189,17 +189,17 @@ export default {
       ],
     },
     {
-      title: '插槽扩展',
+      title: 'Expansion slot',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'closeIcon',
-          title: { label: '关闭图标', tip: 'closeIcon | 自定义关闭图标' },
+          title: { label: 'closeIcon', tip: 'closeIcon' },
           propType: 'node',
           setter: {
             componentName: 'SlotSetter',
-            title: '关闭图标插槽',
+            title: 'closeIcon',
             initialValue: {
               type: 'JSSlot',
               value: [
@@ -216,11 +216,11 @@ export default {
         },
         {
           name: 'extra',
-          title: { label: '操作区域', tip: 'extra | 抽屉右上角的操作区域' },
+          title: { label: 'extra', tip: 'The operating area in the upper right corner of the drawer' },
           propType: 'node',
           setter: {
             componentName: 'SlotSetter',
-            title: '操作区域插槽',
+            title: 'Operating area slot',
             initialValue: {
               type: 'JSSlot',
               value: [],
@@ -229,11 +229,11 @@ export default {
         },
         {
           name: 'footer',
-          title: { label: '抽屉的页脚', tip: 'footer | 抽屉的页脚' },
+          title: { label: 'footer', tip: 'footer' },
           propType: 'node',
           setter: {
             componentName: 'SlotSetter',
-            title: '抽屉页脚插槽',
+            title: 'footer slot',
             initialValue: {
               type: 'JSSlot',
               value: [],
@@ -243,19 +243,19 @@ export default {
       ],
     },
     {
-      title: '其它',
+      title: 'Other',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'className',
-          title: { label: '容器类名', tip: 'className | 对话框外层容器的类名' },
+          title: { label: 'className', tip: 'className' },
           propType: 'string',
           setter: 'StringSetter',
         },
         {
           name: 'drawerStyle',
-          title: '弹出层样式',
+          title: 'drawerStyle',
           type: 'group',
           extraProps: {
             display: 'entry',
@@ -264,8 +264,8 @@ export default {
             {
               name: 'drawerStyle',
               title: {
-                label: '样式设置',
-                tip: 'drawerStyle | 用于设置 Drawer 弹出层的样式',
+                label: 'drawerStyle',
+                tip: 'drawerStyle',
               },
               setter: 'StyleSetter',
               extraProps: {
@@ -276,7 +276,7 @@ export default {
         },
         {
           name: 'contentWrapperStyle',
-          title: '包裹层样式',
+          title: 'contentWrapperStyle',
           type: 'group',
           extraProps: {
             display: 'entry',
@@ -285,8 +285,8 @@ export default {
             {
               name: 'contentWrapperStyle',
               title: {
-                label: '样式设置',
-                tip: 'contentWrapperStyle | 可用于设置 Drawer 包裹内容部分的样式',
+                label: 'contentWrapperStyle',
+                tip: 'contentWrapperStyle',
               },
               setter: 'StyleSetter',
               extraProps: {
@@ -297,7 +297,7 @@ export default {
         },
         {
           name: 'headerStyle',
-          title: '头部样式',
+          title: 'headerStyle',
           type: 'group',
           extraProps: {
             display: 'entry',
@@ -306,8 +306,8 @@ export default {
             {
               name: 'headerStyle',
               title: {
-                label: '样式设置',
-                tip: 'headerStyle | 用于设置 Drawer 头部的样式',
+                label: 'headerStyle',
+                tip: 'headerStyle',
               },
               setter: 'StyleSetter',
               extraProps: {
@@ -318,7 +318,7 @@ export default {
         },
         {
           name: 'bodyStyle',
-          title: '内容样式',
+          title: 'bodyStyle',
           type: 'group',
           extraProps: {
             display: 'entry',
@@ -327,8 +327,8 @@ export default {
             {
               name: 'bodyStyle',
               title: {
-                label: '样式设置',
-                tip: 'bodyStyle | 可用于设置 Drawer 内容部分的样式',
+                label: 'bodyStyle',
+                tip: 'bodyStyle',
               },
               setter: 'StyleSetter',
               extraProps: {
@@ -339,7 +339,7 @@ export default {
         },
         {
           name: 'footerStyle',
-          title: '页脚样式',
+          title: 'footerStyle',
           type: 'group',
           extraProps: {
             display: 'entry',
@@ -348,8 +348,8 @@ export default {
             {
               name: 'footerStyle',
               title: {
-                label: '样式设置',
-                tip: 'footerStyle | 抽屉页脚部件的样式',
+                label: 'footerStyle',
+                tip: 'footerStyle',
               },
               setter: 'StyleSetter',
               extraProps: {
@@ -360,7 +360,7 @@ export default {
         },
         {
           name: 'maskStyle',
-          title: '遮罩样式',
+          title: 'maskStyle',
           type: 'group',
           extraProps: {
             display: 'entry',
@@ -369,8 +369,8 @@ export default {
             {
               name: 'maskStyle',
               title: {
-                label: '样式设置',
-                tip: 'maskStyle | 遮罩样式',
+                label: 'maskStyle',
+                tip: 'maskStyle',
               },
               setter: 'StyleSetter',
               extraProps: {
@@ -396,12 +396,12 @@ export default {
         {
           name: 'onClose',
           template:
-            "onClose(event,${extParams}){\n// 点击遮罩层或右上角叉或取消按钮的回调\nconsole.log('onClose',event);}",
+            "onClose(event,${extParams}){\n//Callback for clicking the mask layer or the upper right fork or cancel button\nconsole.log('onClose',event);}",
         },
         {
           name: 'afterVisibleChange',
           template:
-            "afterVisibleChange(visible,${extParams}){\n// 切换抽屉时动画结束后的回调\nconsole.log('afterVisibleChange',visible);}",
+            "afterVisibleChange(visible,${extParams}){\n//Callback after the animation ends when switching drawers\nconsole.log('afterVisibleChange',visible);}",
         },
       ],
     },

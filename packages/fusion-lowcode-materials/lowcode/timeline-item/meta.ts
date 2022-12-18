@@ -43,7 +43,7 @@ module.exports = {
         type: 'oneOfType',
         value: ['string', 'node'],
       },
-      description: '标题',
+      description: 'Title',
     },
     {
       name: 'timeLeft',
@@ -81,7 +81,7 @@ module.exports = {
         name: 'title',
         setter: 'StringSetter',
         supportVariable: true,
-        title: '标题',
+        title: 'Title',
       },
       {
         name: 'icon',

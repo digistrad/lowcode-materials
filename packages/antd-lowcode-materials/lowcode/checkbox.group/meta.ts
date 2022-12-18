@@ -2,12 +2,12 @@ import { uuid } from '../_utils/utils';
 
 export default {
   componentName: 'Checkbox.Group',
-  title: '多选框组',
-  category: '表单',
+  title: 'Checkbox Group',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',
-      title: { label: '默认值', tip: '默认选中值' },
+      title: { label: 'defaultValue', tip: 'default selected value' },
       propType: { type: 'arrayOf', value: 'string' },
       defaultValue: [],
       setter: {
@@ -22,7 +22,7 @@ export default {
     },
     {
       name: 'value',
-      title: { label: '当前值', tip: '当前选中的选项' },
+      title: { label: 'value', tip: 'currently selected option' },
       propType: { type: 'arrayOf', value: 'string' },
       setter: {
         componentName: 'ArraySetter',
@@ -36,7 +36,7 @@ export default {
     },
     {
       name: 'disabled',
-      title: { label: '是否禁用', tip: '是否为禁用状态' },
+      title: { label: 'disabled', tip: 'Is it disabled' },
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter',
@@ -44,14 +44,14 @@ export default {
     },
     {
       name: 'name',
-      title: { label: 'name属性', tip: 'name属性' },
+      title: { label: 'name', tip: 'name' },
       propType: 'string',
       setter: 'StringSetter',
       supportVariable: true
     },
     {
       name: 'options',
-      title: { label: '指定可选项', tip: '指定可选项' },
+      title: { label: 'options', tip: 'specify options' },
       propType: {
         type: 'arrayOf',
         value: {
@@ -59,19 +59,19 @@ export default {
           value: [
             {
               name: 'label',
-              description: '选项名',
+              description: 'label',
               propType: 'string',
-              defaultValue: '选项名',
+              defaultValue: 'option name',
             },
             {
               name: 'value',
-              description: '选项值',
+              description: 'value',
               propType: 'string',
-              defaultValue: '选项值',
+              defaultValue: 'option value',
             },
             {
               name: 'disabled',
-              description: '是否禁用',
+              description: 'disabled',
               propType: 'bool',
               defaultValue: false,
             },
@@ -88,19 +88,19 @@ export default {
                 items: [
                   {
                     name: 'label',
-                    title: '选项名',
+                    title: 'label',
                     setter: 'StringSetter',
                     isRequired: true
                   },
                   {
                     name: 'value',
-                    title: '选项值',
+                    title: 'value',
                     setter: 'StringSetter',
                     isRequired: true
                   },
                   {
                     name: 'disabled',
-                    title: '是否禁用',
+                    title: 'disabled',
                     setter: 'BoolSetter',
                   },
                 ],
@@ -108,7 +108,7 @@ export default {
             },
             initialValue: () => {
               return {
-                label: '选项名',
+                label: 'option name',
                 value: uuid(),
                 disabled: false,
               };
@@ -120,7 +120,7 @@ export default {
     },
     {
       name: 'onChange',
-      title: { label: '变化时回调函数', tip: '变化时回调函数' },
+      title: { label: 'onChange', tip: 'Callback function on change' },
       propType: 'func',
     },
   ],
@@ -131,7 +131,7 @@ export default {
         {
           name: 'onChange',
           template:
-            "onChange(checkedValue,${extParams}){\n// 变化时回调函数\nconsole.log('onChange', checkedValue);}",
+            "onChange(checkedValue,${extParams}){\n//Callback function when changing\nconsole.log('onChange', checkedValue);}",
         },
       ],
     },

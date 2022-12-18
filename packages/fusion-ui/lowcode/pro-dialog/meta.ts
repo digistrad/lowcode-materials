@@ -99,7 +99,7 @@ const ProDialogMeta: ComponentMetadata = {
       },
       {
         name: 'title',
-        title: '标题',
+        title: 'Title',
         setter: () => {
           const hasTitleSetter = AliLowCodeEngine.setters.getSetter('TitleSetter');
           return hasTitleSetter

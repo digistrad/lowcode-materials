@@ -1,6 +1,6 @@
 export default [
   {
-    title: '徽标数',
+    title: 'Badge',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/badge-1.png',
     schema: {
       componentName: 'Badge',

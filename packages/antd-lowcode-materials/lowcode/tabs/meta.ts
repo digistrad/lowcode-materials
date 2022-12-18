@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Tabs',
   title: '标签页',
-  category: '数据展示',
+  category: 'Data Display',
   props: [
     {
       name: 'items',
@@ -28,7 +28,7 @@ export default {
                   },
                   {
                     name: 'label',
-                    title: '标题',
+                    title: 'Title',
                     setter: 'StringSetter',
                     initialValue: '标签项',
                     supportVariable: true
@@ -107,7 +107,7 @@ export default {
     //               },
     //               {
     //                 name: 'tab',
-    //                 title: '标题',
+    //                 title: 'Title',
     //                 setter: 'StringSetter',
     //                 initialValue: '标签项',
     //                 supportVariable: true

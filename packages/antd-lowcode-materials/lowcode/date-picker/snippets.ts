@@ -1,6 +1,6 @@
 export default [
   {
-    title: '选择日期',
+    title: 'Date Picker',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-1.png',
     schema: {
       componentName: 'DatePicker',
@@ -8,7 +8,7 @@ export default [
     },
   },
   {
-    title: '选择周',
+    title: 'Week Picker',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-2.png',
     schema: {
       componentName: 'DatePicker',
@@ -18,7 +18,7 @@ export default [
     },
   },
   {
-    title: '选择月份',
+    title: 'Month Picker',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-3.png',
     schema: {
       componentName: 'DatePicker',
@@ -28,7 +28,7 @@ export default [
     },
   },
   {
-    title: '选择季度',
+    title: 'Querter Picker',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-4.png',
     schema: {
       componentName: 'DatePicker',
@@ -38,7 +38,7 @@ export default [
     },
   },
   {
-    title: '选择年份',
+    title: 'Year Picker',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-5.png',
     schema: {
       componentName: 'DatePicker',

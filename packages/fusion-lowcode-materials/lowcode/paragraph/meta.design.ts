@@ -81,6 +81,6 @@ export default {
     ],
   },
   icon: 'https://img.alicdn.com/imgextra/i3/O1CN01n5wpxc1bi862KuXFz_!!6000000003498-55-tps-50-50.svg',
-  category: '通用',
+  category: 'Universal',
   snippets,
 };

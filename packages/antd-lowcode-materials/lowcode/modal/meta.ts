@@ -4,11 +4,11 @@ export default {
   snippets,
   componentName: 'Modal',
   title: '对话框',
-  category: '反馈',
+  category: 'Feedback',
   props: [
     {
       name: 'title',
-      title: { label: '标题', tip: '标题' },
+      title: { label: 'Title', tip: 'Title' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {

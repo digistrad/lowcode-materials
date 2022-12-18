@@ -1,6 +1,6 @@
 export default [
   {
-    title: '走马灯',
+    title: 'Carousel',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/carousel-1.jpg',
     schema: {
       componentName: 'Carousel',

@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'TimePicker',
   title: '时间选择框',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

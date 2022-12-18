@@ -7,5 +7,5 @@ module.exports = {
       isContainer: true,
     },
   },
-  category: '基础',
+  category: 'Base',
 };

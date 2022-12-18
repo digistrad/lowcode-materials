@@ -172,6 +172,6 @@ export default {
     ],
   },
   icon: '',
-  category: '通用',
+  category: 'Universal',
   snippets: require('./snippets'),
 };

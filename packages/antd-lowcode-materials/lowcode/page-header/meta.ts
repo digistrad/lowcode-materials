@@ -4,11 +4,11 @@ export default {
   snippets,
   componentName: 'PageHeader',
   title: '页头',
-  category: '导航',
+  category: 'Navigation',
   props: [
     {
       name: 'title',
-      title: { label: '标题', tip: '自定义标题文字' },
+      title: { label: 'Title', tip: '自定义标题文字' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {

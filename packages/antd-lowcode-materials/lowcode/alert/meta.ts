@@ -3,62 +3,62 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Alert',
-  title: '警告提示',
-  category: '反馈',
+  title: 'Alert',
+  category: 'Feedback',
   props: [
     {
       name: 'afterClose',
       title: {
-        label: '关闭动画结束后触发的回调函数',
-        tip: '关闭动画结束后触发的回调函数',
+        label: 'afterClose',
+        tip: 'Callback function triggered after closing animation',
       },
       propType: 'func',
     },
     {
       name: 'banner',
-      title: { label: '顶部公告', tip: '是否用作顶部公告' },
+      title: { label: 'banner', tip: 'Whether to use as a top announcement' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'closable',
-      title: { label: '可关闭', tip: '默认不显示关闭按钮' },
+      title: { label: 'closable', tip: 'The close button is not displayed by default' },
       propType: 'bool',
     },
     {
       name: 'closeText',
-      title: { label: '自定义关闭按钮', tip: '自定义关闭按钮' },
+      title: { label: 'closeText', tip: 'Custom close button' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'description',
       title: {
-        label: '描述信息',
-        tip: '警告提示的辅助性文字介绍',
+        label: 'description',
+        tip: 'Auxiliary text introduction to warnings',
       },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'icon',
       title: {
-        label: '图标',
-        tip: '自定义图标，`showIcon` 为 true 时有效',
+        label: 'icon',
+        tip: 'Custom icon, valid when `showIcon` is true',
       },
       propType: 'node',
     },
     {
       name: 'message',
-      title: { label: '警告提示内容', tip: '警告提示内容' },
+      title: { label: 'message', tip: 'Warning content' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'showIcon',
-      title: { label: '显示图标', tip: '是否显示辅助图标' },
+      title: { label: 'showIcon', tip: 'Whether to display auxiliary icons' },
       propType: 'bool',
     },
     {
       name: 'type',
-      title: { label: '类型', tip: '类型' },
+      title: { label: 'type', tip: 'type' },
       propType: {
         type: 'oneOf',
         value: ['success', 'info', 'warning', 'error'],
@@ -66,7 +66,7 @@ export default {
     },
     {
       name: 'onClose',
-      title: { label: '关闭时触发的回调函数', tip: '关闭时触发的回调函数' },
+      title: { label: 'onClose', tip: 'Callback function triggered on shutdown' },
       propType: 'func',
     },
   ],
@@ -77,7 +77,7 @@ export default {
         {
           name: 'onClose',
           template:
-            "onChange(event,${extParams}){\n// 关闭时触发的回调函数\nconsole.log('onChange');}",
+            "onChange(event,${extParams}){\n// Callback function triggered on close\nconsole.log('onChange');}",
         },
       ],
     },

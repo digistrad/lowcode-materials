@@ -20,7 +20,7 @@ export default [
                 },
                 {
                   name: 'title',
-                  title: '标题',
+                  title: 'Title',
                   important: true,
                   setter: 'StringSetter',
                 },

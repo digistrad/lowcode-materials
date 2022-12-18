@@ -2,19 +2,19 @@ import snippets from './snippets';
 
 export default {
   componentName: 'Button',
-  title: '按钮',
-  category: '通用',
+  title: 'Button',
+  category: 'Universal',
   props: [
     {
-      title: '功能',
+      title: 'Function',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'children',
           title: {
-            label: '内容',
-            tip: 'children | 内容',
+            label: 'content',
+            tip: 'children',
           },
           propType: {
             type: 'oneOfType',
@@ -25,8 +25,8 @@ export default {
         {
           name: 'htmlType',
           title: {
-            label: '原生类型',
-            tip: 'htmlType | 设置 `button` 原生的 `type` 值',
+            label: 'htmlType',
+            tip: 'htmlType',
           },
           propType: {
             type: 'oneOf',
@@ -59,8 +59,8 @@ export default {
         {
           name: 'href',
           title: {
-            label: '跳转地址',
-            tip: 'href | 点击跳转的地址，指定此属性 button 的行为和 a 链接一致',
+            label: 'href',
+            tip: 'href',
           },
           propType: 'string',
           setter: ['StringSetter', 'VariableSetter'],
@@ -69,7 +69,7 @@ export default {
           name: 'target',
           title: {
             label: 'Target',
-            tip: 'target | 相当于 a 链接的 target 属性，href 存在时生效',
+            tip: 'target',
           },
           propType: {
             type: 'oneOf',
@@ -81,19 +81,19 @@ export default {
               props: {
                 options: [
                   {
-                    title: '本窗口跳转',
+                    title: '_self',
                     value: '_self',
                   },
                   {
-                    title: '打开新标签页',
+                    title: '_blank',
                     value: '_blank',
                   },
                   {
-                    title: '父窗口跳转',
+                    title: '_parent',
                     value: '_parent',
                   },
                   {
-                    title: '顶层窗口跳转',
+                    title: '_top',
                     value: '_top',
                   },
                 ],
@@ -110,13 +110,13 @@ export default {
       ],
     },
     {
-      title: '外观',
+      title: 'Exterior',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'type',
-          title: { label: '类型', tip: 'type | 设置按钮类型' },
+          title: { label: 'type', tip: 'type' },
           propType: {
             type: 'oneOf',
             value: ['primary', 'ghost', 'dashed', 'danger', 'link', 'text'],
@@ -127,23 +127,23 @@ export default {
               props: {
                 options: [
                   {
-                    title: '主按钮',
+                    title: 'primary',
                     value: 'primary',
                   },
                   {
-                    title: '虚线框按钮',
+                    title: 'dashed',
                     value: 'dashed',
                   },
                   {
-                    title: '危险按钮',
+                    title: 'danger',
                     value: 'danger',
                   },
                   {
-                    title: '链接按钮',
+                    title: 'link',
                     value: 'link',
                   },
                   {
-                    title: '类文本按钮',
+                    title: 'text',
                     value: 'text',
                   },
                 ],
@@ -154,7 +154,7 @@ export default {
         },
         {
           name: 'size',
-          title: { label: '尺寸', tip: 'size | 设置按钮大小' },
+          title: { label: 'size', tip: 'size' },
           propType: { type: 'oneOf', value: ['large', 'middle', 'small'] },
           setter: [
             {
@@ -162,15 +162,15 @@ export default {
               props: {
                 options: [
                   {
-                    title: '大',
+                    title: 'large',
                     value: 'large',
                   },
                   {
-                    title: '中',
+                    title: 'middle',
                     value: 'middle',
                   },
                   {
-                    title: '小',
+                    title: 'small',
                     value: 'small',
                   },
                 ],
@@ -183,8 +183,8 @@ export default {
         {
           name: 'shape',
           title: {
-            label: '形状',
-            tip: 'shape | 设置按钮形状，可选值为 `circle`、 `round` 或者不设',
+            label: 'shape',
+            tip: 'shape',
           },
           propType: { type: 'oneOf', value: ['default', 'circle', 'round'] },
           defaultValue: 'default',
@@ -194,15 +194,15 @@ export default {
               props: {
                 options: [
                   {
-                    title: '默认',
+                    title: 'default',
                     value: 'default',
                   },
                   {
-                    title: '圆形',
+                    title: 'circle',
                     value: 'circle',
                   },
                   {
-                    title: '圆角',
+                    title: 'round',
                     value: 'round',
                   },
                 ],
@@ -213,7 +213,7 @@ export default {
         },
         {
           name: 'icon',
-          title: { label: '图标', tip: 'icon | 设置按钮的图标组件' },
+          title: { label: 'icon', tip: 'icon' },
           propType: 'node',
           setter: {
             componentName: 'SlotSetter',
@@ -236,8 +236,8 @@ export default {
         {
           name: 'block',
           title: {
-            label: '自适应',
-            tip: 'block | 将按钮宽度调整为其父宽度的选项',
+            label: 'block',
+            tip: 'block',
           },
           propType: 'bool',
           setter: 'BoolSetter',
@@ -245,14 +245,14 @@ export default {
         },
         {
           name: 'danger',
-          title: { label: '危险按钮', tip: 'danger | 设置危险按钮' },
+          title: { label: 'danger', tip: 'danger' },
           propType: 'bool',
           setter: 'BoolSetter',
           defaultValue: false,
         },
         {
           name: 'ghost',
-          title: { label: '幽灵属性', tip: 'ghost | 幽灵属性，使按钮背景透明' },
+          title: { label: 'ghost', tip: 'ghost' },
           propType: 'bool',
           setter: 'BoolSetter',
           defaultValue: false,
@@ -260,19 +260,19 @@ export default {
       ],
     },
     {
-      title: '状态',
+      title: 'State',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'loading',
-          title: { label: '载入状态', tip: 'loading | 设置按钮载入状态' },
+          title: { label: 'loading', tip: 'loading' },
           propType: 'bool',
           setter: ['BoolSetter', 'VariableSetter'],
         },
         {
           name: 'disabled',
-          title: { label: '是否禁用', tip: 'disabled | 是否为禁用状态' },
+          title: { label: 'disabled', tip: 'disabled' },
           propType: 'bool',
           setter: ['BoolSetter', 'VariableSetter'],
           defaultValue: false,
@@ -281,7 +281,7 @@ export default {
     },
     {
       name: 'onClick',
-      title: { label: '点击回调', tip: '点击按钮时的回调' },
+      title: { label: 'onClick', tip: 'onClick' },
       propType: 'func',
     },
   ],
@@ -291,7 +291,7 @@ export default {
         {
           name: 'onClick',
           template:
-            "onClick(event,${extParams}){\n// 点击按钮时的回调\nconsole.log('onClick', event);}",
+            "onClick(event,${extParams}){\n//Callback when the button is clicked\nconsole.log('onClick', event);}",
         },
       ],
       style: true,

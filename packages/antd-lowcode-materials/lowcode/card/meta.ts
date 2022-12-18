@@ -3,12 +3,12 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Card',
-  title: '卡片',
-  category: '数据展示',
+  title: 'Card',
+  category: 'Data Display',
   props: [
     {
       name: 'title',
-      title: { label: '卡片标题', tip: '卡片标题' },
+      title: { label: 'title', tip: 'title' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     // {
@@ -28,23 +28,23 @@ export default {
     // },
     {
       name: 'bordered',
-      title: { label: '显示边框', tip: '是否有边框' },
+      title: { label: 'bordered', tip: 'bordered' },
       propType: 'bool',
       defaultValue: true,
     },
     {
       name: 'cover',
-      title: { label: '卡片封面', tip: '卡片封面' },
+      title: { label: 'cover', tip: 'cover' },
       propType: 'node',
     },
     {
       name: 'extra',
-      title: { label: '额外元素', tip: '卡片右上角的操作区域' },
+      title: { label: 'extra', tip: 'The action area in the upper right corner of the card' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'hoverable',
-      title: { label: '可浮起', tip: '鼠标移过时可浮起' },
+      title: { label: 'hoverable', tip: 'Float when the mouse is over' },
       propType: 'bool',
       defaultValue: false,
     },
@@ -52,20 +52,20 @@ export default {
       name: 'loading',
       title: {
         label: 'loading',
-        tip: '当卡片内容还在加载中时，可以用 loading 展示一个占位',
+        tip: 'When the card content is still loading, you can use loading to display a placeholder',
       },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'size',
-      title: { label: '尺寸', tip: 'card 的尺寸' },
+      title: { label: 'size', tip: 'card size' },
       propType: { type: 'oneOf', value: ['default', 'small'] },
       defaultValue: 'default',
     },
     {
       name: 'type',
-      title: { label: '卡片类型', tip: '卡片类型' },
+      title: { label: 'type', tip: 'type' },
       propType: { type: 'oneOf', value: ['default', 'inner'] },
       defaultValue: 'default',
     },
@@ -78,7 +78,7 @@ export default {
         {
           name: 'onTabChange',
           template:
-            "onTabChange(key,${extParams}){\n// 页签切换的回调\nconsole.log('onTabChange', key);}",
+            "onTabChange(key,${extParams}){\n//Callback for tab switching\nconsole.log('onTabChange', key);}",
         },
       ],
     },

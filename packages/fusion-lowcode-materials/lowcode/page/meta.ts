@@ -44,7 +44,7 @@ export default [
         },
       },
     },
-    category: '基础',
+    category: 'Base',
   },
   {
     componentName: 'Leaf',

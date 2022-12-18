@@ -1,6 +1,6 @@
 {
-  "name": "@alilc/lowcode-materials",
-  "version": "1.0.4",
+  "name": "@dslc/lowcode-materials",
+  "version": "1.0.10",
   "description": "Fusion Next for LowCode",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,7 +11,8 @@
     "build": "build-scripts build",
     "lowcode:dev": "build-scripts start --config ./build.lowcode.js",
     "lowcode:build": "build-scripts build --config ./build.lowcode.js",
-    "prepublishOnly": "npm run build && npm run lowcode:build"
+    "prepublishOnly": "npm run build && npm run lowcode:build",
+    "pub": "npm version patch && npm run lowcode:build && npm publish --access public"
   },
   "files": [
     "es/",
@@ -63,8 +64,8 @@
     }
   ],
   "componentConfig": {
-    "materialSchema": "https://alifd.alicdn.com/npm/@alilc/lowcode-materials@1.0.4/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@dslc/lowcode-materials@1.0.10/build/lowcode/assets-prod.json"
   },
   "license": "MIT",
-  "homepage": "https://unpkg.com/@alilc/lowcode-materials@1.0.4/build/index.html"
+  "homepage": "https://unpkg.com/@dslc/lowcode-materials@1.0.10/build/index.html"
 }

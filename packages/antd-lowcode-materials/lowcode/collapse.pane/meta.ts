@@ -2,7 +2,7 @@
 
 export default {
   componentName: 'Collapse.Panel',
-  title: '折叠项',
+  title: 'Collapse.Panel',
   category: '',
   props: [
     {
@@ -18,8 +18,8 @@ export default {
     {
       name: 'header',
       title: {
-        label: '标题',
-        tip: '标题',
+        label: 'Title',
+        tip: 'Title',
       },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
@@ -27,14 +27,14 @@ export default {
     {
       name: 'extra',
       title: {
-        label: '右上角内容',
-        tip: '自定义渲染每个面板右上角的内容',
+        label: 'extra',
+        tip: 'Custom rendering of content in the upper right corner of each panel',
       },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'collapsible',
-      title: '可折叠触发区域',
+      title: 'collapsible',
       propType: {
         type: 'oneOf',
         value: ['-', 'header', 'disabled'],
@@ -43,8 +43,8 @@ export default {
     {
       name: 'showArrow',
       title: {
-        label: '显示折叠图标',
-        tip: '是否展示当前面板上的箭头',
+        label: 'showArrow',
+        tip: 'Whether to show the arrows on the current panel',
       },
       propType: 'bool',
       defaultValue: true,
@@ -54,8 +54,8 @@ export default {
     {
       name: 'forceRender',
       title: {
-        label: '隐藏时渲染',
-        tip: '被隐藏时是否渲染 DOM 结构',
+        label: 'forceRender',
+        tip: 'Whether to render the DOM structure when hidden',
       },
       propType: 'bool',
       setter: 'BoolSetter',

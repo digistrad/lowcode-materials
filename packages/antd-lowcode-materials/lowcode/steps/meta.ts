@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Steps',
   title: '步骤条',
-  category: '导航',
+  category: 'Navigation',
   props: [
     {
       name: 'steps',
@@ -27,7 +27,7 @@ export default {
                   },
                   {
                     name: 'title',
-                    title: '标题',
+                    title: 'Title',
                     setter: 'StringSetter',
                   },
                   {

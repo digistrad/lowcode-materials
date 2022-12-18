@@ -3,24 +3,24 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Table',
-  title: '表格',
-  category: '数据展示',
+  title: 'Table',
+  category: 'Data Display',
   props: [
     {
-      title: '数据源',
+      title: 'Data Source',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'dataSource',
-          title: { label: '表格数据', tip: 'dataSource | 表格数据' },
+          title: { label: 'dataSource', tip: 'dataSource' },
           propType: 'object',
           setter: 'JsonSetter',
           supportVariable: true,
         },
         {
           name: 'loading',
-          title: { label: '加载中', tip: 'loading | 是否加载中' },
+          title: { label: 'loading', tip: 'loading' },
           propType: 'bool',
           setter: 'BoolSetter',
           defaultValue: false,
@@ -29,8 +29,8 @@ export default {
         {
           name: 'rowKey',
           title: {
-            label: '行Key',
-            tip: 'rowKey | 表格行 key 的取值，可以是字符串或一个函数',
+            label: 'rowKey',
+            tip: 'The value of the table row key, which can be a string or a function',
           },
           propType: { type: 'oneOfType', value: ['string', 'func'] },
           setter: [
@@ -39,7 +39,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'getRowKey(record,index,${extParams}){\n// 通过函数获取表格行 key\nreturn record.id;\n}',
+                  'getRowKey(record,index,${extParams}){\n//Get table row key through function\nreturn record.id;\n}',
               },
             },
             'VariableSetter',
@@ -50,7 +50,7 @@ export default {
     },
     {
       name: 'columns',
-      title: { label: '表格列', tip: '表格列的配置描述，具体项见下表' },
+      title: { label: 'columns', tip: 'The configuration description of the table column, see the table below for specific items' },
       setter: {
         componentName: 'ArraySetter',
         props: {
@@ -61,13 +61,13 @@ export default {
                 items: [
                   {
                     name: 'title',
-                    title: { label: '列标题', tip: 'title | 列标题' },
+                    title: { label: 'title', tip: 'title' },
                     propType: { type: 'oneOfType', value: ['string', 'func'] },
                     setter: [
                       'StringSetter',
                       {
                         componentName: 'SlotSetter',
-                        title: '列标题插槽',
+                        title: 'column header slot',
                         initialValue: {
                           type: 'JSSlot',
                           params: ['options'],
@@ -78,20 +78,20 @@ export default {
                   },
                   {
                     name: 'dataIndex',
-                    title: { label: '数据字段', tip: 'dataIndex | 数据字段' },
+                    title: { label: 'dataIndex', tip: 'dataIndex' },
                     propType: 'string',
                     setter: 'StringSetter',
                     isRequired: true,
                   },
                   {
                     name: 'key',
-                    title: { label: 'React key', tip: 'key | React需要的key' },
+                    title: { label: 'React key', tip: 'key' },
                     propType: 'string',
                     setter: 'StringSetter',
                   },
                   {
                     name: 'align',
-                    title: { label: '对齐方式', tip: 'align | 对齐方式' },
+                    title: { label: 'align', tip: 'align' },
                     propType: {
                       type: 'oneOf',
                       value: ['left', 'right', 'center'],
@@ -122,8 +122,8 @@ export default {
                   },
                   {
                     name: 'fixed',
-                    title: { label: '列是否固定', tip: 'fixed | 列是否固定' },
-                    description: '（IE 下无效）列是否固定，可选 true (等效于 left) left right',
+                    title: { label: 'fixed', tip: 'fixed' },
+                    description: '(Invalid under IE) Whether the column is fixed, optional true (equivalent to left) left right',
                     defaultValue: '',
                     propType: {
                       type: 'oneOf',
@@ -135,15 +135,15 @@ export default {
                         props: {
                           options: [
                             {
-                              title: '不固定',
+                              title: 'not fixed',
                               value: '',
                             },
                             {
-                              title: '固定在左侧',
+                              title: 'left',
                               value: 'left',
                             },
                             {
-                              title: '固定在右侧',
+                              title: 'right',
                               value: 'right',
                             },
                           ],
@@ -155,15 +155,15 @@ export default {
                   {
                     name: 'className',
                     title: {
-                      label: '列样式类名',
-                      tip: 'className | 列样式类名',
+                      label: 'className',
+                      tip: 'className',
                     },
                     propType: 'string',
                     setter: 'StringSetter',
                   },
                   {
                     name: 'width',
-                    title: { label: '宽度', tip: 'width | 宽度' },
+                    title: { label: 'width', tip: 'width' },
                     propType: {
                       type: 'oneOfType',
                       value: ['number', 'string'],
@@ -173,8 +173,8 @@ export default {
                   {
                     name: 'sorter',
                     title: {
-                      label: '排序规则',
-                      tip: 'sorter | 排序函数，本地排序使用一个函数，需要服务端排序可设为 true',
+                      label: 'sorter',
+                      tip: 'Sorting function, local sorting uses a function, which needs to be set to true for server-side sorting',
                     },
                     propType: { type: 'oneOfType', value: ['bool', 'func'] },
                     setter: ['BoolSetter', 'FunctionSetter', 'VariableSetter'],
@@ -182,8 +182,8 @@ export default {
                   {
                     name: 'hidden',
                     title: {
-                      label: '是否隐藏',
-                      tip: 'hidden | 是否隐藏当前列',
+                      label: 'hidden',
+                      tip: 'Whether to hide the current column',
                     },
                     propType: 'bool',
                     setter: 'BoolSetter',
@@ -191,8 +191,8 @@ export default {
                   {
                     name: 'filters',
                     title: {
-                      label: '筛选菜单项',
-                      tip: 'filters | 表头的筛选菜单项',
+                      label: 'filters',
+                      tip: 'Filter menu items in header',
                     },
                     propType: 'object',
                     setter: 'JsonSetter',
@@ -200,15 +200,15 @@ export default {
                   {
                     name: 'render',
                     title: {
-                      label: '自定义渲染',
+                      label: 'render',
                       tip:
-                        'render | 插槽内的物料表达式可通过this.record获取当前行数据，this.index获取索引',
+                        'The material expression in the slot can get the current row data through this.record, and this.index gets the index',
                     },
                     propType: 'func',
                     setter: [
                       {
                         componentName: 'SlotSetter',
-                        title: '单元格插槽',
+                        title: 'cell slot',
                         initialValue: {
                           type: 'JSSlot',
                           params: ['text', 'record', 'index'],
@@ -221,19 +221,19 @@ export default {
                 ],
               },
             },
-            initialValue: { title: '标题' },
+            initialValue: { title: 'Title' },
           },
         },
       },
     },
     {
-      title: '外观',
+      title: 'Exterior',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'showHeader',
-          title: { label: '显示表头', tip: 'showHeader | 是否显示表头' },
+          title: { label: 'showHeader', tip: 'showHeader' },
           propType: 'bool',
           setter: 'BoolSetter',
           defaultValue: true,
@@ -241,15 +241,15 @@ export default {
         {
           name: 'bordered',
           title: {
-            label: '显示边框',
-            tip: 'bordered | 是否展示外边框和列边框',
+            label: 'bordered',
+            tip: 'bordered',
           },
           propType: 'bool',
           setter: 'BoolSetter',
         },
         {
           name: 'size',
-          title: { label: '表格大小', tip: 'size | 表格大小' },
+          title: { label: 'size', tip: 'size' },
           propType: {
             type: 'oneOf',
             value: ['default', 'middle', 'small'],
@@ -260,15 +260,15 @@ export default {
               props: {
                 options: [
                   {
-                    title: '默认',
+                    title: 'default',
                     value: 'default',
                   },
                   {
-                    title: '中',
+                    title: 'middle',
                     value: 'middle',
                   },
                   {
-                    title: '小',
+                    title: 'small',
                     value: 'small',
                   },
                 ],
@@ -280,7 +280,7 @@ export default {
         },
         {
           name: 'tableLayout',
-          title: { label: '表格布局', tip: 'tableLayout | 表格布局' },
+          title: { label: 'tableLayout', tip: 'tableLayout' },
           defaultValue: '',
           propType: {
             type: 'oneOf',
@@ -292,15 +292,15 @@ export default {
               props: {
                 options: [
                   {
-                    title: '默认',
+                    title: 'default',
                     value: '',
                   },
                   {
-                    title: '自动',
+                    title: 'auto',
                     value: 'auto',
                   },
                   {
-                    title: '固定',
+                    title: 'fixed',
                     value: 'fixed',
                   },
                 ],
@@ -312,13 +312,13 @@ export default {
       ],
     },
     {
-      title: '分页',
+      title: 'Paging',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'pagination',
-          title: { label: '显示分页', tip: 'pagination | 显示分页' },
+          title: { label: 'pagination', tip: 'pagination' },
           propType: 'object',
           setter: 'BoolSetter',
           extraProps: {
@@ -333,7 +333,7 @@ export default {
         },
         {
           name: 'pagination.pageSize',
-          title: { label: '每页条数', tip: 'pagination.pageSize | 每页条数' },
+          title: { label: 'pageSize', tip: 'pagination.pageSize' },
           propType: 'number',
           setter: 'NumberSetter',
           condition: {
@@ -343,7 +343,7 @@ export default {
         },
         {
           name: 'pagination.total',
-          title: { label: '数据总数', tip: 'pagination.total | 数据总数' },
+          title: { label: 'total', tip: 'pagination.total' },
           propType: 'number',
           setter: 'NumberSetter',
           condition: {
@@ -354,8 +354,8 @@ export default {
         {
           name: 'pagination.defaultCurrent',
           title: {
-            label: '默认当前页',
-            tip: 'pagination.defaultCurrent | 默认的当前页数',
+            label: 'defaultCurrent',
+            tip: 'Default current page number',
           },
           propType: 'number',
           setter: 'NumberSetter',
@@ -366,7 +366,7 @@ export default {
         },
         {
           name: 'pagination.current',
-          title: { label: '当前页数', tip: 'pagination.current | 当前页数' },
+          title: { label: 'current', tip: 'current page number' },
           propType: 'number',
           setter: 'NumberSetter',
           condition: {
@@ -377,8 +377,8 @@ export default {
         {
           name: 'pagination.showTotal',
           title: {
-            label: '显示总数',
-            tip: 'pagination.showTotal | 用于显示数据总量和当前数据顺序',
+            label: 'showTotal',
+            tip: 'Used to display the total amount of data and the current data sequence',
           },
           propType: 'func',
           setter: [
@@ -386,7 +386,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'showTotal(total,range,${extParams}){\n// 用于格式化显示表格数据总量\nreturn `共 ${total} 条`;\n}',
+                  'showTotal(total,range,${extParams}){\n//Used to format and display the total amount of table data\nreturn `Total ${total} items`;\n}',
               },
             },
             'VariableSetter',
@@ -399,8 +399,8 @@ export default {
         {
           name: 'pagination.showSizeChanger',
           title: {
-            label: '页数切换',
-            tip: 'pagination.showSizeChanger | 是否展示 pageSize 切换器',
+            label: 'showSizeChanger',
+            tip: 'Whether to show the pageSize switcher',
           },
           propType: 'bool',
           setter: 'BoolSetter',
@@ -413,8 +413,8 @@ export default {
         {
           name: 'pagination.showQuickJumper',
           title: {
-            label: '快速跳转',
-            tip: 'pagination.showQuickJumper | 是否可以快速跳转至某页',
+            label: 'showQuickJumper',
+            tip: 'Is it possible to quickly jump to a certain page',
           },
           propType: 'bool',
           setter: 'BoolSetter',
@@ -426,7 +426,7 @@ export default {
         },
         {
           name: 'pagination.simple',
-          title: { label: '简单分页', tip: 'pagination.simple | 简单分页' },
+          title: { label: 'simple', tip: 'pagination.simple' },
           propType: 'bool',
           setter: 'BoolSetter',
           defaultValue: false,
@@ -437,7 +437,7 @@ export default {
         },
         {
           name: 'pagination.size',
-          title: { label: '分页尺寸', tip: 'pagination.size | 分页尺寸' },
+          title: { label: 'size', tip: 'pagination.size' },
           propType: {
             type: 'oneOf',
             value: ['default', 'small'],
@@ -448,11 +448,11 @@ export default {
               props: {
                 options: [
                   {
-                    title: '默认',
+                    title: 'default',
                     value: 'default',
                   },
                   {
-                    title: '小',
+                    title: 'small',
                     value: 'small',
                   },
                 ],
@@ -468,7 +468,7 @@ export default {
         },
         {
           name: 'pagination.position',
-          title: { label: '分页位置', tip: 'pagination.position | 分页位置' },
+          title: { label: 'position', tip: 'pagination.position' },
           setter: {
             componentName: 'ArraySetter',
             props: {
@@ -477,27 +477,27 @@ export default {
                 props: {
                   options: [
                     {
-                      title: '上左',
+                      title: 'topLeft',
                       value: 'topLeft',
                     },
                     {
-                      title: '上中',
+                      title: 'topCenter',
                       value: 'topCenter',
                     },
                     {
-                      title: '上右',
+                      title: 'topRight',
                       value: 'topRight',
                     },
                     {
-                      title: '下左',
+                      title: 'bottomLeft',
                       value: 'bottomLeft',
                     },
                     {
-                      title: '下中',
+                      title: 'bottomCenter',
                       value: 'bottomCenter',
                     },
                     {
-                      title: '下右',
+                      title: 'bottomRight',
                       value: 'bottomRight',
                     },
                   ],
@@ -514,15 +514,15 @@ export default {
       ],
     },
     {
-      title: '滚动',
+      title: 'Scroll',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'scroll.scrollToFirstRowOnChange',
           title: {
-            label: '自动滚动',
-            tip: 'scroll.scrollToFirstRowOnChange | 是否自动滚动到表格顶部',
+            label: 'scrollToFirstRowOnChange',
+            tip: 'scroll.scrollToFirstRowOnChange',
           },
           propType: 'bool',
           setter: 'BoolSetter',
@@ -531,9 +531,9 @@ export default {
         {
           name: 'scroll.x',
           title: {
-            label: '横向滚动',
+            label: 'horizontal scroll',
             tip:
-              'scroll.x | 	设置横向滚动，也可用于指定滚动区域的宽，可以设置为像素值，百分比，true 和 max-content',
+              'set horizontal scrolling, can also be used to specify the width of the scrolling area, can be set as pixel value, percentage, true and max-content',
           },
           propType: { type: 'oneOfType', value: ['number', 'bool'] },
           setter: ['NumberSetter', 'BoolSetter', 'VariableSetter'],
@@ -541,8 +541,8 @@ export default {
         {
           name: 'scroll.y',
           title: {
-            label: '纵向滚动',
-            tip: 'scroll.y | 	设置纵向滚动，也可用于指定滚动区域的高，可以设置为像素值',
+            label: 'vertical scroll',
+            tip: 'Set the vertical scrolling, and can also be used to specify the height of the scrolling area, which can be set as a pixel value',
           },
           propType: 'number',
           setter: ['NumberSetter', 'VariableSetter'],
@@ -550,13 +550,13 @@ export default {
       ],
     },
     {
-      title: '行选择器',
+      title: 'Row Selector',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'rowSelection',
-          title: { label: '行选择', tip: 'rowSelection | 行选择' },
+          title: { label: 'rowSelection', tip: 'rowSelection' },
           propType: 'object',
           setter: 'BoolSetter',
           extraProps: {
@@ -571,7 +571,7 @@ export default {
         },
         {
           name: 'rowSelection.type',
-          title: { label: '行选择类型', tip: 'rowSelection.type | 多选/单选' },
+          title: { label: 'type', tip: 'rowSelection.type' },
           propType: {
             type: 'oneOf',
             value: ['checkbox', 'radio'],
@@ -582,11 +582,11 @@ export default {
               props: {
                 options: [
                   {
-                    title: '多选',
+                    title: 'checkbox',
                     value: 'checkbox',
                   },
                   {
-                    title: '单选',
+                    title: 'radio',
                     value: 'radio',
                   },
                 ],
@@ -602,8 +602,8 @@ export default {
         {
           name: 'rowSelection.fixed',
           title: {
-            label: '固定左边',
-            tip: 'rowSelection.fixed | 把选择框列固定在左边',
+            label: 'fixed',
+            tip: 'rowSelection.fixed',
           },
           propType: 'bool',
           setter: 'BoolSetter',
@@ -615,8 +615,8 @@ export default {
         {
           name: 'rowSelection.selectedRowKeys',
           title: {
-            label: '选中行Key',
-            tip: 'rowSelection.selectedRowKeys | 指定选中项的 key 数组',
+            label: 'selectedRowKeys',
+            tip: 'rowSelection.selectedRowKeys',
           },
           propType: 'object',
           setter: 'JsonSetter',
@@ -627,7 +627,7 @@ export default {
         },
         {
           name: 'rowSelection.preserveSelectedRowKeys',
-          title: { label: '保留选项', tip: 'rowSelection.preserveSelectedRowKeys | 当数据被删除时仍然保留选项' },
+          title: { label: 'preserveSelectedRowKeys', tip: 'Retain option when data is deleted' },
           propType: 'bool',
           setter: 'BoolSetter',
           condition: {
@@ -638,8 +638,8 @@ export default {
         {
           name: 'rowSelection.getCheckboxProps',
           title: {
-            label: '默认属性',
-            tip: 'rowSelection.getCheckboxProps | 选择框的默认属性配置',
+            label: 'getCheckboxProps',
+            tip: 'The default attribute configuration of the selection box',
           },
           propType: 'func',
           setter: [
@@ -647,7 +647,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'getCheckboxProps(record,${extParams}){\n// 选择框的默认属性配置\nreturn { disabled: false };\n}',
+                  'getCheckboxProps(record,${extParams}){\n//The default property configuration of the checkbox\nreturn { disabled: false };\n}',
               },
             },
             'VariableSetter',
@@ -660,21 +660,21 @@ export default {
       ],
     },
     {
-      title: '行展开',
+      title: 'Row Expand',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'expandable.expandedRowRender',
           title: {
-            label: '展开行渲染',
-            tip: 'expandable.expandedRowRender | 额外的展开行',
+            label: 'expandedRowRender',
+            tip: 'expandable.expandedRowRender',
           },
           propType: 'func',
           setter: [
             {
               componentName: 'SlotSetter',
-              title: '展开行插槽',
+              title: 'expand row slot',
               initialValue: {
                 type: 'JSSlot',
                 params: ['record', 'index', 'indent', 'expanded'],
@@ -685,7 +685,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'expandedRowRender(record,index,indent,expanded,${extParams}){\n// 展开行渲染\nreturn `${record.id}`}',
+                  'expandedRowRender(record,index,indent,expanded,${extParams}){\n//Expanded row rendering\nreturn `${record.id}`}',
               },
             },
             'VariableSetter',
@@ -694,15 +694,15 @@ export default {
         {
           name: 'expandable.rowExpandable',
           title: {
-            label: '是否可展开',
-            tip: 'expandable.rowExpandable | 行是否可展开',
+            label: 'rowExpandable',
+            tip: 'whether the row is expandable',
           },
           propType: 'func',
           setter: [
             {
               componentName: 'FunctionSetter',
               props: {
-                template: 'rowExpandable(record,${extParams}){\n// 行是否可展开\nreturn true;\n}',
+                template: 'rowExpandable(record,${extParams}){\n//Whether the row can be expanded\nreturn true;\n}',
               },
             },
             'VariableSetter',
@@ -711,18 +711,18 @@ export default {
       ],
     },
     {
-      title: '扩展',
+      title: 'Expand',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'title',
-          title: { label: '表格标题', tip: 'title | 表格标题' },
+          title: { label: 'title', tip: 'title' },
           propType: 'func',
           setter: [
             {
               componentName: 'SlotSetter',
-              title: '表格标题插槽',
+              title: 'table title slot',
               initialValue: {
                 type: 'JSSlot',
                 params: ['currentPageData'],
@@ -733,7 +733,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'renderTitle(currentPageData,${extParams}){\n// 自定义渲染表格顶部\nreturn "表格顶部";\n}',
+                  'renderTitle(currentPageData,${extParams}){\n//custom rendering table top\nreturn "table top";\n}',
               },
             },
             'VariableSetter',
@@ -741,12 +741,12 @@ export default {
         },
         {
           name: 'footer',
-          title: { label: '表格尾部', tip: 'footer | 表格尾部' },
+          title: { label: 'footer', tip: 'footer' },
           propType: 'func',
           setter: [
             {
               componentName: 'SlotSetter',
-              title: '表格尾部插槽',
+              title: 'table footer slot',
               initialValue: {
                 type: 'JSSlot',
                 params: ['currentPageData'],
@@ -757,7 +757,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'renderFooter(currentPageData,${extParams}){\n// 自定义渲染表格尾部\nreturn "表格尾部";\n}',
+                  'renderFooter(currentPageData,${extParams}){\n//custom rendering table footer\nreturn "table footer";\n}',
               },
             },
             'VariableSetter',
@@ -765,14 +765,14 @@ export default {
         },
         {
           name: 'onHeaderRow',
-          title: { label: '头部行属性', tip: 'onHeaderRow | 设置头部行属性' },
+          title: { label: 'onHeaderRow', tip: 'Set header row properties' },
           propType: 'func',
           setter: [
             {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'onHeaderRow(columns,index,${extParams}){\n// 设置头部行属性\nreturn {onClick:()=>{}};\n}',
+                  'onHeaderRow(columns,index,${extParams}){\n//Set header row properties\nreturn {onClick:()=>{}};\n}',
               },
             },
             'VariableSetter',
@@ -780,14 +780,14 @@ export default {
         },
         {
           name: 'onRow',
-          title: { label: '行属性', tip: 'onRow | 设置行属性' },
+          title: { label: 'onRow', tip: 'Set row properties' },
           propType: 'func',
           setter: [
             {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'onRow(record,index,${extParams}){\n// 设置行属性\nreturn {onClick:event=>{}};\n}',
+                  'onRow(record,index,${extParams}){\n//Set row properties\nreturn {onClick:event=>{}};\n}',
               },
             },
             'VariableSetter',
@@ -795,14 +795,14 @@ export default {
         },
         {
           name: 'rowClassName',
-          title: { label: '行类名', tip: 'rowClassName | 表格行的类名' },
+          title: { label: 'rowClassName', tip: 'rowClassName' },
           propType: 'func',
           setter: [
             {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'rowClassName(record,index,${extParams}){\n// 表格行的类名\nreturn `className-${record.type}`;\n}',
+                  'rowClassName(record,index,${extParams}){\n//The class name of the table row\nreturn `className-${record.type}`;\n}',
               },
             },
             'VariableSetter',
@@ -818,17 +818,17 @@ export default {
         {
           name: 'onChange',
           template:
-            "onChange(pagination,filters,sorter,extra,${extParams}){\n// 表格翻页事件\nconsole.log('onChange', pagination);}",
+            "onChange(pagination,filters,sorter,extra,${extParams}){\n//form page turning event\nconsole.log('onChange', pagination);}",
         },
         {
           name: 'rowSelection.onChange',
           template:
-            "onRowSelectionChange(selectedRowKeys,selectedRows,${extParams}){\n// 选中项发生变化时的回调\nconsole.log('onRowSelectionChange', selectedRowKeys, selectedRows);}",
+            "onRowSelectionChange(selectedRowKeys,selectedRows,${extParams}){\n//Callback when the selected item changes\nconsole.log('onRowSelectionChange', selectedRowKeys, selectedRows);}",
         },
         {
           name: 'expandable.onExpand',
           template:
-            "onExpandableExpand(expanded,record){\n// 点击展开图标时触发\nconsole.log('onRowSelectionChange', expanded, record);}",
+            "onExpandableExpand(expanded,record){\n//Triggered when the expand icon is clicked\nconsole.log('onRowSelectionChange', expanded, record);}",
         },
       ],
     },

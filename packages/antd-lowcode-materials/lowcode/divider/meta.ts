@@ -3,49 +3,49 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Divider',
-  title: '分割线',
-  category: '布局',
+  title: 'Divider',
+  category: 'Layout',
   props: [
     {
       name: 'className',
-      title: { label: '分割线样式类', tip: '分割线样式类' },
+      title: { label: 'className', tip: 'className' },
       propType: 'string',
     },
     {
       name: 'dashed',
-      title: { label: '是否虚线', tip: '是否虚线' },
+      title: { label: 'dashed', tip: 'dashed' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'orientation',
-      title: { label: '标题位置', tip: '分割线标题的位置' },
+      title: { label: 'orientation', tip: 'orientation' },
       propType: { type: 'oneOf', value: ['left', 'right', 'center'] },
     },
     {
       name: 'orientationMargin',
       title: {
-        label: '标题边距',
+        label: 'orientationMargin',
         tip:
-          '标题和最近 left/right 边框之间的距离，去除了分割线，同时 orientation 必须为 left 或 right',
+          'The distance between the title and the nearest left/right border, the dividing line is removed, and the orientation must be left or right',
       },
       propType: { type: 'oneOfType', value: ['string', 'number'] },
     },
     {
       name: 'style',
-      title: { label: '分割线样式对象', tip: '分割线样式对象' },
+      title: { label: 'style', tip: 'style' },
       propType: 'object',
     },
     {
       name: 'type',
-      title: { label: '方向', tip: '水平还是垂直类型' },
+      title: { label: 'type', tip: 'horizontal or vertical type' },
       propType: { type: 'oneOf', value: ['horizontal', 'vertical'] },
     },
     {
       name: 'plain',
       title: {
-        label: '普通正文样式',
-        tip: '文字是否显示为普通正文样式',
+        label: 'plain',
+        tip: 'Whether the text is displayed in normal text style',
       },
       propType: 'bool',
       defaultValue: false,

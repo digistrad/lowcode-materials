@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Input.Search',
   title: '搜索框',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

@@ -74,5 +74,5 @@ module.exports = {
       propType: 'number',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

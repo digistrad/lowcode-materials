@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Tree',
   title: '树形控件',
-  category: '数据展示',
+  category: 'Data Display',
   props: [
     {
       name: 'treeData',

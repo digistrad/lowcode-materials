@@ -5,14 +5,14 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Descriptions',
-  title: '描述列表',
-  category: '数据展示',
+  title: 'Descriptions',
+  category: 'Data Display',
   props: [
     {
       name: 'title',
       title: {
-        label: '标题',
-        tip: '描述列表的标题，显示在最顶部',
+        label: 'Title',
+        tip: 'The title of the description list, displayed at the very top',
       },
       propType: {
         type: 'oneOfType',
@@ -22,8 +22,8 @@ export default {
     {
       name: 'items',
       title: {
-        label: '列表项',
-        tip: '列表项',
+        label: 'items',
+        tip: 'items',
       },
       setter: {
         componentName: 'ArraySetter',
@@ -42,19 +42,19 @@ export default {
                   },
                   {
                     name: 'label',
-                    title: '标题',
+                    title: 'Title',
                     setter: 'StringSetter',
-                    initialValue: '列表项',
+                    initialValue: 'list item',
                   },
                   {
                     name: 'span',
-                    title: '所占列数',
+                    title: 'spam',
                     setter: 'NumberSetter',
                     initialValue: 1,
                   },
                   {
                     name: 'children',
-                    title: '内容',
+                    title: 'content',
                     setter: {
                       componentName: 'SlotSetter',
                       initialValue: {
@@ -69,7 +69,7 @@ export default {
             initialValue: () => {
               return {
                 key: uuid(),
-                label: '标签项',
+                label: 'tag item',
                 span: 1,
                 children: {
                   type: 'JSSlot',
@@ -174,15 +174,15 @@ export default {
     },
     {
       name: 'bordered',
-      title: { label: '显示边框', tip: '是否展示边框' },
+      title: { label: 'bordered', tip: 'bordered' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'column',
       title: {
-        label: '列数',
-        tip: '一行的列表项数量',
+        label: 'Number of columns',
+        tip: 'The number of list items in a row',
       },
       propType: 'number',
       defaultValue: 3,
@@ -190,24 +190,24 @@ export default {
     {
       name: 'size',
       title: {
-        label: '尺寸',
+        label: 'size',
         tip:
-          '设置列表的大小。可以设置为 `middle` 、`small`, 或不填（只有设置 `bordered={true}` 生效）',
+          'Set the size of the list. Can be set to `middle`, `small`, or left blank (only if `bordered={true}` is set)',
       },
       propType: { type: 'oneOf', value: ['default', 'middle', 'small'] },
       defaultValue: 'middle',
     },
     {
       name: 'layout',
-      title: { label: '布局方向', tip: '描述布局' },
+      title: { label: 'layout', tip: 'describe the layout' },
       propType: { type: 'oneOf', value: ['horizontal', 'vertical'] },
       defaultValue: 'horizontal',
     },
     {
       name: 'colon',
       title: {
-        label: '展示冒号',
-        tip: '配置 `Descriptions.Item` 的 `colon` 的默认值',
+        label: 'colon',
+        tip: 'Configure the default value of `colon` for `Descriptions.Item`',
       },
       propType: 'bool',
       defaultValue: true,

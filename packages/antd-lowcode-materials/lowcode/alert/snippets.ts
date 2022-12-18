@@ -1,6 +1,6 @@
 export default [
   {
-    title: '成功提示',
+    title: 'Success',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/alert-1.png',
     schema: {
       componentName: 'Alert',
@@ -13,7 +13,7 @@ export default [
     },
   },
   {
-    title: '信息提示',
+    title: 'Info',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/alert-2.png',
     schema: {
       componentName: 'Alert',
@@ -26,7 +26,7 @@ export default [
     },
   },
   {
-    title: '警告提示',
+    title: 'Warning',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/alert-3.png',
     schema: {
       componentName: 'Alert',
@@ -39,7 +39,7 @@ export default [
     },
   },
   {
-    title: '错误提示',
+    title: 'Error',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/alert-4.png',
     schema: {
       componentName: 'Alert',

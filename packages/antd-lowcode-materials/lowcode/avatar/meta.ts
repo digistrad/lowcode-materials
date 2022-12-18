@@ -3,22 +3,22 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Avatar',
-  title: '头像',
-  category: '数据展示',
+  title: 'Avatar',
+  category: 'Data Display',
   props: [
     {
       name: 'icon',
-      title: { label: '头像图标', tip: '设置头像的自定义图标' },
+      title: { label: 'icon', tip: 'Set a custom icon for your avatar' },
       propType: 'node',
     },
     {
       name: 'shape',
-      title: { label: '头像形状', tip: '指定头像的形状' },
+      title: { label: 'shape', tip: 'Specifies the shape of the avatar' },
       propType: { type: 'oneOf', value: ['circle', 'square'] },
     },
     {
       name: 'size',
-      title: { label: '尺寸', tip: '设置头像的大小' },
+      title: { label: 'size', tip: 'Set the size of the avatar' },
       propType: {
         type: 'oneOfType',
         value: ['number', { type: 'oneOf', value: ['large', 'small', 'default'] }],
@@ -27,30 +27,30 @@ export default {
     },
     {
       name: 'src',
-      title: { label: '图片地址', tip: '图片类头像的资源地址' },
+      title: { label: 'src', tip: 'The resource address of the picture type avatar' },
       propType: 'string',
     },
     {
       name: 'alt',
       title: {
-        label: '替代文本',
-        tip: '图像无法显示时的替代文本',
+        label: 'alt',
+        tip: 'Alternative text when the image cannot be displayed',
       },
       propType: 'string',
     },
     {
       name: 'onError',
       title: {
-        label: '图片加载失败的事件',
-        tip: '图片加载失败的事件，返回 false 会关闭组件默认的 fallback 行为',
+        label: 'onError',
+        tip: 'The event of image loading failure, returning false will disable the default fallback behavior of the component',
       },
       propType: 'func',
     },
     {
       name: 'gap',
       title: {
-        label: '文字边距',
-        tip: '字符类型距离左右两侧边界单位像素',
+        label: 'gap',
+        tip: 'The character type is in pixels from the left and right borders',
       },
       propType: 'number',
     },
@@ -61,7 +61,7 @@ export default {
       events: [
         {
           name: 'onError',
-          template: "onError(${extParams}){\n// 图片加载失败的事件\nconsole.log('onError');}",
+          template: "onError(${extParams}){\n//The event of image loading failure\nconsole.log('onError');}",
         },
       ],
     },

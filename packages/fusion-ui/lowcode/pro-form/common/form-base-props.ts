@@ -331,7 +331,7 @@ const props: IProps[] = [
       },
       {
         name: 'columns',
-        title: '布局',
+        title: 'Layout',
         setter: {
           componentName: 'RadioGroupSetter',
           props: {

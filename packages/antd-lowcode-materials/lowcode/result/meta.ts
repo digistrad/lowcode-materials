@@ -4,11 +4,11 @@ export default {
   snippets,
   componentName: 'Result',
   title: '结果',
-  category: '反馈',
+  category: 'Feedback',
   props: [
     {
       name: 'title',
-      title: { label: '标题', tip: 'title 文字' },
+      title: { label: 'Title', tip: 'title 文字' },
       propType: 'node',
     },
     {

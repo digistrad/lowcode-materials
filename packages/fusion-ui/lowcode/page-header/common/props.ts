@@ -3,7 +3,7 @@ import { FieldConfig } from '@ali/lowcode-types';
 const props: FieldConfig[] = [
   {
     name: 'title',
-    title: '标题',
+    title: 'Title',
     setter: 'StringSetter',
   },
   {

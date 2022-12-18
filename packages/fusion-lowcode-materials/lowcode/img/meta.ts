@@ -32,7 +32,7 @@ module.exports = {
       title: {
         label: {
           type: 'i18n',
-          zh_CN: '标题',
+          zh_CN: 'Title',
           en_US: 'Title',
         },
       },

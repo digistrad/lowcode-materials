@@ -40,5 +40,5 @@ module.exports = {
       propType: 'object',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

@@ -60,5 +60,5 @@ module.exports = {
       defaultValue: 'next-',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

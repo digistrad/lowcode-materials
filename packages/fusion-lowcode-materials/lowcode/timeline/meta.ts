@@ -66,7 +66,7 @@ module.exports = {
                       setter: 'StringSetter',
                       supportVariable: true,
                       isRequired: true,
-                      title: '标题',
+                      title: 'Title',
                     },
                     {
                       name: 'icon',

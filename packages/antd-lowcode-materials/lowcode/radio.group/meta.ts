@@ -3,7 +3,7 @@ import { uuid } from '../_utils/utils';
 export default {
   componentName: 'Radio.Group',
   title: '单选框组',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

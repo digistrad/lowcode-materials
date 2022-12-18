@@ -3,25 +3,25 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Typography.Link',
-  title: '链接',
-  category: '基础',
+  title: 'Link',
+  category: 'Base',
   props: [
     {
       name: 'children',
-      title: { label: '内容', tip: '内容' },
+      title: { label: 'content', tip: 'content' },
       propType: 'string',
       defaultValue: '',
       supportVariable: true,
     },
     {
       name: 'href',
-      title: { label: '跳转链接', tip: '跳转链接' },
+      title: { label: 'href', tip: 'href' },
       propType: 'string',
       defaultValue: '',
     },
     {
       name: 'target',
-      title: { label: '跳转位置', tip: '在何处显示链接的资源' },
+      title: { label: 'target', tip: 'target' },
       propType: {
         type: 'oneOf',
         value: ['_self', '_blank', '_parent', '_top'],

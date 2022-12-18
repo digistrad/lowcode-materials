@@ -189,7 +189,7 @@ const groupTableMeta: IComponentDescription = {
                 },
               },
               initialValue: {
-                header: '标题',
+                header: 'Title',
                 footer: '尾部',
                 children: [],
               },

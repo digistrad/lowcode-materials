@@ -7,7 +7,7 @@ export default {
   props: [
     {
       name: 'title',
-      title: { label: '标题', tip: '标题' },
+      title: { label: 'Title', tip: 'Title' },
       propType: 'string',
     },
     {

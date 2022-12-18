@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Slider',
   title: '滑动输入条',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Select',
   title: '选择器',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

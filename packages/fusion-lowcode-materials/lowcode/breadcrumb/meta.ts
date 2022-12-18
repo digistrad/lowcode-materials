@@ -119,7 +119,7 @@ module.exports = {
                     },
                     {
                       name: 'children',
-                      title: '标题',
+                      title: 'Title',
                       initialValue: {
                         zh_CN: '',
                         en_US: '',

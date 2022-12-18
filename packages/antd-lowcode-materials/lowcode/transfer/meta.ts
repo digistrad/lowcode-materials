@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Transfer',
   title: '穿梭框',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'dataSource',

@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Progress',
   title: '进度条',
-  category: '反馈',
+  category: 'Feedback',
   props: [
     {
       name: 'type',

@@ -23,7 +23,7 @@ export const commonActions = [
   },
   {
     name: 'text',
-    title: '标题',
+    title: 'Title',
     editable: true,
     initialValue: '详情',
     display: 'inline',

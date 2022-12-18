@@ -37,7 +37,7 @@ module.exports = {
         type: 'oneOfType',
         value: ['node', 'string'],
       },
-      description: '标题',
+      description: 'Title',
     },
     {
       name: 'subTitle',

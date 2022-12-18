@@ -46,5 +46,5 @@ module.exports = {
       propType: 'string',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

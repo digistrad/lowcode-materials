@@ -1,67 +1,67 @@
 export default [
   {
-    title: '主按钮',
+    title: 'primary button',
     screenshot: require('./__screenshots__/button-1.png'),
     schema: {
       componentName: 'Button',
       props: {
         type: 'primary',
-        children: '主按钮',
+        children: 'primary',
       },
     },
   },
   {
-    title: '次按钮',
+    title: 'secondary button',
     screenshot: require('./__screenshots__/button-2.png'),
     schema: {
       componentName: 'Button',
       props: {
-        type: 'default',
-        children: '次按钮',
+        type: 'secondary',
+        children: 'secondary',
       },
     },
   },
   {
-    title: '危险按钮',
+    title: 'danger button',
     screenshot: require('./__screenshots__/button-3.png'),
     schema: {
       componentName: 'Button',
       props: {
         type: 'danger',
-        children: '危险按钮',
+        children: 'danger',
       },
     },
   },
   {
-    title: '文字按钮',
+    title: 'text button',
     screenshot: require('./__screenshots__/button-4.png'),
     schema: {
       componentName: 'Button',
       props: {
         type: 'text',
-        children: '文字按钮',
+        children: 'text',
       },
     },
   },
   {
-    title: '虚框按钮',
+    title: 'dashed button',
     screenshot: require('./__screenshots__/button-5.png'),
     schema: {
       componentName: 'Button',
       props: {
         type: 'dashed',
-        children: '虚框按钮',
+        children: 'dashed',
       },
     },
   },
   {
-    title: '链接按钮',
+    title: 'link button',
     screenshot: require('./__screenshots__/button-6.png'),
     schema: {
       componentName: 'Button',
       props: {
         type: 'link',
-        children: '链接按钮',
+        children: 'link',
       },
     },
   },

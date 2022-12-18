@@ -18,5 +18,5 @@ module.exports = {
       propType: 'any',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

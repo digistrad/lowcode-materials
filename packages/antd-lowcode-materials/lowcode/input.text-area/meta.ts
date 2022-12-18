@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Input.TextArea',
   title: '长文本',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

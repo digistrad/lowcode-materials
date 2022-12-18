@@ -78,7 +78,7 @@ module.exports = {
         type: 'oneOfType',
         value: ['string', 'node'],
       },
-      description: '标题',
+      description: 'Title',
     },
     {
       name: 'headerStyle',
@@ -154,7 +154,7 @@ module.exports = {
         title: {
           label: {
             type: 'i18n',
-            zh_CN: '标题',
+            zh_CN: 'Title',
             en_US: 'Title',
           },
           tip: {
@@ -166,7 +166,7 @@ module.exports = {
         setter: {
           componentName: 'StringSetter',
         },
-        description: '标题',
+        description: 'Title',
       },
       {
         name: 'width',

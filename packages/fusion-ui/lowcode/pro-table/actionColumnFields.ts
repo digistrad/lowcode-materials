@@ -16,7 +16,7 @@ export const actionColumnField: IProps = {
         items: [
           {
             name: 'title',
-            title: '标题',
+            title: 'Title',
             extraProps: {
               display: 'inline',
               defaultValue: '操作',

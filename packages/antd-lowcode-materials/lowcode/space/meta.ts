@@ -5,7 +5,7 @@ export default {
   snippets,
   componentName: 'Space',
   title: '间距',
-  category: '布局',
+  category: 'Layout',
   props: [
     {
       name: 'align',

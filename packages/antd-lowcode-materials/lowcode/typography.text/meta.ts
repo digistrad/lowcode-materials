@@ -3,85 +3,85 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Typography.Text',
-  title: '文本',
-  category: '基础',
+  title: 'Text',
+  category: 'Base',
   props: [
     {
       name: 'children',
-      title: { label: '内容', tip: '内容' },
+      title: { label: 'content', tip: 'content' },
       propType: 'string',
       defaultValue: '',
       supportVariable: true,
     },
     {
       name: 'code',
-      title: { label: '添加代码样式', tip: '添加代码样式' },
+      title: { label: 'code', tip: 'code' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'delete',
-      title: { label: '添加删除线样式', tip: '添加删除线样式' },
+      title: { label: 'delete', tip: 'delete' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'disabled',
-      title: { label: '是否禁用', tip: '是否为禁用状态' },
+      title: { label: 'disabled', tip: 'disabled' },
       propType: 'bool',
       defaultValue: false,
     },
 
     {
       name: 'mark',
-      title: { label: '添加标记样式', tip: '添加标记样式' },
+      title: { label: 'mark', tip: 'mark' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'keyboard',
-      title: { label: '添加键盘样式', tip: '添加键盘样式' },
+      title: { label: 'keyboard', tip: 'keyboard' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'underline',
-      title: { label: '添加下划线样式', tip: '添加下划线样式' },
+      title: { label: 'underline', tip: 'underline' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'strong',
-      title: { label: '是否加粗', tip: '是否加粗' },
+      title: { label: 'strong', tip: 'strong' },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'type',
-      title: { label: '文本类型', tip: '文本类型' },
+      title: { label: 'type', tip: 'type' },
       propType: { type: 'oneOf', value: ['secondary', 'warning', 'danger'] },
       setter: {
         componentName: 'SelectSetter',
         props: {
           options: [
             {
-              title: '默认',
+              title: 'default',
               value: 'default',
             },
             {
-              title: '弱提示',
+              title: 'secondary',
               value: 'secondary',
             },
             {
-              title: '成功',
+              title: 'success',
               value: 'success',
             },
             {
-              title: '警告',
+              title: 'warning',
               value: 'warning',
             },
             {
-              title: '错误',
+              title: 'danger',
               value: 'danger',
             },
           ],
@@ -89,13 +89,13 @@ export default {
       },
     },
     {
-      title: '高级',
+      title: 'Advanced',
       type: 'group',
       display: 'accordion',
       items: [
         {
           name: 'copyable',
-          title: { label: '是否可拷贝', tip: '是否可拷贝' },
+          title: { label: 'copyable', tip: 'copyable' },
           propType: { type: 'oneOfType', value: ['bool', 'object'] },
           setter: [
             {
@@ -111,7 +111,7 @@ export default {
         },
         {
           name: 'editable',
-          title: { label: '是否可编辑', tip: '是否可编辑' },
+          title: { label: 'editable', tip: 'editable' },
           propType: { type: 'oneOfType', value: ['bool', 'object'] },
           setter: [
             {
@@ -128,8 +128,8 @@ export default {
         {
           name: 'ellipsis',
           title: {
-            label: '自动溢出省略',
-            tip: '设置自动溢出省略，需要设置元素宽度',
+            label: 'ellipsis',
+            tip: 'To set automatic overflow omission, you need to set the element width',
           },
           propType: { type: 'oneOfType', value: ['bool', 'object'] },
           setter: [
@@ -153,35 +153,35 @@ export default {
       events: [
         {
           name: 'copyable.onCopy',
-          template: "onCopy(${extParams}){\n// 拷贝成功的回调函数\nconsole.log('onCopy');}",
+          template: "onCopy(${extParams}){\n//Copy successful callback function\nconsole.log('onCopy');}",
         },
         {
           name: 'editable.onStart',
-          template: "onStart(${extParams}){\n// 进入编辑中状态时触发\nconsole.log('onStart');}",
+          template: "onStart(${extParams}){\n//Triggered when entering the editing state\nconsole.log('onStart');}",
         },
         {
           name: 'editable.onChange',
           template:
-            "onChange(event,${extParams}){\n// 文本域编辑时触发\nconsole.log('onChange', event);}",
+            "onChange(event,${extParams}){\n//Triggered when the text field is edited\nconsole.log('onChange', event);}",
         },
         {
           name: 'editable.onEnd',
-          template: "onEnd(${extParams}){\n// 按 ENTER 结束编辑状态时触发\nconsole.log('onEnd');}",
+          template: "onEnd(${extParams}){\n//Triggered when pressing ENTER to end the editing state\nconsole.log('onEnd');}",
         },
         {
           name: 'editable.onCancel',
           template:
-            "onCancel(${extParams}){\n// 按 ESC 退出编辑状态时触发\nconsole.log('onCancel');}",
+            "onCancel(${extParams}){\n//Triggered when pressing ESC to exit the editing state\nconsole.log('onCancel');}",
         },
         {
           name: 'ellipsis.onEllipsis',
           template:
-            "onEllipsis(ellipsis,${extParams}){\n// 触发省略时的回调\nconsole.log('onEllipsis', ellipsis);}",
+            "onEllipsis(ellipsis,${extParams}){\n//Trigger callback when ellipsis\nconsole.log('onEllipsis', ellipsis);}",
         },
         {
           name: 'ellipsis.onExpand',
           template:
-            "onExpand(event,${extParams}){\n// 点击展开时的回调\nconsole.log('onExpand', event);}",
+            "onExpand(event,${extParams}){\n//Callback when clicked to expand\nconsole.log('onExpand', event);}",
         },
       ],
     },

@@ -1,6 +1,6 @@
 export default [
   {
-    title: '面包屑',
+    title: 'Breadcrumb',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/breadcrumb-1.jpg',
     schema: {
       componentName: 'Breadcrumb',

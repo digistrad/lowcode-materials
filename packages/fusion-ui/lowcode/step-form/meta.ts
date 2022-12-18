@@ -148,7 +148,7 @@ const ProFormMeta: IComponentDescription[] = [
           value: 'node',
         },
         defaultValue: '步骤项',
-        description: '标题',
+        description: 'Title',
       },
       {
         name: 'content',
@@ -220,7 +220,7 @@ const ProFormMeta: IComponentDescription[] = [
               componentName: 'StringSetter',
             },
             defaultValue: '步骤项',
-            title: '标题',
+            title: 'Title',
           },
           {
             name: 'content',

@@ -1,6 +1,6 @@
 export default [
   {
-    title: '分割线',
+    title: 'Divider',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/divider-1.png',
     schema: {
       componentName: 'Divider',
@@ -8,7 +8,7 @@ export default [
     },
   },
   {
-    title: '带文字分割线',
+    title: 'Divider with Text',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/divider-2.png',
     schema: {
       componentName: 'Divider',

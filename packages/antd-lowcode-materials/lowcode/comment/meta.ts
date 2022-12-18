@@ -3,46 +3,46 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Comment',
-  title: '评论',
-  category: '数据展示',
+  title: 'Comment',
+  category: 'Data Display',
   props: [
     {
       name: 'actions',
       title: {
-        label: '操作列表',
-        tip: '在评论内容下面呈现的操作项列表',
+        label: 'actions',
+        tip: 'A list of action items to render below the comment content',
       },
       propType: { type: 'arrayOf', value: 'node' },
     },
     {
       name: 'author',
-      title: { label: '要显示为注释作者的元素', tip: '要显示为注释作者的元素' },
+      title: { label: 'author', tip: 'The element to display as the author of the note' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'avatar',
       title: {
-        label: '头像元素',
-        tip: '要显示为评论头像的元素 - 通常是 antd Avatar 或者 src',
+        label: 'avatar',
+        tip: 'Element to display as comment avatar -usually antd Avatar or src',
       },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'children',
       title: {
-        label: '子节点',
-        tip: '嵌套注释应作为注释的子项提供',
+        label: 'children',
+        tip: 'Nested annotations should be provided as children of annotations',
       },
       propType: 'node',
     },
     {
       name: 'content',
-      title: { label: '评论的主要内容', tip: '评论的主要内容' },
+      title: { label: 'content', tip: 'The main content of the comment' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'datetime',
-      title: { label: '展示时间描述', tip: '展示时间描述' },
+      title: { label: 'datetime', tip: 'Display time description' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
   ],

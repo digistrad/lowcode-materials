@@ -24,7 +24,7 @@ module.exports = {
         type: 'instanceOf',
         value: 'node',
       },
-      description: '标题',
+      description: 'Title',
     },
     {
       name: 'content',
@@ -83,7 +83,7 @@ module.exports = {
       override: [
         {
           name: 'title',
-          title: '标题',
+          title: 'Title',
           setter: 'StringSetter',
         },
         {

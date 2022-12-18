@@ -3,19 +3,19 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Upload',
-  title: '上传',
-  category: '表单',
+  title: 'Upload',
+  category: 'Form',
   props: [
     {
-      title: '基本',
+      title: 'Basic',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'defaultFileList',
           title: {
-            label: '默认上传文件',
-            tip: 'defaultFileList | 默认已经上传的文件列表',
+            label: 'defaultFileList',
+            tip: 'defaultFileList',
           },
           propType: { type: 'arrayOf', value: 'object' },
           setter: {
@@ -28,12 +28,12 @@ export default {
                     items: [
                       {
                         name: 'name',
-                        title: '文件名',
+                        title: 'name',
                         setter: 'StringSetter',
                       },
                       {
                         name: 'status',
-                        title: '状态',
+                        title: 'status',
                         setter: {
                           componentName: 'SelectSetter',
                           props: {
@@ -49,17 +49,17 @@ export default {
                       },
                       {
                         name: 'url',
-                        title: '下载地址',
+                        title: 'url',
                         setter: 'StringSetter',
                       },
                       {
                         name: 'url',
-                        title: '下载地址',
+                        title: 'url',
                         setter: 'StringSetter',
                       },
                       {
                         name: 'response',
-                        title: '错误信息',
+                        title: 'response',
                         setter: 'StringSetter',
                       },
                     ],
@@ -72,8 +72,8 @@ export default {
         {
           name: 'fileList',
           title: {
-            label: '当前上传文件',
-            tip: 'fileList | 当前上传的文件列表（受控）',
+            label: 'fileList',
+            tip: 'List of currently uploaded files (controlled)',
           },
           propType: { type: 'arrayOf', value: 'object' },
           setter: {
@@ -86,12 +86,12 @@ export default {
                     items: [
                       {
                         name: 'name',
-                        title: '文件名',
+                        title: 'name',
                         setter: 'StringSetter',
                       },
                       {
                         name: 'status',
-                        title: '状态',
+                        title: 'status',
                         setter: {
                           componentName: 'SelectSetter',
                           props: {
@@ -107,17 +107,17 @@ export default {
                       },
                       {
                         name: 'url',
-                        title: '下载地址',
+                        title: 'url',
                         setter: 'StringSetter',
                       },
                       {
                         name: 'url',
-                        title: '下载地址',
+                        title: 'url',
                         setter: 'StringSetter',
                       },
                       {
                         name: 'response',
-                        title: '错误信息',
+                        title: 'response',
                         setter: 'StringSetter',
                       },
                     ],
@@ -130,8 +130,8 @@ export default {
         {
           name: 'multiple',
           title: {
-            label: '支持多选文件',
-            tip: 'multiple | 是否支持多选文件，`ie10+` 支持。开启后按住 ctrl 可选择多个文件',
+            label: 'multiple',
+            tip: 'Whether to support multi-select files, `ie10+` support. Hold down ctrl after opening to select multiple files',
           },
           propType: 'bool',
           defaultValue: false,
@@ -140,8 +140,8 @@ export default {
         {
           name: 'maxCount',
           title: {
-            label: '上传数量限制',
-            tip: 'maxCount | 限制上传数量。当为 1 时，始终用最新上传的文件代替当前文件',
+            label: 'maxCount',
+            tip: 'Limit the number of uploads. When 1, always replace the current file with the latest uploaded file',
           },
           propType: 'number',
           setter: 'NumberSetter',
@@ -149,8 +149,8 @@ export default {
         {
           name: 'accept',
           title: {
-            label: '上传文件类型',
-            tip: 'accept | 接受上传的文件类型, 例如 .doc,.docx,application/msword',
+            label: 'accept',
+            tip: 'Accept uploaded file types, such as .doc, .docx, application/msword',
           },
           propType: 'string',
           setter: 'StringSetter',
@@ -158,8 +158,8 @@ export default {
         {
           name: 'directory',
           title: {
-            label: '文件夹上传',
-            tip: 'directory | 支持上传文件夹',
+            label: 'directory',
+            tip: 'Support for uploading folders',
           },
           propType: 'bool',
           defaultValue: false,
@@ -167,7 +167,7 @@ export default {
         },
         {
           name: 'disabled',
-          title: { label: '是否禁用', tip: 'disabled | 是否为禁用状态' },
+          title: { label: 'disabled', tip: 'Is it disabled' },
           propType: 'bool',
           defaultValue: false,
           setter: 'BoolSetter',
@@ -175,15 +175,15 @@ export default {
       ],
     },
     {
-      title: '高级',
+      title: 'Advanced',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'openFileDialogOnClick',
           title: {
-            label: '打开文件对话框',
-            tip: 'openFileDialogOnClick | 点击打开文件对话框',
+            label: 'openFileDialogOnClick',
+            tip: 'openFileDialogOnClick',
           },
           propType: 'bool',
           defaultValue: true,
@@ -192,8 +192,8 @@ export default {
         {
           name: 'showUploadList',
           title: {
-            label: '显示上传列表',
-            tip: 'showUploadList | 是否显示上传的文件列表,',
+            label: 'showUploadList',
+            tip: 'Whether to display the list of uploaded files,',
           },
           propType: 'bool',
           defaultValue: true,
@@ -202,9 +202,9 @@ export default {
         {
           name: 'listType',
           title: {
-            label: '上传列表样式',
+            label: 'listType',
             tip:
-              'listType | 上传列表的内建样式，支持三种基本样式 `text`, `picture` 和 `picture-card`',
+              'The built-in style of the upload list, supports three basic styles `text`, `picture` and `picture-card`',
           },
           propType: {
             type: 'oneOf',
@@ -217,15 +217,15 @@ export default {
               props: {
                 options: [
                   {
-                    title: '文本',
+                    title: 'text',
                     value: 'text',
                   },
                   {
-                    title: '图片',
+                    title: 'picture',
                     value: 'picture',
                   },
                   {
-                    title: '图片卡片',
+                    title: 'picture-card',
                     value: 'picture-card',
                   },
                 ],
@@ -236,11 +236,11 @@ export default {
         },
         {
           name: 'iconRender',
-          title: { label: '自定义图标', tip: 'iconRender | 自定义显示 icon' },
+          title: { label: 'iconRender', tip: 'custom display icon' },
           propType: 'func',
           setter: {
             componentName: 'SlotSetter',
-            title: '自定义图标插槽',
+            title: 'custom icon slot',
             initialValue: {
               type: 'JSSlot',
               params: ['file', 'listType'],
@@ -251,13 +251,13 @@ export default {
         {
           name: 'itemRender',
           title: {
-            label: '自定义列表项',
-            tip: 'itemRender | 自定义上传列表项',
+            label: 'itemRender',
+            tip: 'Custom Upload List Items',
           },
           propType: 'func',
           setter: {
             componentName: 'SlotSetter',
-            title: '自定义列表项插槽',
+            title: 'custom list item slot',
             initialValue: {
               type: 'JSSlot',
               params: ['originNode', 'file', 'fileList', 'actions'],
@@ -267,34 +267,34 @@ export default {
         },
         {
           name: 'progress',
-          title: { label: '自定义进度条', tip: 'progress | 自定义进度条样式' },
+          title: { label: 'progress', tip: 'Custom progress bar style' },
           propType: 'object',
           setter: 'JsonSetter',
         },
       ],
     },
     {
-      title: '上传参数',
+      title: 'Upload parameters',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'action',
-          title: { label: '上传地址', tip: 'action | 上传的地址或方法' },
+          title: { label: 'upload address', tip: 'URL or method of upload' },
           propType: { type: 'oneOfType', value: ['string', 'func'] },
           setter: ['StringSetter', 'FunctionSetter', 'VariableSetter'],
         },
         {
           name: 'name',
-          title: { label: '文件参数名', tip: 'name | 发到后台的文件参数名' },
+          title: { label: 'name', tip: 'The file parameter name sent to the background' },
           propType: 'string',
           setter: 'StringSetter',
         },
         {
           name: 'method',
           title: {
-            label: '请求Method',
-            tip: 'method | 上传请求的 http method',
+            label: 'method',
+            tip: 'upload request http method',
           },
           propType: {
             type: 'oneOf',
@@ -306,8 +306,8 @@ export default {
         {
           name: 'headers',
           title: {
-            label: '上传请求头',
-            tip: 'headers | 设置上传的请求头部，IE10 以上有效',
+            label: 'headers',
+            tip: 'Set the upload request header, valid for IE10 and above',
           },
           propType: 'object',
           setter: 'JsonSetter',
@@ -315,8 +315,8 @@ export default {
         {
           name: 'withCredentials',
           title: {
-            label: '携带Cookie',
-            tip: 'withCredentials | 上传请求时是否携带 cookie',
+            label: 'withCredentials',
+            tip: 'Whether to carry cookies when uploading requests',
           },
           propType: 'bool',
           defaultValue: false,
@@ -325,8 +325,8 @@ export default {
         {
           name: 'data',
           title: {
-            label: '额外参数',
-            tip: 'data | 上传所需额外参数或返回上传额外参数的方法',
+            label: 'extra parameters',
+            tip: 'Upload the required extra parameters or return the method of uploading extra parameters',
           },
           propType: { type: 'oneOfType', value: ['object', 'func'] },
           setter: [
@@ -334,7 +334,7 @@ export default {
             {
               componentName: 'FunctionSetter',
               props: {
-                template: 'onData(file,${extParams}){\n// 上传所需额外参数\nreturn {};\n}',
+                template: 'onData(file,${extParams}){\n//Additional parameters required for upload\nreturn {};\n}',
               },
             },
             'VariableSetter',
@@ -343,30 +343,30 @@ export default {
       ],
     },
     {
-      title: '回调函数',
+      title: 'Callback',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'beforeUpload',
           title: {
-            label: '上传前回调',
-            tip: 'beforeUpload | 上传文件之前的回调函数',
+            label: 'beforeUpload',
+            tip: 'Callback function before uploading files',
           },
           propType: 'func',
           setter: {
             componentName: 'FunctionSetter',
             props: {
               template:
-                'beforeUpload(file,fileList,${extParams}){\n// 上传文件之前的钩子\nreturn false;\n}',
+                'beforeUpload(file,fileList,${extParams}){\n//hook before uploading files\nreturn false;\n}',
             },
           },
         },
         {
           name: 'customRequest',
           title: {
-            label: '自定义上传',
-            tip: 'customRequest | 通过覆盖默认的上传行为，可以自定义自己的上传实现',
+            label: 'customRequest',
+            tip: 'You can customize your own upload implementation by overriding the default upload behavior',
           },
           propType: 'func',
           setter: 'FunctionSetter',
@@ -374,22 +374,22 @@ export default {
         {
           name: 'isImageUrl',
           title: {
-            label: '是否为图片',
-            tip: 'isImageUrl | 自定义缩略图是否使用 <img /> 标签进行显示',
+            label: 'isImageUrl',
+            tip: 'Whether the custom thumbnail is displayed using the <img /> tag',
           },
           propType: 'func',
           setter: {
             componentName: 'FunctionSetter',
             props: {
-              template: 'isImageUrl(file,${extParams}){\n// 判断是否为图片\nreturn true;\n}',
+              template: 'isImageUrl(file,${extParams}){\n//Determine whether it is an image\nreturn true;\n}',
             },
           },
         },
         {
           name: 'previewFile',
           title: {
-            label: '自定义文件预览',
-            tip: 'previewFile | 自定义文件预览逻辑',
+            label: 'previewFile',
+            tip: 'Custom file preview logic',
           },
           propType: 'func',
           setter: 'FunctionSetter',
@@ -405,22 +405,22 @@ export default {
         {
           name: 'onChange',
           template:
-            "onChange({file,fileList,event},${extParams}){\n// 上传文件改变时的回调\nconsole.log('onChange',file,fileList,event);}",
+            "onChange({file,fileList,event},${extParams}){\n//Callback when the uploaded file changes\nconsole.log('onChange',file,fileList,event);}",
         },
         {
           name: 'onPreview',
           template:
-            "onPreview(file,${extParams}){\n// 点击文件链接或预览图标时的回调\nconsole.log('onPreview',file);}",
+            "onPreview(file,${extParams}){\n//Callback when clicking the file link or preview icon\nconsole.log('onPreview',file);}",
         },
         {
           name: 'onRemove',
           template:
-            "onRemove(file,${extParams}){\n// 点击移除文件时的回调\nconsole.log('onRemove',file);}",
+            "onRemove(file,${extParams}){\n//Callback when clicking to remove a file\nconsole.log('onRemove',file);}",
         },
         {
           name: 'onDownload',
           template:
-            "onDownload(file,${extParams}){\n// 点击下载文件时的回调\nconsole.log('onDownload',file);}",
+            "onDownload(file,${extParams}){\n//Callback when clicking to download a file\nconsole.log('onDownload',file);}",
         },
       ],
     },

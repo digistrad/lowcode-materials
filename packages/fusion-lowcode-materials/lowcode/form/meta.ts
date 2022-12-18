@@ -321,7 +321,7 @@ module.exports = {
       },
       {
         type: 'group',
-        title: '布局',
+        title: 'Layout',
         display: 'accordion',
         items: [
           {

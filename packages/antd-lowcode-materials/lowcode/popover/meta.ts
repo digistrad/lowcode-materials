@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Popover',
   title: '气泡卡片',
-  category: '数据展示',
+  category: 'Data Display',
   props: [
     {
       title: '内容',

@@ -3,29 +3,29 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'ConfigProvider',
-  title: '全局化配置',
-  category: '其他',
+  title: 'ConfigProvider',
+  category: 'Others',
   props: [
     {
       name: 'autoInsertSpaceInButton',
       title: {
-        label: '按钮插入空格',
-        tip: '自动在按钮中 2 个汉字之间插入空格',
+        label: 'autoInsertSpaceInButton',
+        tip: 'Automatically insert a space between 2 Chinese characters in a button',
       },
       propType: 'bool',
       defaultValue: true,
     },
     {
       name: 'componentSize',
-      title: { label: '组件大小', tip: '设置 antd 组件大小' },
+      title: { label: 'componentSize', tip: 'set antd component size' },
       propType: { type: 'oneOf', value: ['small', 'middle', 'large'] },
       default: 'middle',
     },
     {
       name: 'csp',
       title: {
-        label: 'CSP配置',
-        tip: '设置Content Security Policy配置',
+        label: 'CSP',
+        tip: 'Set Content Security Policy configuration',
       },
       propType: 'object',
       setter: 'JsonSetter',
@@ -33,8 +33,8 @@ export default {
     {
       name: 'form',
       title: {
-        label: 'Form通用属性',
-        tip: '设置 Form 组件的通用属性',
+        label: 'form',
+        tip: 'Set common properties of the Form component',
       },
       propType: 'object',
       setter: 'JsonSetter',
@@ -42,8 +42,8 @@ export default {
     {
       name: 'input',
       title: {
-        label: 'Input通用属性',
-        tip: '设置 Input 组件的通用属性',
+        label: 'input',
+        tip: 'Set common properties of the Input component',
       },
       propType: 'object',
       setter: 'JsonSetter',
@@ -56,53 +56,53 @@ export default {
     {
       name: 'getPopupContainer',
       title: {
-        label: '弹出框父节点',
-        tip: '弹出框渲染父节点，默认渲染到 body 上。',
+        label: 'getPopupContainer',
+        tip: 'The pop-up box renders the parent node, which is rendered on the body by default.',
       },
       propType: 'func',
     },
     {
       name: 'getTargetContainer',
       title: {
-        label: '滚动监听容器',
-        tip: '配置 Affix、Anchor 滚动监听容器。',
+        label: 'getTargetContainer',
+        tip: 'Configure Affix, Anchor scrolling monitor container.',
       },
       propType: 'func',
     },
     {
       name: 'locale',
-      title: { label: '语言', tip: '语言' },
+      title: { label: 'locale', tip: 'language' },
       propType: {
         type: 'oneOf',
-        value: ['zh-CN', 'en-US'],
+        value: ['en-US'],
       },
       defaultValue: 'en-US',
     },
     {
       name: 'prefixCls',
       title: {
-        label: '样式前缀',
-        tip: '设置统一样式前缀。`注意：这将不会应用由 antd 提供的默认样式`',
+        label: 'prefixCls',
+        tip: 'Set the uniform style prefix. `Note: this will not apply the default styles provided by antd`',
       },
       propType: 'string',
     },
     {
       name: 'pageHeader',
       title: {
-        label: '统一设置 PageHeader 的 ghost',
-        tip: '统一设置 PageHeader 的 ghost',
+        label: 'pageHeader',
+        tip: 'Uniformly set the ghost of PageHeader',
       },
       propType: 'object',
       setter: 'JsonSetter',
     },
     {
       name: 'direction',
-      title: { label: '文本方向', tip: '设置文本展示方向' },
+      title: { label: 'direction', tip: 'Set text display direction' },
       propType: { type: 'oneOf', value: ['ltr', 'rtl'] },
     },
     {
       name: 'space',
-      title: { label: '设置 Space 的 尺寸', tip: '设置 Space 的 `size`' },
+      title: { label: 'space', tip: 'Set the `size` of the Space' },
       propType: {
         type: 'oneOf',
         value: ['small', 'middle', 'large', 'number'],
@@ -111,15 +111,15 @@ export default {
     {
       name: 'virtual',
       title: {
-        label: '虚拟滚动',
-        tip: '设置 `false` 时关闭虚拟滚动',
+        label: 'virtual',
+        tip: 'Disable virtual scrolling when set to `false`',
       },
       propType: 'bool',
       defaultValue: true,
     },
     {
       name: 'dropdownMatchSelectWidth',
-      title: { label: '下拉菜单和选择器同宽', tip: '下拉菜单和选择器同宽' },
+      title: { label: 'dropdownMatchSelectWidth', tip: 'The dropdown menu has the same width as the selector' },
       propType: { type: 'oneOfType', value: ['bool', 'number'] },
     },
   ],

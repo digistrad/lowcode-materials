@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Mentions',
   title: '提及',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',

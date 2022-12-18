@@ -3,19 +3,19 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'DatePicker.RangePicker',
-  title: '日期区间选择',
-  category: '表单',
+  title: 'Date Range Picker',
+  category: 'Form',
   props: [
     {
-      title: '值设置',
+      title: 'Value',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'defaultValue',
           title: {
-            label: '默认值',
-            tip: 'defaultValue | 默认值',
+            label: 'defaultValue',
+            tip: 'defaultValue',
           },
           propType: 'object',
           setter: 'JsonSetter',
@@ -23,8 +23,8 @@ export default {
         {
           name: 'value',
           title: {
-            label: '当前值',
-            tip: 'value | 当前值',
+            label: 'value',
+            tip: 'value',
           },
           propType: 'object',
           setter: 'JsonSetter',
@@ -32,8 +32,8 @@ export default {
         {
           name: 'defaultPickerValue',
           title: {
-            label: '默认面板日期',
-            tip: 'defaultPickerValue | 默认面板日期',
+            label: 'defaultPickerValue',
+            tip: 'defaultPickerValue',
           },
           propType: 'object',
           setter: 'JsonSetter',
@@ -41,15 +41,15 @@ export default {
       ],
     },
     {
-      title: '功能选项',
+      title: 'Function',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'size',
           title: {
-            label: '尺寸',
-            tip: 'size | 输入框大小，large 高度为 40px，small 为 24px，默认是 32px',
+            label: 'size',
+            tip: 'Input box size, large height is 40px, small is 24px, the default is 32px',
           },
           propType: {
             type: 'oneOf',
@@ -60,15 +60,15 @@ export default {
             props: {
               options: [
                 {
-                  title: '大',
+                  title: 'large',
                   value: 'large',
                 },
                 {
-                  title: '中',
+                  title: 'middle',
                   value: 'middle',
                 },
                 {
-                  title: '小',
+                  title: 'small',
                   value: 'small',
                 },
               ],
@@ -79,8 +79,8 @@ export default {
         {
           name: 'picker',
           title: {
-            label: '选择器类型',
-            tip: 'picker | 设置选择器类型',
+            label: 'picker',
+            tip: 'Set the picker type',
           },
           propType: {
             type: 'oneOf',
@@ -92,23 +92,23 @@ export default {
             props: {
               options: [
                 {
-                  title: '日期',
+                  title: 'date',
                   value: 'date',
                 },
                 {
-                  title: '周',
+                  title: 'week',
                   value: 'week',
                 },
                 {
-                  title: '月份',
+                  title: 'month',
                   value: 'month',
                 },
                 {
-                  title: '季度',
+                  title: 'quarter',
                   value: 'quarter',
                 },
                 {
-                  title: '年份',
+                  title: 'year',
                   value: 'year',
                 },
               ],
@@ -118,8 +118,8 @@ export default {
         {
           name: 'mode',
           title: {
-            label: '面板模式',
-            tip: 'mode | 日期面板的状态',
+            label: 'mode',
+            tip: 'State of the date panel',
           },
           propType: {
             type: 'oneOf',
@@ -130,23 +130,23 @@ export default {
             props: {
               options: [
                 {
-                  title: '日期',
+                  title: 'date',
                   value: 'date',
                 },
                 {
-                  title: '周',
+                  title: 'week',
                   value: 'week',
                 },
                 {
-                  title: '月份',
+                  title: 'month',
                   value: 'month',
                 },
                 {
-                  title: '年份',
+                  title: 'year',
                   value: 'year',
                 },
                 {
-                  title: '十年间隔',
+                  title: 'decade',
                   value: 'decade',
                 },
               ],
@@ -156,8 +156,8 @@ export default {
         {
           name: 'format',
           title: {
-            label: '日期格式',
-            tip: 'format | 展示的日期格式，配置参考 moment.js',
+            label: 'format',
+            tip: 'Displayed date format, configuration reference moment.js',
           },
           propType: 'string',
           setter: 'StringSetter',
@@ -165,8 +165,8 @@ export default {
         {
           name: 'placeholder',
           title: {
-            label: '提示文字',
-            tip: 'placeholder | 输入框提示文字',
+            label: 'placeholder',
+            tip: 'Input box prompt text',
           },
           propType: 'string',
           setter: 'StringSetter',
@@ -174,8 +174,8 @@ export default {
         {
           name: 'allowClear',
           title: {
-            label: '支持清除',
-            tip: 'allowClear | 是否允许清除',
+            label: 'allowClear',
+            tip: 'Is it allowed to clear',
           },
           propType: 'bool',
           defaultValue: true,
@@ -184,8 +184,8 @@ export default {
         {
           name: 'bordered',
           title: {
-            label: '显示边框',
-            tip: 'bordered | 是否有边框',
+            label: 'bordered',
+            tip: 'Is there a border',
           },
           propType: 'bool',
           defaultValue: true,
@@ -194,8 +194,8 @@ export default {
         {
           name: 'autoFocus',
           title: {
-            label: '自动聚焦',
-            tip: 'autoFocus | 自动获取焦点',
+            label: 'autoFocus',
+            tip: 'autoFocus',
           },
           propType: 'bool',
           defaultValue: false,
@@ -204,8 +204,8 @@ export default {
         {
           name: 'disabled',
           title: {
-            label: '是否禁用',
-            tip: 'disabled | 是否为禁用状态',
+            label: 'disabled',
+            tip: 'disabled',
           },
           propType: 'bool',
           defaultValue: false,
@@ -223,8 +223,8 @@ export default {
         {
           name: 'showTime',
           title: {
-            label: '时间选择',
-            tip: 'showTime | 时间选择',
+            label: 'showTime',
+            tip: 'showTime',
           },
           propType: 'bool',
           defaultValue: false,
@@ -233,8 +233,8 @@ export default {
         {
           name: 'inputReadOnly',
           title: {
-            label: '输入框只读',
-            tip: 'inputReadOnly | 设置输入框为只读（避免在移动设备上打开虚拟键盘）',
+            label: 'inputReadOnly',
+            tip: 'Set the input field as read-only (to avoid opening the virtual keyboard on mobile devices)',
           },
           propType: 'bool',
           defaultValue: false,
@@ -243,15 +243,15 @@ export default {
       ],
     },
     {
-      title: '高级',
+      title: 'Advanced',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'ranges',
           title: {
-            label: '预设范围',
-            tip: 'ranges | 预设时间范围快捷选择',
+            label: 'ranges',
+            tip: 'Quick selection of preset time ranges',
           },
           propType: 'object',
           setter: 'JsonSetter',
@@ -259,8 +259,8 @@ export default {
         {
           name: 'disabledDate',
           title: {
-            label: '不可选日期',
-            tip: 'disabledDate | 不可选择的日期',
+            label: 'disabledDate',
+            tip: 'disabledDate',
           },
           propType: 'func',
           setter: [
@@ -268,7 +268,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'disabledDate(currentDate,${extParams}){\n// 设置不可选择的日期\nreturn true\n}',
+                  'disabledDate(currentDate,${extParams}){\n//Set unselectable date\nreturn true\n}',
               },
             },
             'VariableSetter',
@@ -327,17 +327,17 @@ export default {
         {
           name: 'onChange',
           template:
-            "onChange(dates,dateStrings,${extParams}){\n// 日期范围发生变化的回调\nconsole.log('onChange',dates,dateStrings);}",
+            "onChange(dates,dateStrings,${extParams}){\n//Callback for date range changes\nconsole.log('onChange',dates,dateStrings);}",
         },
         {
           name: 'onOpenChange',
           template:
-            "onOpenChange(open,${extParams}){\n// 弹出日历和关闭日历的回调\nconsole.log('onOpenChange',open);}",
+            "onOpenChange(open,${extParams}){\n//Callback for popping up and closing the calendar\nconsole.log('onOpenChange',open);}",
         },
         {
           name: 'onPanelChange',
           template:
-            "onPanelChange(value,mode,${extParams}){\n// 日历面板切换的回调\nconsole.log('onPanelChange',value,mode);}",
+            "onPanelChange(value,mode,${extParams}){\n//Calendar panel switching callback\nconsole.log('onPanelChange',value,mode);}",
         },
       ],
     },

@@ -79,5 +79,5 @@ module.exports = {
       propType: 'bool',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

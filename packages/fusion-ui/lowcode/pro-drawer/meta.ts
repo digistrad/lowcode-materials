@@ -76,7 +76,7 @@ const meta = {
         title: {
           label: {
             type: 'i18n',
-            zh_CN: '标题',
+            zh_CN: 'Title',
             en_US: 'Title',
           },
           tip: {
@@ -88,7 +88,7 @@ const meta = {
         setter: {
           componentName: 'StringSetter',
         },
-        description: '标题',
+        description: 'Title',
       },
       {
         name: 'titleTip.enable',

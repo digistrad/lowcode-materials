@@ -1,6 +1,6 @@
 export default {
   componentName: 'Descriptions.Item',
-  title: '描述列表项',
+  title: 'Descriptions.Item',
   props: [
     {
       name: 'key',
@@ -13,8 +13,8 @@ export default {
     {
       name: 'tab',
       title: {
-        label: '标题',
-        tip: '标题',
+        label: 'Title',
+        tip: 'Title',
       },
       propType: 'string',
     },

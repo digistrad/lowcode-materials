@@ -3,27 +3,27 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Badge',
-  title: '徽标数',
-  category: '数据展示',
+  title: 'Badge',
+  category: 'Data Display',
   props: [
     {
       name: 'color',
-      title: { label: '圆点颜色', tip: '自定义小圆点的颜色' },
+      title: { label: 'color', tip: 'Customize the color of the dots' },
       propType: 'string',
     },
     {
       name: 'count',
       title: {
-        label: '展示数字',
-        tip: '展示的数字，大于 overflowCount 时显示为 `${overflowCount}+`，为 0 时隐藏',
+        label: 'count',
+        tip: 'The displayed number, when it is greater than overflowCount, it will be displayed as `${overflowCount}+`, and when it is 0, it will be hidden',
       },
       propType: 'node',
     },
     {
       name: 'dot',
       title: {
-        label: '展示圆点',
-        tip: '不展示数字，只有一个小红点',
+        label: 'dot',
+        tip: 'No numbers are displayed, only a small red dot',
       },
       propType: 'bool',
       defaultValue: false,
@@ -31,28 +31,28 @@ export default {
     {
       name: 'offset',
       title: {
-        label: '圆点偏移',
-        tip: '设置状态点的位置偏移 [number, number]',
+        label: 'offset',
+        tip: 'Set the position offset of the status point [number, number]',
       },
       propType: { type: 'arrayOf', value: 'number' },
     },
     {
       name: 'overflowCount',
-      title: { label: '封顶值', tip: '展示封顶的数字值' },
+      title: { label: 'overflowCount', tip: 'display capped numeric value' },
       propType: 'number',
     },
     {
       name: 'showZero',
       title: {
-        label: '展示零值',
-        tip: '当数值为 0 时，是否展示 Badge',
+        label: 'showZero',
+        tip: 'Whether to display Badge when the value is 0',
       },
       propType: 'bool',
       defaultValue: false,
     },
     {
       name: 'status',
-      title: { label: '状态', tip: '设置 Badge 为状态点' },
+      title: { label: 'status', tip: 'Set Badge as status point' },
       propType: {
         type: 'oneOf',
         value: ['success', 'processing', 'default', 'error', 'warning'],
@@ -61,8 +61,8 @@ export default {
     {
       name: 'text',
       title: {
-        label: '状态文本',
-        tip: '在设置了 `status` 的前提下有效，设置状态点的文本',
+        label: 'text',
+        tip: 'Valid when `status` is set, set the text of the status point',
       },
       condition(target) {
         return !!target.getProps().getPropValue('status');
@@ -72,8 +72,8 @@ export default {
     {
       name: 'title',
       title: {
-        label: '悬浮提示',
-        tip: '设置鼠标放在状态点上时显示的文字',
+        label: 'title',
+        tip: 'Set the text displayed when the mouse is placed on the status point',
       },
       propType: 'string',
     },

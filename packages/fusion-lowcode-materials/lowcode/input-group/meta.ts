@@ -66,5 +66,5 @@ module.exports = {
       description: 'rtl',
     },
   ],
-  category: '基础',
+  category: 'Base',
 };

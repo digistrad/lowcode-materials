@@ -1,6 +1,6 @@
 export default [
   {
-    title: '卡片',
+    title: 'Card',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/card-1.png',
     schema: {
       componentName: 'Card',

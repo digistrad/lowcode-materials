@@ -466,7 +466,7 @@ export default [
         },
       ],
     },
-    category: '通用',
+    category: 'Universal',
     snippets,
   },
 ];

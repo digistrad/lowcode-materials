@@ -1,6 +1,6 @@
 export default [
   {
-    title: '表格',
+    title: 'Table',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/table-1.png',
     schema: {
       componentName: 'Table',
@@ -8,25 +8,25 @@ export default [
         dataSource: [
           {
             id: '1',
-            name: '胡彦斌',
+            name: 'Hu Yanbin',
             age: 32,
-            address: '西湖区湖底公园1号',
+            address: 'No. 1 Lake Bottom Park, West Lake District',
           },
           {
             id: '2',
-            name: '王一博',
+            name: 'Wang Yibo',
             age: 28,
-            address: '滨江区网商路699号',
+            address: 'No. 699, Wangshang Road, Binjiang District',
           },
         ],
         columns: [
           {
-            title: '姓名',
+            title: 'Name',
             dataIndex: 'name',
             key: 'name',
           },
           {
-            title: '年龄',
+            title: 'Age',
             dataIndex: 'age',
             key: 'age',
           },

@@ -44,7 +44,7 @@ module.exports = {
     props: [
       {
         name: 'layout',
-        title: '布局',
+        title: 'Layout',
         defaultValue: '6:6',
         // setter: {
         //   componentName: 'NewArraySetter',

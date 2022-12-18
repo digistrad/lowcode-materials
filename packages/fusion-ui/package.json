@@ -1,6 +1,6 @@
 {
-  "name": "@alifd/fusion-ui",
-  "version": "1.0.7",
+  "name": "@dslc/fusion-ui",
+  "version": "1.0.13",
   "description": "A component library based on Fusion Next",
   "files": [
     "docs/",
@@ -24,7 +24,8 @@
     "test": "build-scripts test",
     "prepublishOnly": "npm run build && npm run lowcode:build",
     "lint": "f2elint scan",
-    "lint:fix": "f2elint fix"
+    "lint:fix": "f2elint fix",
+    "pub": "npm version patch && npm run lowcode:build && npm publish --access public"
   },
   "keywords": [
     "react",
@@ -41,6 +42,7 @@
     "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "numeral": "^2.0.6",
     "numvert": "^0.2.2",
     "prop-types": "^15.5.8",
@@ -85,7 +87,7 @@
     "name": "FusionUI",
     "category": "精品物料库",
     "isComponentLibrary": true,
-    "materialSchema": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@1.0.7/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@dslc/fusion-ui@1.0.13/build/lowcode/assets-prod.json"
   },
   "husky": {
     "hooks": {

@@ -1,6 +1,6 @@
 export default [
   {
-    title: '日期区间',
+    title: 'Date Range',
     screenshot:
       'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-range-picker-1.png',
     schema: {
@@ -9,7 +9,7 @@ export default [
     },
   },
   {
-    title: '周区间',
+    title: 'Week Range',
     screenshot:
       'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-range-picker-2.png',
     schema: {
@@ -20,7 +20,7 @@ export default [
     },
   },
   {
-    title: '月区间',
+    title: 'Month Range',
     screenshot:
       'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-range-picker-3.png',
     schema: {
@@ -31,7 +31,7 @@ export default [
     },
   },
   {
-    title: '年区间',
+    title: 'Year Range',
     screenshot:
       'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/date-picker-range-picker-4.png',
     schema: {

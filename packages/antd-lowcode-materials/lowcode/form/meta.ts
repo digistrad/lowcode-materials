@@ -5,7 +5,7 @@ export default {
   snippets,
   componentName: 'Form',
   title: '表单容器',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'ref',
@@ -44,7 +44,7 @@ export default {
     },
     {
       type: 'group',
-      title: '布局',
+      title: 'Layout',
       display: 'accordion',
       items: [
         {

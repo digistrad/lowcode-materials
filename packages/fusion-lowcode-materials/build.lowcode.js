@@ -50,10 +50,10 @@ module.exports = {
           },
         ],
         baseUrl: {
-          prod: `https://alifd.alicdn.com/npm/${name}@${version}`,
-          daily: `https://alifd.alicdn.com/npm/${name}@${version}`,
+          prod: `https://unpkg.com/${name}@${version}`,
+          daily: `https://unpkg.com/${name}@${version}`,
         },
-        categories: ['通用', '导航', '信息输入', '信息展示', '信息反馈'],
+        categories: ['Universal', 'Navigation', 'Input', 'Display', 'Feedback'],
         engineScope: '@alilc',
       },
     ],

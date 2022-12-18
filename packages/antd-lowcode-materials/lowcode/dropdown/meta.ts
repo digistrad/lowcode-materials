@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Dropdown',
   title: '下拉菜单',
-  category: '导航',
+  category: 'Navigation',
   props: [
     {
       name: 'visible',

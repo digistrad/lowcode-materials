@@ -189,7 +189,7 @@ export default {
     props: [
       {
         name: 'title',
-        title: '标题',
+        title: 'Title',
         setter: 'StringSetter',
         supportVariable: true,
       },

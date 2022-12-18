@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: '标题',
+    title: 'Title',
     screenshot:
       'https://img.alicdn.com/imgextra/i4/O1CN01E2PcPW1bKJV5QUVMg_!!6000000003446-55-tps-50-50.svg',
     schema: {

@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Tooltip',
   title: '文字提示',
-  category: '数据展示',
+  category: 'Data Display',
   props: [
     {
       title: '内容',

@@ -103,10 +103,10 @@ export default {
                     },
                     {
                       name: 'title',
-                      title: '标题',
+                      title: 'Title',
                       setter: 'StringSetter',
                       supportVariable: true,
-                      description: '标题',
+                      description: 'Title',
                     },
                     {
                       name: 'status',

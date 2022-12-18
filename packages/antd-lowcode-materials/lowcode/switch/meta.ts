@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Switch',
   title: '开关',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'defaultChecked',

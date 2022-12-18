@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Form.Item',
   title: '表单项',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'name',
@@ -130,7 +130,7 @@ export default {
     },
     {
       type: 'group',
-      title: '布局',
+      title: 'Layout',
       display: 'accordion',
       items: [
         {

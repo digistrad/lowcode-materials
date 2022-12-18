@@ -56,7 +56,7 @@ const columnSpanConfig = {
 
 const labelConfig = {
   name: 'label',
-  title: '标题',
+  title: 'Title',
   display: 'inline',
   defaultValue: '表单项',
   setter: 'StringSetter',

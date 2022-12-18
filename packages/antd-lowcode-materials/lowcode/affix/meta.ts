@@ -3,30 +3,30 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Affix',
-  title: '固钉',
-  category: '导航',
+  title: 'Affix',
+  category: 'Navigation',
   props: [
     {
       name: 'offsetBottom',
-      title: { label: '底部触发距离', tip: '距离窗口底部达到指定偏移量后触发' },
+      title: { label: 'offsetBottom', tip: 'Triggered when the specified offset is reached from the bottom of the window' },
       propType: 'number',
     },
     {
       name: 'offsetTop',
-      title: { label: '顶部触发距离', tip: '距离窗口顶部达到指定偏移量后触发' },
+      title: { label: 'offsetTop', tip: 'Triggered when the specified offset is reached from the top of the window' },
       propType: 'number',
     },
     {
       name: 'target',
       title: {
-        label: '获取触发元素',
-        tip: '设置 `Affix` 需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数',
+        label: 'target',
+        tip: 'Set the element that `Affix` needs to listen to its scroll event, the value is a function that returns the corresponding DOM element',
       },
       propType: 'func',
     },
     {
       name: 'onChange',
-      title: { label: '监听状态改变', tip: '固定状态改变时触发的回调函数' },
+      title: { label: 'onChange', tip: 'Callback function triggered when fixed state changes' },
       propType: 'func',
     },
   ],
@@ -37,7 +37,7 @@ export default {
         {
           name: 'onChange',
           template:
-            "onChange(affixed,${extParams}){\n// 固定状态变更回调函数\nconsole.log('onChange', affixed);}",
+            "onChange(affixed,${extParams}){\n// Fixed state change callback function\nconsole.log('onChange', affixed);}",
         },
       ],
     },

@@ -103,7 +103,7 @@ const AnchorFormMeta: IComponentDescription = {
                   items: [
                     {
                       title: '卡片名称',
-                      defaultValue: '标题',
+                      defaultValue: 'Title',
                       name: 'anchorItemProps.label',
                       setter: 'StringSetter',
                       important: true,
@@ -126,7 +126,7 @@ const AnchorFormMeta: IComponentDescription = {
               initialValue: () => ({
                 anchorItemProps: {
                   htmlId: mockId(),
-                  label: '标题',
+                  label: 'Title',
                 },
                 noBullet: true,
               }),
@@ -142,7 +142,7 @@ const AnchorFormMeta: IComponentDescription = {
               anchorItemProps.htmlId = htmlId;
             }
             if (!anchorItemProps.label) {
-              anchorItemProps.label = '标题';
+              anchorItemProps.label = 'Title';
             }
             return {
               anchorItemProps,

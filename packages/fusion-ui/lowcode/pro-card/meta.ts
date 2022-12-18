@@ -45,7 +45,7 @@ export default [
         schema: {
           componentName: 'ProCard',
           props: {
-            title: '标题',
+            title: 'Title',
             hasDivider: true,
             isFillContainer: true,
           },
@@ -81,7 +81,7 @@ export const wrapWithCard = (snippets) => {
         schema: {
           componentName: 'ProCard',
           props: {
-            title: snippet.title || '标题',
+            title: snippet.title || 'Title',
             hasDivider: true,
             isFillContainer: true,
           },
@@ -95,7 +95,7 @@ export const wrapWithCard = (snippets) => {
     schema: {
       componentName: 'ProCard',
       props: {
-        title: snippets.title || '标题',
+        title: snippets.title || 'Title',
         hasDivider: true,
         isFillContainer: true,
       },

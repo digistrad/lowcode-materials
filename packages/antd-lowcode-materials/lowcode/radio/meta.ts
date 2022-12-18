@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Radio',
   title: '单选框',
-  category: '表单',
+  category: 'Form',
   props: [
     {
       name: 'children',

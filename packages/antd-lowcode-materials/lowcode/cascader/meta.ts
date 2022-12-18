@@ -3,12 +3,12 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Cascader',
-  title: '级联选择',
-  category: '表单',
+  title: 'Cascader',
+  category: 'Form',
   props: [
     {
       name: 'defaultValue',
-      title: { label: '默认的选中项', tip: '默认的选中项' },
+      title: { label: 'defaultValue', tip: 'defaultValue' },
       propType: {
         type: 'arrayOf',
         value: { type: 'oneOfType', value: ['string', 'number'] },
@@ -16,7 +16,7 @@ export default {
     },
     {
       name: 'value',
-      title: { label: '当前选中项', tip: '当前选中项' },
+      title: { label: 'value', tip: 'value' },
       propType: {
         type: 'arrayOf',
         value: { type: 'oneOfType', value: ['string', 'number'] },
@@ -24,26 +24,26 @@ export default {
     },
     {
       name: 'options',
-      title: { label: '选项数据', tip: '可选项数据源' },
+      title: { label: 'options', tip: 'options' },
       setter: 'JsonSetter',
     },
     {
       name: 'allowClear',
-      title: { label: '支持清除', tip: '是否允许清除' },
+      title: { label: 'allowClear', tip: 'allowClear' },
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter'
     },
     {
       name: 'autoFocus',
-      title: { label: '自动聚焦', tip: '自动获取焦点' },
+      title: { label: 'autoFocus', tip: 'autoFocus' },
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter'
     },
     {
       name: 'bordered',
-      title: { label: '显示边框', tip: '是否有边框' },
+      title: { label: 'bordered', tip: 'bordered' },
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter'
@@ -51,8 +51,8 @@ export default {
     {
       name: 'changeOnSelect',
       title: {
-        label: '点选触发',
-        tip: '点选每级菜单选项值都会触发onChange',
+        label: 'changeOnSelect',
+        tip: 'Clicking the value of each menu option will trigger on change',
       },
       propType: 'bool',
       defaultValue: false,
@@ -60,37 +60,37 @@ export default {
     },
     {
       name: 'className',
-      title: { label: '自定义类名', tip: '自定义类名' },
+      title: { label: 'className', tip: 'className' },
       propType: 'string',
       setter: 'StringSetter'
     },
     {
       name: 'disabled',
-      title: { label: '是否禁用', tip: '是否为禁用状态' },
+      title: { label: 'disabled', tip: 'disabled' },
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter'
     },
     {
       name: 'expandTrigger',
-      title: { label: '菜单触发方式', tip: '触发次级菜单的展开的方式' },
+      title: { label: 'expandTrigger', tip: 'How to trigger the expansion of the secondary menu' },
       propType: { type: 'oneOf', value: ['click', 'hover'] },
     },
     {
       name: 'notFoundContent',
-      title: { label: '无数据展示', tip: '无数据' },
+      title: { label: 'notFoundContent', tip: 'notFoundContent' },
       propType: 'string',
       setter: 'StringSetter'
     },
     {
       name: 'placeholder',
-      title: { label: '输入框占位文本', tip: '输入框占位文本' },
+      title: { label: 'placeholder', tip: 'placeholder' },
       propType: 'string',
       setter: 'StringSetter'
     },
     {
       name: 'placement',
-      title: { label: '浮层预设位置', tip: '浮层预设位置' },
+      title: { label: 'placement', tip: 'placement' },
       propType: {
         type: 'oneOf',
         value: ['bottomLeft', 'bottomRight', 'topLeft', 'topRight'],
@@ -98,29 +98,29 @@ export default {
     },
     {
       name: 'showSearch',
-      title: { label: '支持搜索', tip: '在选择框中显示搜索框' },
+      title: { label: 'showSearch', tip: 'Show search box in select box' },
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter'
     },
     {
       name: 'size',
-      title: { label: '尺寸', tip: '输入框大小' },
+      title: { label: 'size', tip: 'input box size' },
       propType: { type: 'oneOf', value: ['large', 'middle', 'small'] },
       setter: {
         componentName: 'SelectSetter',
         props: {
           options: [
             {
-              title: '大',
+              title: 'large',
               value: 'large',
             },
             {
-              title: '中',
+              title: 'middle',
               value: 'middle',
             },
             {
-              title: '小',
+              title: 'small',
               value: 'small',
             },
           ],
@@ -130,17 +130,17 @@ export default {
     },
     {
       name: 'style',
-      title: { label: '自定义样式', tip: '自定义样式' },
+      title: { label: 'style', tip: 'style' },
       propType: 'object',
     },
     {
       name: 'onChange',
-      title: { label: '选择完成后的回调', tip: '选择完成后的回调' },
+      title: { label: 'onChange', tip: 'onChange' },
       propType: 'func',
     },
     {
       name: 'onPopupVisibleChange',
-      title: { label: '显示/隐藏浮层的回调', tip: '显示/隐藏浮层的回调' },
+      title: { label: 'onPopupVisibleChange', tip: 'onPopupVisibleChange' },
       propType: 'func',
     },
   ],
@@ -151,12 +151,12 @@ export default {
         {
           name: 'onChange',
           template:
-            "onChange(value,selectedOptions,${extParams}){\n// 选择完成后的回调\nconsole.log('onChange', value, selectedOptions);}",
+            "onChange(value,selectedOptions,${extParams}){\n//Callback after selection is completed\nconsole.log('onChange', value, selectedOptions);}",
         },
         {
           name: 'onPopupVisibleChange',
           template:
-            "onPopupVisibleChange(value,selectedOptions,${extParams}){\n// 显示/隐藏浮层的回调\nconsole.log('onPopupVisibleChange', value, selectedOptions);}",
+            "onPopupVisibleChange(value,selectedOptions,${extParams}){\n//Callback for showing/hiding floating layer\nconsole.log('onPopupVisibleChange', value, selectedOptions);}",
         },
       ],
     },

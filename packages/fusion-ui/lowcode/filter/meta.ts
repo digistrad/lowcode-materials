@@ -111,7 +111,7 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'cols',
-            title: '布局',
+            title: 'Layout',
             setter: {
               componentName: 'RadioGroupSetter',
               props: {

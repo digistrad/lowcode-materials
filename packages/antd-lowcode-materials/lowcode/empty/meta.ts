@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Empty',
   title: '空状态',
-  category: '数据展示',
+  category: 'Data Display',
   props: [
     {
       name: 'description',

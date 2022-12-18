@@ -3,12 +3,12 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Calendar',
-  title: '日历',
-  category: '数据展示',
+  title: 'Calendar',
+  category: 'Data Display',
   props: [
     {
       name: 'defaultValue',
-      title: { label: '默认值', tip: '默认展示的日期' },
+      title: { label: 'defaultValue', tip: 'The date shown by default' },
       propType: 'date',
       setter: 'DateSetter',
     },
@@ -30,12 +30,12 @@ export default {
     // },
     {
       name: 'disabledDate',
-      title: { label: '不可选日期', tip: '不可选择的日期' },
+      title: { label: 'disabledDate', tip: 'unselectable date' },
       propType: 'func',
     },
     {
       name: 'fullscreen',
-      title: { label: '全屏显示', tip: '是否全屏显示' },
+      title: { label: 'fullscreen', tip: 'Whether to display in full screen' },
       propType: 'bool',
       defaultValue: true,
     },
@@ -46,7 +46,7 @@ export default {
     // },
     {
       name: 'mode',
-      title: { label: '初始模式', tip: '初始模式' },
+      title: { label: 'mode', tip: 'mode' },
       propType: { type: 'oneOf', value: ['month', 'year'] },
       defaultValue: 'month',
     },
@@ -78,17 +78,17 @@ export default {
     // },
     {
       name: 'onPanelChange',
-      title: { label: '日期面板变化回调', tip: '日期面板变化回调' },
+      title: { label: 'onPanelChange', tip: 'onPanelChange' },
       propType: 'func',
     },
     {
       name: 'onSelect',
-      title: { label: '点击选择日期回调', tip: '点击选择日期回调' },
+      title: { label: 'onSelect', tip: 'onSelect' },
       propType: 'func',
     },
     {
       name: 'onChange',
-      title: { label: '日期变化回调', tip: '日期变化回调' },
+      title: { label: 'onChange', tip: 'onChange' },
       propType: 'func',
     },
     // {
@@ -104,17 +104,17 @@ export default {
         {
           name: 'onPanelChange',
           template:
-            "onPanelChange(date,mode,${extParams}){\n// 日期面板变化回调\nconsole.log('onPanelChange', date, mode);}",
+            "onPanelChange(date,mode,${extParams}){\n//Date panel change callback\nconsole.log('onPanelChange', date, mode);}",
         },
         {
           name: 'onSelect',
           template:
-            "onSelect(date,${extParams}){\n// 点击选择日期回调\nconsole.log('onSelect', date);}",
+            "onSelect(date,${extParams}){\n//Click to select date callback\nconsole.log('onSelect', date);}",
         },
         {
           name: 'onChange',
           template:
-            "onChange(date,${extParams}){\n// 日期变化回调\nconsole.log('onChange', date);}",
+            "onChange(date,${extParams}){\n//Date change callback\nconsole.log('onChange', date);}",
         },
       ],
     },

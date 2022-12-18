@@ -47,5 +47,5 @@ module.exports = {
       ],
     },
   },
-  category: '基础',
+  category: 'Base',
 };

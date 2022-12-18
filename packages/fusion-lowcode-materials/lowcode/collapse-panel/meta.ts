@@ -33,7 +33,7 @@ module.exports = {
         type: 'instanceOf',
         value: 'node',
       },
-      description: '标题',
+      description: 'Title',
     },
   ],
   configure: {

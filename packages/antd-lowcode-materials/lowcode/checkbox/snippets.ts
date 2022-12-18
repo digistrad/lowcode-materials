@@ -1,6 +1,6 @@
 export default [
   {
-    title: '多选框',
+    title: 'Checkbox',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/checkbox-1.png',
     schema: {
       componentName: 'Checkbox',
@@ -10,7 +10,7 @@ export default [
     },
   },
   {
-    title: '多选框组',
+    title: 'Checkbox Group',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/checkbox-group-1.png',
     schema: {
       componentName: 'Checkbox.Group',

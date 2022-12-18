@@ -285,6 +285,6 @@ export default {
     },
   },
   icon: '',
-  category: '导航',
+  category: 'Navigation',
   snippets,
 };

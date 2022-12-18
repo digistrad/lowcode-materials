@@ -1,6 +1,6 @@
 export default [
   {
-    title: '文本',
+    title: 'Text',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/typography-text-1.png',
     schema: {
       componentName: 'Typography.Text',
@@ -10,7 +10,7 @@ export default [
     },
   },
   {
-    title: '可复制文本',
+    title: 'Copyable Text',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/typography-text-2.png',
     schema: {
       componentName: 'Typography.Text',
@@ -21,7 +21,7 @@ export default [
     },
   },
   {
-    title: '可编辑文本',
+    title: 'Editable Text',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/typography-text-3.png',
     schema: {
       componentName: 'Typography.Text',

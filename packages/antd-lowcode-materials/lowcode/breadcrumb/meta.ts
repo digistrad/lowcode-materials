@@ -3,17 +3,17 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Breadcrumb',
-  title: '面包屑',
-  category: '导航',
+  title: 'Breadcrumb',
+  category: 'Navigation',
   props: [
     {
-      title: '基础',
+      title: 'Block',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'routes',
-          title: { label: '路由栈信息', tip: 'router 的路由栈信息' },
+          title: { label: 'routes', tip: 'router Routing stack information' },
           propType: {
             type: 'arrayOf',
             value: {
@@ -34,7 +34,7 @@ export default {
                     items: [
                       {
                         name: 'path',
-                        title: { label: '路由路径', tip: 'path | 路由路径' },
+                        title: { label: 'path', tip: 'path' },
                         propType: 'string',
                         setter: 'StringSetter',
                         isRequired: true
@@ -42,8 +42,8 @@ export default {
                       {
                         name: 'breadcrumbName',
                         title: {
-                          label: '路由名称',
-                          tip: 'breadcrumbName | 路由名称',
+                          label: 'breadcrumbName',
+                          tip: 'breadcrumbName',
                         },
                         propType: 'string',
                         setter: 'StringSetter',
@@ -62,13 +62,13 @@ export default {
         },
         {
           name: 'params',
-          title: { label: '路由的参数', tip: '路由的参数' },
+          title: { label: 'params', tip: 'params' },
           propType: 'object',
           setter: 'JsonSetter',
         },
         {
           name: 'separator',
-          title: { label: '分隔符自定义', tip: '分隔符自定义' },
+          title: { label: 'separator', tip: 'separator' },
           propType: { type: 'oneOfType', value: ['string', 'node'] },
           setter: [
             'StringSetter',
@@ -85,21 +85,21 @@ export default {
       ],
     },
     {
-      title: '扩展',
+      title: 'Block',
       display: 'block',
       type: 'group',
       items: [
         {
           name: 'itemRender',
           title: {
-            label: '自定义渲染',
-            tip: 'itemRender | 自定义渲染',
+            label: 'itemRender',
+            tip: 'itemRender',
           },
           propType: { type: 'oneOfType', value: ['func', 'node'] },
           setter: [
             {
               componentName: 'SlotSetter',
-              title: '自定义渲染插槽',
+              title: 'SlotSetter',
               initialValue: {
                 type: 'JSSlot',
                 params: ['route', 'params', 'routes', 'paths'],
@@ -110,7 +110,7 @@ export default {
               componentName: 'FunctionSetter',
               props: {
                 template:
-                  'itemRender(route, params, routes, paths,${extParams}){\n// 自定义渲染\nreturn `${route.breadcrumbName}`}',
+                  'itemRender(route, params, routes, paths,${extParams}){\n//custom rendering\nreturn `${route.breadcrumbName}`}',
               },
             },
             'VariableSetter',

@@ -159,7 +159,7 @@ module.exports = {
                         name: 'title',
                         setter: 'StringSetter',
                         important: true,
-                        title: '标题',
+                        title: 'Title',
                       },
                       {
                         name: 'icon',

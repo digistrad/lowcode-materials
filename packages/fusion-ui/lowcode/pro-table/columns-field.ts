@@ -42,7 +42,7 @@ export const columnsField: IProps = {
             items: [
               {
                 name: 'title',
-                title: '标题',
+                title: 'Title',
                 display: 'inline',
                 initialValue: '姓名',
                 isRequired: true,

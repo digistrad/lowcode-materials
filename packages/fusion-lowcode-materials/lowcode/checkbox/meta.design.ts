@@ -80,7 +80,7 @@ export default {
     props: [
       {
         name: 'label',
-        title: '标题',
+        title: 'Title',
         setter: {
           componentName: 'MixedSetter',
           props: {

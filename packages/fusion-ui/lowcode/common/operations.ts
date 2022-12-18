@@ -40,7 +40,7 @@ export const operationConfig = {
           },
           {
             name: 'align',
-            title: '布局',
+            title: 'Layout',
             defaultValue: 'center',
             setter: {
               componentName: 'RadioGroupSetter',

@@ -1,7 +1,7 @@
 module.exports = {
   group: '原子组件',
   componentName: 'Nav',
-  title: '导航',
+  title: 'Navigation',
   docUrl: '',
   screenshot: '',
   npm: {

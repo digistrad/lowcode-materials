@@ -7,7 +7,7 @@ export default {
   snippets,
   componentName: 'Menu',
   title: '导航菜单',
-  category: '导航',
+  category: 'Navigation',
   props: [
     {
       name: 'items',

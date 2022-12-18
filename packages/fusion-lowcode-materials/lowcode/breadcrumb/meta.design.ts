@@ -112,7 +112,7 @@ export default {
                     },
                     {
                       name: 'children',
-                      title: '标题',
+                      title: 'Title',
                       important: true,
                       initialValue: {
                         zh_CN: '',
@@ -244,6 +244,6 @@ export default {
     },
   },
   icon: '',
-  category: '导航',
+  category: 'Navigation',
   snippets: require('./snippets'),
 };

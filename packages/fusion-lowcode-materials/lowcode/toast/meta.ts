@@ -26,7 +26,7 @@ module.exports = {
       title: {
         label: {
           type: 'i18n',
-          zh_CN: '标题',
+          zh_CN: 'Title',
           en_US: 'Title',
         },
         tip: {
@@ -36,8 +36,8 @@ module.exports = {
         },
       },
       propType: 'string',
-      description: '标题',
-      defaultValue: '标题',
+      description: 'Title',
+      defaultValue: 'Title',
     },
     {
       name: 'type',

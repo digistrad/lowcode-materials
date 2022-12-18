@@ -18,8 +18,8 @@ export default {
     {
       name: 'tab',
       title: {
-        label: '标题',
-        tip: '标题',
+        label: 'Title',
+        tip: 'Title',
       },
       propType: 'string',
       setter: 'StringSetter',

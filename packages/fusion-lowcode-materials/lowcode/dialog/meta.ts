@@ -32,7 +32,7 @@ module.exports = {
         type: 'oneOfType',
         value: ['string', 'node'],
       },
-      description: '标题',
+      description: 'Title',
     },
     {
       name: 'children',
@@ -124,10 +124,10 @@ module.exports = {
     props: [
       {
         name: 'title',
-        title: '标题',
+        title: 'Title',
         setter: 'StringSetter',
         supportVariable: true,
-        initialValue: '标题',
+        initialValue: 'Title',
       },
       {
         name: 'visible',

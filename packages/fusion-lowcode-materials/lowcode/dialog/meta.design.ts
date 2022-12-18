@@ -35,7 +35,7 @@ export default {
         type: 'oneOfType',
         value: ['string', 'node'],
       },
-      description: '标题',
+      description: 'Title',
     },
     {
       name: 'children',
@@ -127,9 +127,9 @@ export default {
     props: [
       {
         name: 'title',
-        title: '标题',
+        title: 'Title',
         setter: 'StringSetter',
-        initialValue: '标题',
+        initialValue: 'Title',
       },
       {
         name: 'visible',

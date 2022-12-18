@@ -518,7 +518,7 @@ module.exports = {
                   items: [
                     {
                       name: 'title',
-                      description: '标题',
+                      description: 'Title',
                       setter: 'StringSetter',
                       supportVariable: true,
                       initialValue: 'Title',
@@ -553,7 +553,7 @@ module.exports = {
                   items: [
                     {
                       name: 'title',
-                      description: '标题',
+                      description: 'Title',
                       setter: 'StringSetter',
                       supportVariable: true,
                       initialValue: 'Title',
