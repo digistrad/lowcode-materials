@@ -4,7 +4,7 @@ module.exports = {
   category: '基础元素',
   group: 'Featured',
   npm: {
-    package: '@alilc/lowcode-materials',
+    package: '@dslc/lowcode-materials',
     version: 'latest',
     exportName: 'NextText',
     main: 'lib/index.js',

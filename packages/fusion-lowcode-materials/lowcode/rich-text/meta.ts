@@ -2,7 +2,7 @@ module.exports = {
   componentName: 'RichText',
   title: '需求占位',
   npm: {
-    package: '@alilc/lowcode-materials',
+    package: '@dslc/lowcode-materials',
     version: 'latest',
     exportName: 'RichText',
     main: '',

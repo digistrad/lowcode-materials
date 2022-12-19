@@ -7,7 +7,7 @@ export default {
   docUrl: '',
   screenshot: '',
   npm: {
-    package: '@alilc/lowcode-materials',
+    package: '@dslc/lowcode-materials',
     version: 'latest',
     exportName: 'NumberPicker',
     main: '',

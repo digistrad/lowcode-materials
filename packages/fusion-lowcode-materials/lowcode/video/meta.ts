@@ -3,7 +3,7 @@ module.exports = {
   componentName: 'Video',
   title: '视频',
   npm: {
-    package: '@alilc/lowcode-materials',
+    package: '@dslc/lowcode-materials',
     version: 'latest',
     exportName: 'Video',
     main: '',

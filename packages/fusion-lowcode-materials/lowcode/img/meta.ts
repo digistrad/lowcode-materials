@@ -2,7 +2,7 @@ module.exports = {
   componentName: 'Image',
   title: '图片',
   npm: {
-    package: '@alilc/lowcode-materials',
+    package: '@dslc/lowcode-materials',
     version: 'latest',
     exportName: 'Image',
     main: '',

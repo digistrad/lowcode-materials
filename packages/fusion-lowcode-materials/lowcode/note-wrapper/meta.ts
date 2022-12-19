@@ -4,7 +4,7 @@ module.exports = {
   title: '备注容器',
   category: 'Others',
   npm: {
-    package: '@alilc/lowcode-materials',
+    package: '@dslc/lowcode-materials',
     version: 'latest',
     exportName: 'NoteWrapper',
     main: '',
