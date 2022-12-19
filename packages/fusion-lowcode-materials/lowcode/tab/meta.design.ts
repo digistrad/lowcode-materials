@@ -2,7 +2,7 @@ import snippets from './snippets';
 import { getDataFromPlainText } from './adaptor';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Tab',
   title: '选项卡',
   docUrl: '',

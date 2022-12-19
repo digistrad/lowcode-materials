@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Badge',
   title: '徽标数',
   docUrl: '',

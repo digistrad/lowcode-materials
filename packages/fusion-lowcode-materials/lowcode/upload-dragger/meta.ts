@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Upload.Dragger',
   title: 'Upload.Dragger',
   docUrl: '',

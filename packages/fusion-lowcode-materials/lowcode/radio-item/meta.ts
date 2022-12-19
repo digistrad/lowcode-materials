@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'RadioItem',
   title: '单选菜单项',
   docUrl: '',

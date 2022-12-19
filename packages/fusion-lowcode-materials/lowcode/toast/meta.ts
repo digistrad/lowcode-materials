@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Message',
   title: '面包片',
   docUrl: '',

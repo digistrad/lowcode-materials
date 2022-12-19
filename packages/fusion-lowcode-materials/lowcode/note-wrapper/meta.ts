@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Wrapper',
   title: '备注容器',
   category: 'Others',

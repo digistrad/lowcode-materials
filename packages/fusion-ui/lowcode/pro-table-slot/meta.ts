@@ -7,7 +7,7 @@ const ProTableSlotMeta: ComponentMetadata = {
   screenshot: '',
   devMode: 'proCode',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '0.1.6-beta.8',
     exportName: 'ProTableSlot',
     main: 'lib/index.js',

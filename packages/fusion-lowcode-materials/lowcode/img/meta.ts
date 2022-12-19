@@ -56,6 +56,6 @@ module.exports = {
   ],
   icon: 'https://img.alicdn.com/imgextra/i3/O1CN01tnhXhk1GUIFhsXwzA_!!6000000000625-55-tps-56-56.svg',
   category: '基础元素',
-  group: '精选组件',
+  group: 'Featured',
   snippets: require('./snippets'),
 };

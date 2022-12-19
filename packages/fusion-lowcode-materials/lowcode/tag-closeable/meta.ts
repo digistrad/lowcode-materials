@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Tag.Closeable',
   title: '可关闭标签',
   docUrl: '',

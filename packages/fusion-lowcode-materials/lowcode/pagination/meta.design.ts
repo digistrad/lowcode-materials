@@ -1,5 +1,5 @@
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Pagination',
   title: '翻页器',
   docUrl: '',

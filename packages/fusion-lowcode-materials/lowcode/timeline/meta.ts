@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Timeline',
   title: '时间轴',
   docUrl: '',

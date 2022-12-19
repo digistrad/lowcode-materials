@@ -5,13 +5,13 @@ import { operationProps } from '../common';
 const ProDialogMeta: ComponentMetadata = {
   componentName: 'ProDialog',
   title: '对话框',
-  group: '精选组件',
+  group: 'Featured',
   docUrl: '',
   screenshot:
     'https://img.alicdn.com/imgextra/i1/O1CN01n5JLZG1aBmYZlckSx_!!6000000003292-55-tps-56-56.svg',
   devMode: 'proCode',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '0.1.6-beta.23',
     exportName: 'ProDialog',
     main: 'lib/index.js',

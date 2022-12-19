@@ -3,7 +3,7 @@ import parseData from '../utils/parse-data';
 import { createDataSource } from './adaptor';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Tree',
   title: '树形控件',
   docUrl: '',

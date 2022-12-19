@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'ConfigProvider',
   title: 'ConfigProvider',
-  category: 'Others',
+  category: 'Other',
   props: [
     {
       name: 'autoInsertSpaceInButton',

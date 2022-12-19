@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'TreeNode',
   title: '树形控件节点',
   docUrl: '',

@@ -49,12 +49,12 @@ const ProFormMeta: IComponentDescription[] = [
     componentName: 'ProForm',
     category: '表单类',
     title: '高级表单',
-    group: '精选组件',
+    group: 'Featured',
     docUrl: '',
     screenshot: '',
     devMode: 'procode',
     npm: {
-      package: '@alifd/fusion-ui',
+      package: '@dslc/fusion-ui',
       version: '0.1.4',
       exportName: 'ProForm',
       main: 'lib/index.js',
@@ -86,7 +86,7 @@ const ProFormMeta: IComponentDescription[] = [
     icon: 'https://img.alicdn.com/imgextra/i2/O1CN016gn5DQ1FeXUNKdK22_!!6000000000512-55-tps-50-36.svg',
     devMode: 'procode',
     npm: {
-      package: '@alifd/fusion-ui',
+      package: '@dslc/fusion-ui',
       version: '0.1.4',
       exportName: 'ProForm',
       main: 'lib/index.js',

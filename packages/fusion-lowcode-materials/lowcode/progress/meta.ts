@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Progress',
   title: '进度指示器',
   docUrl: '',

@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'CheckboxGroup',
   title: '复选按钮组',
   docUrl: '',

@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Menu.PopupItem',
   title: '自定义弹出内容',
   docUrl: '',

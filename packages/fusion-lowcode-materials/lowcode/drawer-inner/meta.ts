@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Drawer.Inner',
   title: 'Drawer.Inner',
   docUrl: '',

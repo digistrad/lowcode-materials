@@ -2,7 +2,7 @@ module.exports = {
   componentName: 'NextText',
   title: '文本',
   category: '基础元素',
-  group: '精选组件',
+  group: 'Featured',
   npm: {
     package: '@alilc/lowcode-materials',
     version: 'latest',

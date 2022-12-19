@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'TreeSelect',
   title: '树型选择控件',
   docUrl: '',

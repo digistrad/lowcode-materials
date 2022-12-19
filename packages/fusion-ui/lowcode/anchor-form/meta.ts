@@ -9,13 +9,13 @@ const AnchorFormMeta: IComponentDescription = {
   componentName: 'AnchorForm',
   title: '电梯表单',
   category: '表单类',
-  group: '精选组件',
+  group: 'Featured',
   docUrl: '',
   screenshot:
     'https://img.alicdn.com/imgextra/i1/O1CN01jnfLpK1rFJ4nPj9Pt_!!6000000005601-55-tps-56-56.svg',
   devMode: 'proCode',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '0.1.6-beta.22',
     exportName: 'AnchorForm',
     main: 'lib/index.js',

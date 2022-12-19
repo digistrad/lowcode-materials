@@ -1,7 +1,7 @@
 import snippets from './snippets';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'DatePicker',
   title: '日期选择框',
   docUrl: '',

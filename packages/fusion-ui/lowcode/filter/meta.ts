@@ -38,14 +38,14 @@ const operationConfig = {
 const FilterMeta: ComponentMetadata = {
   componentName: 'Filter',
   title: '查询筛选',
-  group: '精选组件',
+  group: 'Featured',
   category: '表格类',
   tags: ['业务组件'],
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
   devMode: 'proCode',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '0.1.6-beta.8',
     exportName: 'Filter',
     main: 'lib/index.js',

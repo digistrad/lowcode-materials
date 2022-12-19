@@ -2,7 +2,7 @@ import snippets from './snippets.design';
 import { getDataFromPlainText } from './adaptor';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Menu',
   title: '菜单',
   docUrl: '',

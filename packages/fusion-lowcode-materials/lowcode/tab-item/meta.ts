@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Tab.Item',
   title: '选项卡Item',
   docUrl: '',

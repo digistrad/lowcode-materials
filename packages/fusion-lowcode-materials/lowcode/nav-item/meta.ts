@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Nav.Item',
   title: '导航项',
   docUrl: '',

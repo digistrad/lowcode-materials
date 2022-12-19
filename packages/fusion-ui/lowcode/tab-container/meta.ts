@@ -39,13 +39,13 @@ const TabContainerMeta: ComponentMetadata[] = [
     componentName: 'TabContainer',
     title: '选项卡',
     category: '布局容器类',
-    group: '精选组件',
+    group: 'Featured',
     docUrl: '',
     screenshot:
       'https://img.alicdn.com/imgextra/i4/O1CN01mh9LPG268B90t8DaA_!!6000000007616-55-tps-56-56.svg',
     devMode: 'proCode',
     npm: {
-      package: '@alifd/fusion-ui',
+      package: '@dslc/fusion-ui',
       version: '0.1.6-beta.24',
       exportName: 'TabContainer',
       main: 'lib/index.js',
@@ -73,7 +73,7 @@ const TabContainerMeta: ComponentMetadata[] = [
     screenshot: '',
     devMode: 'proCode',
     npm: {
-      package: '@alifd/fusion-ui',
+      package: '@dslc/fusion-ui',
       version: '0.1.6-beta.24',
       exportName: 'TabContainer',
       main: 'lib/index.js',

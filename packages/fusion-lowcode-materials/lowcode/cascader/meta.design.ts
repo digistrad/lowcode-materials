@@ -2,7 +2,7 @@ import parseData from '../utils/parse-data';
 import { createDataSource } from '../cascader-select/adaptor';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Cascader',
   title: '级联',
   docUrl: '',

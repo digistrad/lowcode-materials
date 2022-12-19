@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Step.Item',
   title: '步骤项',
   docUrl: '',

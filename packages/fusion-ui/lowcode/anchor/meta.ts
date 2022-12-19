@@ -51,7 +51,7 @@ const meta = {
   components: [
     {
       componentName: 'Anchor',
-      group: '精选组件',
+      group: 'Featured',
       title: '电梯容器',
       category: '布局容器类',
       docUrl: '',
@@ -59,7 +59,7 @@ const meta = {
         'https://img.alicdn.com/imgextra/i3/O1CN01aDpmze26zlTZVDhtR_!!6000000007733-2-tps-112-112.png',
       devMode: 'proCode',
       npm: {
-        package: '@alifd/fusion-ui',
+        package: '@dslc/fusion-ui',
         version: '1.0.24-5',
         exportName: 'Anchor',
         main: 'lib/index.js',

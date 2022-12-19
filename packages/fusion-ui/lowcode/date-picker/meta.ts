@@ -9,7 +9,7 @@ const meta: IComponentDescription = {
   docUrl: '',
   screenshot: '',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '{{version}}',
     exportName: 'FormDatePicker',
     main: '',

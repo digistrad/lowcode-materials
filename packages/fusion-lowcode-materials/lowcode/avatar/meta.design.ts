@@ -1,5 +1,5 @@
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Avatar',
   title: '头像',
   docUrl: '',

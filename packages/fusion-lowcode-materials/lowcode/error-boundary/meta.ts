@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'ErrorBoundary',
   title: 'ErrorBoundary',
   docUrl: '',

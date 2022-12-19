@@ -5,13 +5,13 @@ import props from './common/props';
 const PageHeaderMeta: ComponentMetadata = {
   componentName: 'PageHeader',
   category: '布局容器类',
-  group: '精选组件',
+  group: 'Featured',
   title: '页头',
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',
   devMode: 'procode',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '1.0.0',
     exportName: 'PageHeader',
     main: 'lib/index.js',

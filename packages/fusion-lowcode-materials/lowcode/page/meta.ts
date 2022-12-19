@@ -1,6 +1,6 @@
 export default [
   {
-    group: '原子组件',
+    group: 'Atomic',
     componentName: 'Page',
     title: '页面',
     props: [
@@ -39,9 +39,6 @@ export default [
       component: {
         isContainer: true,
         disableBehaviors: '*',
-        nestingRule: {
-          childWhitelist: ['NextPage', 'ProDialog', 'Dialog', 'Drawer'],
-        },
       },
     },
     category: 'Base',

@@ -1,7 +1,7 @@
 import snippets from './snippets.design';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Dialog',
   title: '对话框',
   docUrl: '',

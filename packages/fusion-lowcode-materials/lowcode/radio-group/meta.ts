@@ -1,5 +1,5 @@
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Radio.Group',
   title: '单选框组',
   docUrl: '',

@@ -1,7 +1,7 @@
 moment?.locale?.('zh-cn');
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Calendar',
   title: '日历',
   docUrl: '',

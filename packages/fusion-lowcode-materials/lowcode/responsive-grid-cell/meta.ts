@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'ResponsiveGrid.Cell',
   title: '布局容器 Cell',
   docUrl: '',

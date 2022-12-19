@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Menu.Group',
   title: '菜单组',
   docUrl: '',

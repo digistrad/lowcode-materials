@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Input.TextArea',
   title: '多行文本框',
   docUrl: '',

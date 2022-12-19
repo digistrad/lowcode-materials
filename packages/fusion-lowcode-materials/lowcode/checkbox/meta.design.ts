@@ -1,7 +1,7 @@
 import snippets from './snippets.design';
 
 export default {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Checkbox',
   title: '复选按钮',
   docUrl: '',

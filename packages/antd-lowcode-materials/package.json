@@ -1,6 +1,6 @@
 {
   "name": "@dslc/antd-lowcode-materials",
-  "version": "1.1.23",
+  "version": "1.1.27",
   "description": "Antd for LowCode",
   "main": "lib/index.js",
   "scripts": {
@@ -53,7 +53,7 @@
     "react-dom": "^16.0.0"
   },
   "componentConfig": {
-    "materialSchema": "https://unpkg.com/@dslc/antd-lowcode-materials@1.1.23/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@dslc/antd-lowcode-materials@1.1.27/build/lowcode/assets-prod.json"
   },
   "license": "MIT",
   "homepage": "https://unpkg.com/@alilc/antd-lowcode-materials@1.1.1/build/index.html"

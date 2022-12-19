@@ -2,7 +2,7 @@ import snippets from './snippets.design';
 
 export default [
   {
-    group: '原子组件',
+    group: 'Atomic',
     componentName: 'Button',
     title: '按钮',
     icon: 'https://img.alicdn.com/tfs/TB1rT0gPQL0gK0jSZFAXXcA9pXa-200-200.svg',

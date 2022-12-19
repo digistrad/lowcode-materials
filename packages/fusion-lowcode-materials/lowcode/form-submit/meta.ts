@@ -1,5 +1,5 @@
 module.exports = {
-  group: '原子组件',
+  group: 'Atomic',
   componentName: 'Form.Submit',
   title: '提交按钮',
   docUrl: '',
