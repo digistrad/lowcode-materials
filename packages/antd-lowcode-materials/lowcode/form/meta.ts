@@ -339,7 +339,7 @@ export default {
             !dragment.componentMeta ||
             !dragment.componentMeta.npm ||
             !dragment.componentMeta.npm.package ||
-            dragment.componentMeta.npm.package.indexOf('@alilc/antd-lowcode-materials') === -1 ||
+            dragment.componentMeta.npm.package.indexOf('@dslc/antd-lowcode-materials') === -1 ||
             comps.every((comp) => dragment.componentName.indexOf(comp) === -1)
           ) {
             return;
