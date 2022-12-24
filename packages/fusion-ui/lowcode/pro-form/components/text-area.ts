@@ -287,7 +287,7 @@ const meta = {
   docUrl: '',
   screenshot: '',
   npm: {
-    package: '@alifd/fusion-ui',
+    package: '@dslc/fusion-ui',
     version: '{{version}}',
     exportName: 'FormTextArea',
     main: '',
@@ -302,7 +302,7 @@ const meta = {
     },
   },
   icon: '',
-  category: '内容',
+  category: 'Form',
 };
 
 export default meta;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { GroupTable } from '@alifd/fusion-ui';
+import { GroupTable } from '@dslc/fusion-ui';
 
 export default { title: 'GroupTable' };
 const dataSource = [

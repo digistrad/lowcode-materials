@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Input } from '@alifd/next';
-import { Filter, ProForm } from '@alifd/fusion-ui';
+import { Filter, ProForm } from '@dslc/fusion-ui';
 
 const ProFormItem = ProForm.Item;
 
@@ -35,7 +35,7 @@ export const Basic = () => {
           name="email"
           size="medium"
           componentProps={{ componentName: 'Input' }}
-          label="表单项"
+          label="Form.Item"
           device="desktop"
           primaryKey="9815"
         >
@@ -44,7 +44,7 @@ export const Basic = () => {
         <ProFormItem
           size="medium"
           componentProps={{ componentName: 'Input' }}
-          label="表单项"
+          label="Form.Item"
           device="desktop"
           primaryKey="1961"
         >
@@ -53,7 +53,7 @@ export const Basic = () => {
         <ProFormItem
           size="medium"
           componentProps={{ componentName: 'Input' }}
-          label="表单项"
+          label="Form.Item"
           device="desktop"
           primaryKey="6067"
         >

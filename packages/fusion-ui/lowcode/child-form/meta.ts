@@ -6,7 +6,7 @@ const ChildFormMeta: ComponentMetadata = {
   title: '子表单',
   docUrl: '',
   screenshot: '',
-  category: '表单类',
+  category: 'Form',
   group: 'Featured',
   devMode: 'proCode',
   hidden: true,

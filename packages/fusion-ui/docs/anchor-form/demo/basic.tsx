@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnchorForm, ChildForm, FormInput } from '@alifd/fusion-ui';
+import { AnchorForm, ChildForm, FormInput } from '@dslc/fusion-ui';
 
 export default { title: 'AnchorForm' };
 

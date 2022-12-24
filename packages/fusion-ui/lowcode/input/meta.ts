@@ -441,7 +441,7 @@ const meta = {
     },
   },
   icon: '',
-  category: '内容',
+  category: 'Form',
 };
 
 export default meta;

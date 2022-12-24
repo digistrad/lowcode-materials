@@ -349,7 +349,7 @@ export default {
           const layoutPNode = currentNode.document.createNode({
             componentName: 'Form.Item',
             props: {
-              label: '表单项: ',
+              label: 'Form Item: ',
             },
             children: [dragment.exportSchema()],
           });

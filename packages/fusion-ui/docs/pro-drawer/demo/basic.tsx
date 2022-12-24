@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProDrawer } from '@alifd/fusion-ui';
+import { ProDrawer } from '@dslc/fusion-ui';
 
 export default { title: 'ProDrawer' };
 

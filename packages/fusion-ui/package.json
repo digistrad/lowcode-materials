@@ -1,6 +1,6 @@
 {
   "name": "@dslc/fusion-ui",
-  "version": "1.0.18",
+  "version": "1.0.26",
   "description": "A component library based on Fusion Next",
   "files": [
     "docs/",
@@ -82,12 +82,12 @@
     "react-dom": "^16.9.0"
   },
   "license": "MIT",
-  "homepage": "https://unpkg.com/@alifd/fusion-ui@1.0.7/build/docs/index.html?path=/story/protable--page",
+  "homepage": "https://unpkg.com/@dslc/fusion-ui@1.0.7/build/docs/index.html?path=/story/protable--page",
   "componentConfig": {
     "name": "FusionUI",
     "category": "精品物料库",
     "isComponentLibrary": true,
-    "materialSchema": "https://unpkg.com/@dslc/fusion-ui@1.0.18/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@dslc/fusion-ui@1.0.26/build/lowcode/assets-prod.json"
   },
   "husky": {
     "hooks": {

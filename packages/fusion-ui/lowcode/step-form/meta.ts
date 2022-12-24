@@ -96,7 +96,7 @@ const snippets: ISnippet[] = [
 const ProFormMeta: IComponentDescription[] = [
   {
     componentName: 'StepForm',
-    category: '表单类',
+    category: 'Form',
     title: '步骤表单',
     group: 'Featured',
     docUrl: '',
@@ -266,7 +266,7 @@ const ProFormMeta: IComponentDescription[] = [
         ],
       },
     },
-    category: 'null',
+    category: 'Form',
     icon: '',
   },
 ];

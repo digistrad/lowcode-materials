@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { AreaChart } from '@alifd/fusion-ui';
+import { AreaChart } from '@dslc/fusion-ui';
 
 export default { title: 'AreaChart' };
 

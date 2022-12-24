@@ -3,7 +3,7 @@
 export default {
   componentName: 'Collapse.Panel',
   title: 'Collapse.Panel',
-  category: '',
+  category: 'Display',
   props: [
     {
       name: 'key',

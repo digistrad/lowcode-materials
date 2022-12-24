@@ -3,7 +3,7 @@
 export default {
   componentName: 'List.Item',
   title: '列表项',
-  category: '',
+  category: 'Display',
   props: [
     {
       name: 'actions',

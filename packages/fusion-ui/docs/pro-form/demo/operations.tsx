@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Input, Button } from '@alifd/next';
-import { ProForm } from '@alifd/fusion-ui';
+import { ProForm } from '@dslc/fusion-ui';
 
 const ProFormItem = ProForm.Item;
 

@@ -11,7 +11,7 @@ import {
 
 const primaryKeyConfig = {
   name: 'primaryKey',
-  title: '编号',
+  title: 'primaryKey',
   display: 'none',
   condition: hideProp,
   defaultValue: (val: any) => {
@@ -23,25 +23,25 @@ const primaryKeyConfig = {
 
 const columnSpanConfig = {
   name: 'columnSpan',
-  title: '表单项宽度',
+  title: 'columnSpan',
   defaultValue: 1,
   setter: (target) => {
     const parentColumns = target.parent.getPropValue('columns');
     const options = [
       {
-        title: '一列',
+        title: 'a row',
         value: 1,
       },
       {
-        title: '二列',
+        title: 'two columns',
         value: 2,
       },
       {
-        title: '三列',
+        title: 'three columns',
         value: 3,
       },
       {
-        title: '四列',
+        title: 'four columns',
         value: 4,
       },
     ].slice(0, parentColumns);
@@ -58,7 +58,7 @@ const labelConfig = {
   name: 'label',
   title: 'Title',
   display: 'inline',
-  defaultValue: '表单项',
+  defaultValue: 'form item',
   setter: 'StringSetter',
   important: true,
   supportVariable: true,
@@ -137,8 +137,8 @@ const extraConfig = {
 const validateStateConfig = {
   name: 'validateState',
   title: {
-    label: '校验状态',
-    tip: '如不设置，则会根据校验规则自动生成\n@enumdesc 失败, 成功, 校验中, 警告',
+    label: 'validateState',
+    tip: 'If not set, it will be automatically generated according to the verification rules\n@enum desc failure, success, verification, warning',
   },
   setter: {
     componentName: 'RadioGroupSetter',
@@ -151,8 +151,8 @@ const validateStateConfig = {
 const sizeConfig = {
   name: 'size',
   title: {
-    label: '尺寸',
-    tip: '单个 Item 的 size 自定义，优先级高于 Form 的 size, 并且当组件与 Item 一起使用时，组件自身设置 size 属性无效。',
+    label: 'size',
+    tip: 'The size customization of a single Item has a higher priority than the size of the Form, and when the component is used with the Item, the size attribute set by the component itself is invalid.',
   },
   setter: {
     componentName: 'RadioGroupSetter',
@@ -166,8 +166,8 @@ const sizeConfig = {
 const labelAlignConfig = {
   name: 'labelAlign',
   title: {
-    label: '标签位置',
-    tip: '上, 左, 内',
+    label: 'labelAlign',
+    tip: 'Top, Left, Inset',
   },
   condition: hideProp,
   getValue: getParentValue,
@@ -176,19 +176,19 @@ const labelAlignConfig = {
     props: {
       options: [
         {
-          title: '上',
+          title: 'top',
           value: 'top',
         },
         {
-          title: '左',
+          title: 'left',
           value: 'left',
         },
         {
-          title: '内',
+          title: 'inset',
           value: 'inset',
         },
         {
-          title: '默认',
+          title: 'default',
           value: '',
         },
       ],
@@ -198,7 +198,7 @@ const labelAlignConfig = {
 
 const labelColFixedSpanConfig = {
   name: 'labelCol.fixedSpan',
-  title: '标题宽度',
+  title: 'labelCol.fixedSpan',
   condition: showWithLabelAlign,
   getValue: getParentValue,
   setter: {
@@ -212,7 +212,7 @@ const labelColFixedSpanConfig = {
 
 const labelColOffsetConfig = {
   name: 'labelCol.offset',
-  title: '标题偏移',
+  title: 'labelCol.offset',
   condition: showWithLabelAlign,
   getValue: getParentValue,
   setter: {
@@ -226,7 +226,7 @@ const labelColOffsetConfig = {
 
 const wrapperColSpanConfig = {
   name: 'wrapperCol.span',
-  title: '内容宽度',
+  title: 'wrapperCol.span',
   condition: showWithLabelAlign,
   getValue: getParentValue,
   setter: {
@@ -240,7 +240,7 @@ const wrapperColSpanConfig = {
 
 const wrapperColOffsetConfig = {
   name: 'wrapperCol.offset',
-  title: '内容偏移',
+  title: 'wrapperCol.offset',
   condition: showWithLabelAlign,
   getValue: getParentValue,
   setter: {
@@ -254,7 +254,7 @@ const wrapperColOffsetConfig = {
 
 const labelTipEnableConfig = {
   name: 'labelTip.enable',
-  title: '标题提示',
+  title: 'labelTip.enable',
   condition: showWithLabelAlign,
   setter: {
     componentName: 'BoolSetter',
@@ -263,7 +263,7 @@ const labelTipEnableConfig = {
 
 const labelTipContentConfig = {
   name: 'labelTip.content',
-  title: '提示内容',
+  title: 'labelTip.content',
   condition: showWithLabelAlign,
   setter: {
     componentName: 'StringSetter',
@@ -272,7 +272,7 @@ const labelTipContentConfig = {
 
 const labelTipIconConfig = {
   name: 'labelTip.icon',
-  title: '提示图标',
+  title: 'labelTip.icon',
   condition: showWithLabelAlign,
   setter: {
     componentName: 'IconSetter',
@@ -283,23 +283,23 @@ const labelTextAlignConfig = {
   name: 'labelTextAlign',
   condition: showWithLabelAlign,
   title: {
-    label: '标签对齐',
-    tip: '左, 右',
+    label: 'labelTextAlign',
+    tip: 'left, right',
   },
   setter: {
     componentName: 'RadioGroupSetter',
     props: {
       options: [
         {
-          title: '左',
+          title: 'left',
           value: 'left',
         },
         {
-          title: '右',
+          title: 'right',
           value: 'right',
         },
         {
-          title: '默认',
+          title: 'default',
           value: '',
         },
       ],
@@ -311,7 +311,7 @@ const labelTextAlignConfig = {
 const deviceConfig = {
   name: 'device',
   title: {
-    label: '设备',
+    label: 'device',
   },
   setter: {
     componentName: 'RadioGroupSetter',
@@ -326,8 +326,8 @@ const requiredConfig = {
   name: 'required',
   defaultValue: false,
   title: {
-    label: '是否必填',
-    tip: 'required | 是否必填',
+    label: 'required',
+    tip: 'required',
   },
   setter: {
     componentName: 'BoolSetter',
@@ -349,8 +349,8 @@ const fullWidthConfig = {
   name: 'fullWidth',
   defaultValue: true,
   title: {
-    label: '宽度占满',
-    tip: '单个 Item 中表单类组件宽度是否是100%',
+    label: 'fullWidth',
+    tip: 'Whether the width of the form class component in a single item is 100%',
   },
   setter: {
     componentName: 'BoolSetter',
@@ -360,8 +360,8 @@ const fullWidthConfig = {
 const isPreviewConfig = {
   name: 'isPreview',
   title: {
-    label: '预览态',
-    tip: '是否开启预览态',
+    label: 'isPreview',
+    tip: 'Whether to enable the preview state',
   },
   setter: 'BoolSetter',
 };
@@ -369,8 +369,8 @@ const isPreviewConfig = {
 const autoValidateConfig = {
   name: 'autoValidate',
   title: {
-    label: '自动校验',
-    tip: '是否修改数据时自动触发校验',
+    label: 'autoValidate',
+    tip: 'Whether to automatically trigger verification when modifying data',
   },
   setter: 'BoolSetter',
 };
@@ -380,27 +380,27 @@ const validationConfig = {
   name: 'validation',
   display: 'accordion',
   defaultCollapsed: true,
-  title: '校验',
+  title: 'Validation',
   items: [
     {
       type: 'group',
       name: 'notNullValidation',
       display: 'popup',
-      title: '非空校验',
+      title: 'notNullValidation',
       items: [
         {
           name: 'required',
           title: {
-            label: '不能为空',
-            tip: '[表单校验] 不能为空',
+            label: 'required',
+            tip: '[Form validation] cannot be empty',
           },
           setter: 'BoolSetter',
         },
         {
           name: 'requiredMessage',
           title: {
-            label: '错误信息',
-            tip: '[表单校验]为空时自定义错误信息',
+            label: 'requiredMessage',
+            tip: 'Custom error message when [Form Validation] is empty',
           },
           setter: 'StringSetter',
         },
@@ -410,29 +410,29 @@ const validationConfig = {
       type: 'group',
       name: 'maxValidation',
       display: 'popup',
-      title: '最大/最小值校验',
+      title: 'Max/Min Validation',
       items: [
         {
           name: 'min',
           title: {
-            label: '最小值',
-            tip: '[表单校验] 最小值',
+            label: 'min',
+            tip: 'min',
           },
           setter: 'NumberSetter',
         },
         {
           name: 'max',
           title: {
-            label: '最大值',
-            tip: '[表单校验] 最大值',
+            label: 'max',
+            tip: 'max',
           },
           setter: 'NumberSetter',
         },
         {
           name: 'minmaxMessage',
           title: {
-            label: '错误信息',
-            tip: '[表单校验] min/max 自定义错误信息',
+            label: 'minmaxMessage',
+            tip: 'minmaxMessage',
           },
           setter: 'StringSetter',
         },
@@ -442,29 +442,29 @@ const validationConfig = {
       type: 'group',
       name: 'maxLenValidation',
       display: 'popup',
-      title: '最大/最小长度校验',
+      title: 'Max/Min Length Validation',
       items: [
         {
           name: 'minLength',
           title: {
-            label: '最小长度',
-            tip: '[表单校验] 字符串最小长度 / 数组最小个数',
+            label: 'minLength',
+            tip: '[Form Validation] Minimum length of string /Minimum number of arrays',
           },
           setter: 'NumberSetter',
         },
         {
           name: 'maxLength',
           title: {
-            label: '最大长度',
-            tip: '[表单校验] 字符串最大长度 / 数组最大个数',
+            label: 'maxLength',
+            tip: '[Form Validation] Maximum length of string /maximum number of arrays',
           },
           setter: 'NumberSetter',
         },
         {
           name: 'minmaxLengthMessage',
           title: {
-            label: '错误信息',
-            tip: '[表单校验] minLength/maxLength 自定义错误信息',
+            label: 'minmaxLengthMessage',
+            tip: '[Form validation] minLength/maxLength custom error message',
           },
           setter: 'StringSetter',
         },
@@ -474,21 +474,21 @@ const validationConfig = {
       type: 'group',
       name: 'lengthValidation',
       display: 'popup',
-      title: '长度校验',
+      title: 'lengthValidation',
       items: [
         {
           name: 'length',
           title: {
-            label: '长度',
-            tip: '[表单校验] 字符串精确长度 / 数组精确个数',
+            label: 'length',
+            tip: '[Form Validation] The exact length of the string /the exact number of the array',
           },
           setter: 'NumberSetter',
         },
         {
           name: 'lengthMessage',
           title: {
-            label: '错误信息',
-            tip: '[表单校验] minLength/maxLength 自定义错误信息',
+            label: 'lengthMessage',
+            tip: '[Form validation] minLength/maxLength custom error message',
           },
           setter: 'StringSetter',
         },
@@ -498,21 +498,21 @@ const validationConfig = {
       type: 'group',
       name: 'regValidation',
       display: 'popup',
-      title: '正则校验',
+      title: 'RegEx Validation',
       items: [
         {
           name: 'pattern',
           title: {
-            label: '正则',
-            tip: '[表单校验] 正则校验',
+            label: 'pattern',
+            tip: '[Form Validation] Regular Expression validation',
           },
           setter: 'StringSetter',
         },
         {
           name: 'patternMessage',
           title: {
-            label: '错误信息',
-            tip: '[表单校验] pattern 自定义错误信息',
+            label: 'patternMessage',
+            tip: '[Form validation] pattern custom error message',
           },
           setter: 'StringSetter',
         },
@@ -522,13 +522,13 @@ const validationConfig = {
       type: 'group',
       name: 'formatValidation',
       display: 'popup',
-      title: '格式化校验',
+      title: 'formatValidation',
       items: [
         {
           name: 'format',
           title: {
             label: 'format',
-            tip: '[表单校验] 四种常用的 pattern',
+            tip: '[Form Validation] Four commonly used patterns',
           },
           setter: {
             componentName: 'RadioGroupSetter',
@@ -540,8 +540,8 @@ const validationConfig = {
         {
           name: 'formatMessage',
           title: {
-            label: '错误信息',
-            tip: '[表单校验] format 自定义错误信息',
+            label: 'formatMessage',
+            tip: '[Form validation] format custom error message',
           },
           setter: 'StringSetter',
         },
@@ -551,7 +551,7 @@ const validationConfig = {
       name: 'validator',
       display: 'popup',
       title: {
-        label: '自定义校验函数',
+        label: 'customValidator',
       },
       setter: 'FunctionSetter',
     },
@@ -560,7 +560,7 @@ const validationConfig = {
 
 const childFormConfig = {
   name: 'childForm',
-  title: '开启子表单',
+  title: 'Child Form',
   setter: {
     componentName: 'SlotSetter',
     initialValue: {
@@ -571,7 +571,7 @@ const childFormConfig = {
           componentName: 'ChildForm',
           props: {
             primaryKey: String(Math.floor(Math.random() * 10000)),
-            placeholder: '请在右侧面板添加表单项+',
+            placeholder: 'Please add a form item in the right panel+',
             placeholderStyle: {
               height: '38px',
               color: '#0088FF',
@@ -584,19 +584,19 @@ const childFormConfig = {
               fixedSpan: 4,
             },
             labelAlign: 'top',
-            emptyContent: '添加表单项',
+            emptyContent: 'Add form item',
           },
           children: [...new Array(3).keys()].map((item) => ({
             componentName: 'FormInput',
             props: {
               formItemProps: {
                 primaryKey: String(Math.floor(Math.random() * 10000) + item),
-                label: '表单项',
+                label: 'Form item',
                 size: 'medium',
                 device: 'desktop',
                 fullWidth: true,
               },
-              placeholder: '请输入',
+              placeholder: 'Please enter',
             },
           })),
         },
@@ -642,7 +642,7 @@ export const formItemShortcutProps = [
   childFormConfig,
   {
     name: 'labelTip.enable',
-    title: '标题提示',
+    title: 'labelTip.enable',
     condition: showWithLabelAlignShortcut,
     setter: {
       componentName: 'BoolSetter',
@@ -650,7 +650,7 @@ export const formItemShortcutProps = [
   },
   {
     name: 'labelTip.icon',
-    title: '提示图标',
+    title: 'labelTip.icon',
     condition: showWithLabelAlignShortcut,
     setter: {
       componentName: 'IconSetter',
@@ -658,7 +658,7 @@ export const formItemShortcutProps = [
   },
   {
     name: 'labelTip.content',
-    title: '提示内容',
+    title: 'labelTip.content',
     condition: showWithLabelAlignShortcut,
     setter: {
       componentName: 'StringSetter',
@@ -670,7 +670,7 @@ export const formItemShortcutProps = [
   autoValidateConfig,
   {
     name: '!entry',
-    title: '组件详细配置',
+    title: 'Component detailed configuration',
     display: 'block',
     setter: (target) => {
       return React.createElement(
@@ -681,7 +681,7 @@ export const formItemShortcutProps = [
             node.children.get(target.parent.key).select();
           },
         },
-        '点击配置',
+        'Configure',
       );
     },
   },
@@ -690,7 +690,7 @@ export const formItemShortcutProps = [
 const props: IProps[] = [
   {
     name: 'formItemProps',
-    title: '表单项配置',
+    title: 'Form item configuration',
     extraProps: {
       display: 'accordion',
       defaultCollapsed: true,

@@ -5,7 +5,7 @@ module.exports = {
   sourceMap: false,
   alias: {
     '@': './src',
-    '@alifd/fusion-ui': './src',
+    '@dslc/fusion-ui': './src',
   },
   plugins: [
     [

@@ -207,5 +207,5 @@ export default {
     },
   },
   icon: '',
-  category: '内容',
+  category: 'Form',
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProDialog } from '@alifd/fusion-ui';
+import { ProDialog } from '@dslc/fusion-ui';
 import { Button } from '@alifd/next';
 
 export default { title: 'ProDialog' };

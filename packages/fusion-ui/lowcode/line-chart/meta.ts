@@ -5,7 +5,7 @@ import { wrapWithCard } from '../pro-card/meta';
 const LineChartMeta: ComponentMetadata = {
   componentName: 'LineChart',
   title: '折线图',
-  category: '图表',
+  category: 'Chart',
   group: 'Featured',
   docUrl: '',
   screenshot: '',

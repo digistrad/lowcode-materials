@@ -29,7 +29,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": true,
@@ -69,7 +69,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,
@@ -111,7 +111,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,
@@ -152,7 +152,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,
@@ -197,7 +197,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "name": "e",
             "labelAlign": "right",
             "colon": true,
@@ -262,7 +262,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,
@@ -304,7 +304,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "name": "g",
             "initialValue": "A",
             "colon": true,
@@ -354,7 +354,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,
@@ -395,7 +395,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,
@@ -438,7 +438,7 @@ export default [
         {
           "componentName": "Form.Item",
           "props": {
-            "label": "表单项",
+            "label": "Form.Item",
             "labelAlign": "right",
             "colon": true,
             "required": false,

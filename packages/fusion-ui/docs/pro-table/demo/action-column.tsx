@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ProTable, useProTable } from '@alifd/fusion-ui';
+import { ProTable, useProTable } from '@dslc/fusion-ui';
 import { fetchPaginationList } from './service';
 import { Dialog } from '@alifd/next';
 

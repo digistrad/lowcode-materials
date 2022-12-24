@@ -1,7 +1,7 @@
 export default {
   componentName: 'List.Item.Meta',
   title: '列表项内容',
-  category: '',
+  category: 'Display',
   props: [
     {
       name: 'avatar',

@@ -55,7 +55,7 @@ module.exports = {
     },
   ],
   icon: 'https://img.alicdn.com/imgextra/i3/O1CN01tnhXhk1GUIFhsXwzA_!!6000000000625-55-tps-56-56.svg',
-  category: '基础元素',
+  category: 'Basic',
   group: 'Featured',
   snippets: require('./snippets'),
 };

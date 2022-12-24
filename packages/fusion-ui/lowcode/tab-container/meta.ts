@@ -4,7 +4,7 @@ import props from './props';
 
 const snippets: Snippet[] = [
   {
-    title: '选项卡',
+    title: 'Tab',
     screenshot:
       'https://img.alicdn.com/imgextra/i4/O1CN01mh9LPG268B90t8DaA_!!6000000007616-55-tps-56-56.svg',
     schema: {
@@ -37,7 +37,7 @@ const snippets: Snippet[] = [
 const TabContainerMeta: ComponentMetadata[] = [
   {
     componentName: 'TabContainer',
-    title: '选项卡',
+    title: 'Tab',
     category: 'Layout',
     group: 'Featured',
     docUrl: '',
@@ -68,7 +68,7 @@ const TabContainerMeta: ComponentMetadata[] = [
   },
   {
     componentName: 'Tab.Item',
-    title: '选项卡',
+    title: 'Tab.Item',
     docUrl: '',
     screenshot: '',
     devMode: 'proCode',
@@ -157,10 +157,10 @@ const TabContainerMeta: ComponentMetadata[] = [
               'en-US': 'locale',
               'zh-CN': '国际化文案对象，属性',
             },
-            tip: 'locale | 国际化文案对象，属性为组件的 displayName',
+            tip: 'locale | Internationalized text object, the property is the displayName of the component',
           },
           name: 'locale',
-          description: '国际化文案对象，属性为组件的 displayName',
+          description: 'Internationalized text object, the property is the displayName of the component',
           setter: {
             componentName: 'StringSetter',
             isRequired: false,

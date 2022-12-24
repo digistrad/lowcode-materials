@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TabContainer } from '@alifd/fusion-ui';
+import { TabContainer } from '@dslc/fusion-ui';
 
 export default { title: 'TabContainer' };
 

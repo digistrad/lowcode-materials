@@ -349,6 +349,6 @@ export default {
       },
     ]),
   },
-  category: '内容',
+  category: 'Form',
   icon: '',
 };

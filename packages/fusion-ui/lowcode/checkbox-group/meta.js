@@ -3,7 +3,7 @@ import { wrapFormItemProps } from '../utils/form-utils';
 export default {
   componentName: 'FormCheckboxGroup',
   isFormItemComponent: true,
-  title: '复选按钮组',
+  title: 'FormCheckboxGroup',
   docUrl: '',
   screenshot: '',
   npm: {
@@ -18,7 +18,7 @@ export default {
     props: wrapFormItemProps([
       {
         name: 'disabled',
-        title: '是否禁用',
+        title: 'disabled',
         setter: {
           componentName: 'MixedSetter',
           props: {
@@ -28,13 +28,13 @@ export default {
       },
       {
         name: 'itemDirection',
-        title: '排列方式',
+        title: 'itemDirection',
         setter: {
           componentName: 'RadioGroupSetter',
           props: {
             options: [
-              { title: '水平排列', value: 'hoz' },
-              { title: '垂直排列', value: 'ver' },
+              { title: 'horizontal', value: 'hoz' },
+              { title: 'vertical', value: 'ver' },
             ],
           },
         },
@@ -42,14 +42,14 @@ export default {
       },
       {
         name: 'isPreview',
-        title: '预览态',
+        title: 'isPreview',
         setter: {
           componentName: 'BoolSetter',
         },
       },
       {
         name: 'defaultValue',
-        title: '默认值',
+        title: 'defaultValue',
         defaultValue: '[]',
         setter: {
           componentName: 'MixedSetter',
@@ -61,7 +61,7 @@ export default {
       {
         name: 'dataSource',
         display: 'block',
-        title: '选项',
+        title: 'dataSource',
         setter: {
           componentName: 'MixedSetter',
           props: {
@@ -88,7 +88,7 @@ export default {
                       },
                     },
                     initialValue: {
-                      label: '选项一',
+                      label: 'option one',
                       value: '1',
                     },
                   },
@@ -101,7 +101,7 @@ export default {
       },
       {
         type: 'group',
-        title: '高级',
+        title: 'Advanced',
         display: 'block',
         items: [
           {
@@ -161,15 +161,15 @@ export default {
           initial: () => {
             return [
               {
-                label: '选项一',
+                label: 'option one',
                 value: '1',
               },
               {
-                label: '选项二',
+                label: 'option two',
                 value: '2',
               },
               {
-                label: '选项三',
+                label: 'option three',
                 value: '3',
               },
             ];
@@ -179,5 +179,5 @@ export default {
     },
   },
   icon: '',
-  category: '内容',
+  category: 'Form',
 };

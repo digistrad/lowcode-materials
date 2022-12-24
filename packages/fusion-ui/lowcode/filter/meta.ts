@@ -6,7 +6,7 @@ import { operations } from '../common';
 const operationConfig = {
   name: 'operationConfig',
   display: 'accordion',
-  title: '底部操作',
+  title: 'operationConfig',
   setter: {
     componentName: 'ObjectSetter',
     props: {
@@ -15,8 +15,8 @@ const operationConfig = {
           {
             name: 'visibleButtonCount',
             title: {
-              label: '可见数量',
-              tip: '超过会收起到”更多“菜单中',
+              label: 'visibleButtonCount',
+              tip: 'More than this amount will be put away in "More" menu',
             },
             extraProps: {
               defaultValue: 3,
@@ -37,10 +37,10 @@ const operationConfig = {
 
 const FilterMeta: ComponentMetadata = {
   componentName: 'Filter',
-  title: '查询筛选',
+  title: 'Query Filter',
   group: 'Featured',
-  category: '表格类',
-  tags: ['业务组件'],
+  category: 'Form',
+  tags: ['business component'],
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
   devMode: 'proCode',
@@ -56,28 +56,28 @@ const FilterMeta: ComponentMetadata = {
     props: [
       {
         name: 'globalConfig',
-        title: '全局配置',
+        title: 'globalConfig',
         type: 'group',
         display: 'accordion',
         items: [
           {
             name: 'enableFilterConfiguration',
-            title: '开启筛选项',
+            title: 'enableFilterConfiguration',
             setter: 'BoolSetter',
           },
           {
             name: 'status',
-            title: '状态',
+            title: 'status',
             setter: {
               componentName: 'RadioGroupSetter',
               props: {
                 options: [
                   {
-                    title: '只读态',
+                    title: 'readonly',
                     value: 'readonly',
                   },
                   {
-                    title: '编辑态',
+                    title: 'editable',
                     value: 'editable',
                   },
                 ],
@@ -117,19 +117,19 @@ const FilterMeta: ComponentMetadata = {
               props: {
                 options: [
                   {
-                    title: '一列',
+                    title: 'a row',
                     value: 1,
                   },
                   {
-                    title: '二列',
+                    title: 'two columns',
                     value: 2,
                   },
                   {
-                    title: '三列',
+                    title: 'three columns',
                     value: 3,
                   },
                   {
-                    title: '四列',
+                    title: 'four columns',
                     value: 4,
                   },
                 ],
@@ -156,15 +156,15 @@ const FilterMeta: ComponentMetadata = {
               props: {
                 options: [
                   {
-                    title: '上',
+                    title: 'top',
                     value: 'top',
                   },
                   {
-                    title: '左',
+                    title: 'left',
                     value: 'left',
                   },
                   {
-                    title: '内',
+                    title: 'inset',
                     value: 'inset',
                   },
                 ],
@@ -184,7 +184,7 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'labelCol.fixedSpan',
-            title: '标题宽度',
+            title: 'titleSpan',
             condition: showWithLabelAlign,
             setter: {
               componentName: 'NumberSetter',
@@ -196,7 +196,7 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'labelCol.offset',
-            title: '标题偏移',
+            title: 'titleOffset',
             condition: showWithLabelAlign,
             setter: {
               componentName: 'NumberSetter',
@@ -208,7 +208,7 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'wrapperCol.span',
-            title: '内容宽度',
+            title: 'wrapperSpan',
             condition: showWithLabelAlign,
             setter: {
               componentName: 'NumberSetter',
@@ -220,7 +220,7 @@ const FilterMeta: ComponentMetadata = {
           },
           {
             name: 'wrapperCol.offset',
-            title: '内容偏移',
+            title: 'wrapperOffset',
             condition: showWithLabelAlign,
             setter: {
               componentName: 'NumberSetter',
@@ -271,7 +271,7 @@ const FilterMeta: ComponentMetadata = {
 };
 const snippets: Snippet[] = [
   {
-    title: '查询筛选',
+    title: 'Query Filter',
     screenshot:
       'https://img.alicdn.com/imgextra/i1/O1CN01O4Oshp1RA6Z0sFZ6h_!!6000000002070-55-tps-56-56.svg',
     schema: {
@@ -285,13 +285,14 @@ const snippets: Snippet[] = [
         props: {
           formItemProps: {
             primaryKey: String(Math.floor(Math.random() * 10000) + item),
-            label: '表单项',
+            label: 'Form Item',
             size: 'medium',
             device: 'desktop',
             fullWidth: true,
           },
-          placeholder: '请输入',
+          placeholder: 'Please enter',
         },
+        
       })),
     },
   },

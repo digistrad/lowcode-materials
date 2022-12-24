@@ -61,5 +61,5 @@ module.exports = {
     },
   },
   icon: '',
-  category: 'null',
+  category: 'Navigation',
 };

@@ -390,5 +390,5 @@ export default {
     ],
   },
   icon: '',
-  category: '常用',
+  category: 'Common',
 };

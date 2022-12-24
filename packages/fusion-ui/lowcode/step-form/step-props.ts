@@ -3,7 +3,7 @@ import { hideProp } from '../utils';
 export default [
   {
     name: '!items',
-    title: '步骤项',
+    title: 'items',
     setter: {
       componentName: 'ArraySetter',
       props: {
@@ -14,7 +14,7 @@ export default [
               items: [
                 {
                   name: 'icon',
-                  title: '图标',
+                  title: 'icon',
                   important: true,
                   setter: 'IconSetter',
                 },
@@ -27,8 +27,8 @@ export default [
                 {
                   name: 'status',
                   title: {
-                    label: '状态',
-                    tip: '步骤的状态，如不传，会根据外层的 Step 的 current 属性生成，可选值为 `wait`, `process`, `finish`',
+                    label: 'status',
+                    tip: 'The status of the step, if not passed, will be generated according to the current property of the outer Step, the optional values ​​are `wait`, `process`, `finish`',
                   },
                   setter: {
                     componentName: 'RadioGroupSetter',
@@ -38,24 +38,24 @@ export default [
                 {
                   name: 'content',
                   title: {
-                    label: '内容',
-                    tip: 'content|内容填充, shape为 arrow 时无效',
+                    label: 'content',
+                    tip: 'content| content padding, invalid when shape is arrow',
                   },
                   condition: hideProp,
                   setter: 'TextAreaSetter',
-                  description: '内容填充, shape为 arrow 时无效',
+                  description: 'content padding, invalid when shape is arrow',
                 },
                 {
                   name: 'percent',
-                  title: '百分比',
+                  title: 'percent',
                   setter: 'NumberSetter',
-                  description: '百分比',
+                  description: 'percent',
                 },
                 {
                   name: 'disabled',
-                  title: '是否禁用',
+                  title: 'disabled',
                   setter: 'BoolSetter',
-                  description: '是否禁用',
+                  description: 'disabled',
                 },
               ],
             },
@@ -119,12 +119,12 @@ export default [
                   props: {
                     formItemProps: {
                       primaryKey: String(Math.floor(Math.random() * 10000) + item),
-                      label: '表单项',
+                      label: 'form item',
                       size: 'medium',
                       device: 'desktop',
                       fullWidth: true,
                     },
-                    placeholder: '请输入',
+                    placeholder: 'please enter',
                   },
                 })),
               });
@@ -158,7 +158,7 @@ export default [
                 return {
                   options: items.map((item, index: number) => {
                     return {
-                      title: `第 ${index + 1} 步: ${item.title}`,
+                      title: `Step ${index + 1}: ${item.title}`,
                       value: `${index}`,
                     };
                   }),
@@ -173,12 +173,12 @@ export default [
     setValue: (target, value) => {
       target.parent.setPropValue('current', +value);
     },
-    title: '当前步骤',
+    title: 'currentStep',
     defaultValue: 0,
   },
   {
     name: 'shape',
-    title: '类型',
+    title: 'shape',
     setter: (target) => {
       const options =
         target.getProps().getPropValue('direction') === 'ver'
@@ -207,7 +207,7 @@ export default [
         ],
       },
     },
-    title: '展示方向',
+    title: 'direction',
     defaultValue: 'hoz',
   },
   {
@@ -215,7 +215,7 @@ export default [
     condition: (target) => {
       return target.getProps().getPropValue('direction') === 'ver';
     },
-    title: '展示所有表单',
+    title: 'showAll',
     setter: {
       componentName: 'BoolSetter',
     },
@@ -229,18 +229,18 @@ export default [
         options: ['hoz', 'ver'],
       },
     },
-    title: '内容排列',
+    title: 'labelPlacement',
     defaultValue: 'ver',
   },
   {
     name: 'readOnly',
     setter: 'BoolSetter',
-    title: '是否只读',
+    title: 'readOnly',
   },
   {
     name: 'animation',
     setter: 'BoolSetter',
-    title: '开启动效',
+    title: 'animation',
     defaultValue: true,
   },
 ];
@@ -248,7 +248,7 @@ export default [
 export const operations = {
   name: 'operations',
   display: 'block',
-  title: '操作项',
+  title: 'Action Items',
   getValue: (target, value) => {
     return value || [];
   },
@@ -274,7 +274,7 @@ export const operations = {
                     {
                       name: 'content',
                       display: 'inline',
-                      title: '文本',
+                      title: 'text',
                       setter: 'StringSetter',
                       important: true,
                       extraProps: {
@@ -284,13 +284,13 @@ export const operations = {
                     {
                       name: 'action',
                       display: 'inline',
-                      title: '操作',
+                      title: 'action',
                       important: true,
                       setValue: (target, value) => {
                         const actionNameMap = {
-                          submit: '提交',
-                          reset: '重置',
-                          custom: '自定义',
+                          submit: 'Submit',
+                          reset: 'Reset',
+                          custom: 'Custom',
                         };
                         const actionName = actionNameMap[value] || '自定义';
                         target.parent.setPropValue('content', actionName);
@@ -300,27 +300,27 @@ export const operations = {
                         props: {
                           options: [
                             {
-                              title: '提交',
+                              title: 'Submit',
                               value: 'submit',
                               action: 'submit',
                             },
                             {
-                              title: '重置',
+                              title: 'Reset',
                               value: 'reset',
                               action: 'reset',
                             },
                             {
-                              title: '上一步',
+                              title: 'Previous',
                               value: 'previous',
                               action: 'previous',
                             },
                             {
-                              title: '下一步',
+                              title: 'Next',
                               value: 'next',
                               action: 'next',
                             },
                             {
-                              title: '自定义',
+                              title: 'Custom',
                               value: 'custom',
                             },
                           ],
@@ -330,22 +330,22 @@ export const operations = {
                     {
                       name: 'type',
                       display: 'inline',
-                      title: '样式',
+                      title: 'type',
                       important: true,
                       setter: {
                         componentName: 'SelectSetter',
                         props: {
                           options: [
                             {
-                              title: '主要',
+                              title: 'primary',
                               value: 'primary',
                             },
                             {
-                              title: '次要',
+                              title: 'primary',
                               value: 'secondary',
                             },
                             {
-                              title: '普通',
+                              title: 'normal',
                               value: 'normal',
                             },
                           ],
@@ -354,7 +354,7 @@ export const operations = {
                     },
                     {
                       name: 'behavior',
-                      title: '交互设置',
+                      title: 'behavior',
                       display: 'block',
                       condition: (target) => {
                         const action = target.parent.getPropValue('action');
@@ -370,7 +370,7 @@ export const operations = {
                     {
                       name: 'onClick',
                       display: 'inline',
-                      title: '点击事件',
+                      title: 'onClick',
                       condition: hideProp,
                       setter: 'FunctionSetter',
                       extraProps: {
@@ -385,7 +385,7 @@ export const operations = {
                       name: '!autoSubmit',
                       display: 'inline',
                       virtual: true,
-                      title: '自动提交',
+                      title: 'autoSubmit',
                       setter: {
                         componentName: 'BoolSetter',
                       },
@@ -406,7 +406,7 @@ export const operations = {
               },
               initialValue: () => {
                 return {
-                  content: '提交',
+                  content: 'Submit',
                   action: 'submit',
                   type: 'secondary',
                 };

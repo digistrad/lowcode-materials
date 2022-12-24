@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { PieChart } from '@alifd/fusion-ui';
+import { PieChart } from '@dslc/fusion-ui';
 
 export default { title: 'PieChart' };
 

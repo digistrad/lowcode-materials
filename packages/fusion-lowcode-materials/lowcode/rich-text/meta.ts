@@ -81,7 +81,7 @@ module.exports = {
     },
   },
   icon: 'https://img.alicdn.com/imgextra/i3/O1CN01G7Lc8e1pZL7p4cdKc_!!6000000005374-2-tps-112-112.png',
-  category: '基础元素',
+  category: 'Basic',
   group: 'Featured',
   snippets: require('./snippets'),
   hidden: true,

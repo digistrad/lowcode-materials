@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { EditTable } from '@alifd/fusion-ui';
+import { EditTable } from '@dslc/fusion-ui';
 
 export default { title: 'EditTable' };
 

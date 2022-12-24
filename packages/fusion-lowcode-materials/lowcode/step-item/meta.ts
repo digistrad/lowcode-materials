@@ -147,6 +147,6 @@ module.exports = {
       },
     },
   },
-  category: 'null',
+  category: 'Guide',
   icon: '',
 };

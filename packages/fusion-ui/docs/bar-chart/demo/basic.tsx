@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BarChart } from '@alifd/fusion-ui';
+import { BarChart } from '@dslc/fusion-ui';
 
 export default { title: 'BarChart' };
 

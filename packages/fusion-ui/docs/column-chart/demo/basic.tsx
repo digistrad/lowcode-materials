@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { ColumnChart } from '@alifd/fusion-ui';
+import { ColumnChart } from '@dslc/fusion-ui';
 
 export default { title: 'ColumnChart' };
 

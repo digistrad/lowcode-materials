@@ -291,7 +291,7 @@ export const proTableMeta: IComponentDescription = {
   icon: 'https://img.alicdn.com/imgextra/i4/O1CN01z4HeA61OwhjktJNDW_!!6000000001770-55-tps-56-56.svg',
   devMode: 'proCode',
   group: 'Featured',
-  category: '表格类',
+  category: 'Form',
   tags: ['业务组件'],
   npm: {
     package: '@dslc/fusion-ui',

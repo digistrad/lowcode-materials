@@ -3,7 +3,7 @@ import { hideProp } from '../utils';
 export const operationConfig = {
   name: 'operationConfig',
   display: 'accordion',
-  title: '底部操作',
+  title: 'operationConfig',
   setter: {
     componentName: 'ObjectSetter',
     props: {
@@ -71,7 +71,7 @@ export const operationConfig = {
 export const operations = {
   name: 'operations',
   display: 'block',
-  title: '操作项',
+  title: 'Action Items',
   getValue: (target, value) => {
     return value || [];
   },

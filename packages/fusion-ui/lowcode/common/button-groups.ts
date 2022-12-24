@@ -4,15 +4,15 @@ import { hideProp } from '../utils';
 export const buttonConfigureProps: IProps[] = [
   {
     name: 'children',
-    title: '名称',
+    title: 'Name',
     display: 'inline',
-    initialValue: '操作',
+    initialValue: 'operate',
     isRequired: true,
     setter: 'StringSetter',
   },
   {
     name: 'type',
-    title: '按钮样式',
+    title: 'type',
     display: 'inline',
     isRequired: true,
     initialValue: 'primary',
@@ -21,15 +21,15 @@ export const buttonConfigureProps: IProps[] = [
       props: {
         options: [
           {
-            title: '普通按钮',
+            title: 'normal',
             value: 'normal',
           },
           {
-            title: '主按钮',
+            title: 'primary',
             value: 'primary',
           },
           {
-            title: '次按钮',
+            title: 'secondary',
             value: 'secondary',
           },
         ],
@@ -38,7 +38,7 @@ export const buttonConfigureProps: IProps[] = [
   },
   {
     name: 'key',
-    title: '标识',
+    title: 'key',
     condition: hideProp,
     initialValue: (currentValue, defaultValue) =>
       currentValue || defaultValue || `data-${Math.random().toString(36).substr(-6)}`,
@@ -48,21 +48,21 @@ export const buttonConfigureProps: IProps[] = [
   },
   {
     name: 'disabled',
-    title: '是否禁用',
+    title: 'disabled',
     display: 'inline',
     initialValue: false,
     setter: 'BoolSetter',
   },
   {
     name: 'hidden',
-    title: '是否隐藏',
+    title: 'hidden',
     display: 'inline',
     initialValue: false,
     setter: 'BoolSetter',
   },
   {
     name: 'actionType',
-    title: '操作类型(TODO)',
+    title: 'actionType(TODO)',
     condition: hideProp,
     display: 'inline',
     initialValue: 'batch',
@@ -75,15 +75,15 @@ export const buttonConfigureProps: IProps[] = [
           //   value: 'batch',
           // },
           {
-            title: '表单弹窗',
+            title: 'formDialog',
             value: 'formDialog',
           },
           {
-            title: '链接',
+            title: 'link',
             value: 'link',
           },
           {
-            title: '导入',
+            title: 'import',
             value: 'import',
           },
           // {
@@ -91,7 +91,7 @@ export const buttonConfigureProps: IProps[] = [
           //   value: 'sync',
           // },
           {
-            title: '导出',
+            title: 'export',
             value: 'export',
           },
           // {
@@ -104,14 +104,14 @@ export const buttonConfigureProps: IProps[] = [
   },
   {
     name: 'onClick',
-    title: '点击事件',
+    title: 'onClick',
     setter: 'FunctionSetter',
   },
 ];
 export const buttonGroupConfigureProp: IProps = {
   type: 'field',
   name: 'buttonGroup',
-  title: '按钮组',
+  title: 'Button Group',
   extraProps: {
     display: 'accordion',
   },
@@ -123,16 +123,16 @@ export const buttonGroupConfigureProp: IProps = {
           {
             name: 'text',
             title: {
-              label: '文字模式',
-              tip: '是否设定按钮为文字模式',
+              label: 'text',
+              tip: 'Whether to set the button to text mode',
             },
             setter: 'BoolSetter',
           },
           {
             name: 'visibleButtonCount',
             title: {
-              label: '可见数量',
-              tip: '超过会收起到”更多“菜单中',
+              label: 'visibleButtonCount',
+              tip: 'More than this amount will be put away in "More" menu',
             },
             extraProps: {
               defaultValue: 3,
@@ -147,7 +147,7 @@ export const buttonGroupConfigureProp: IProps = {
           },
           {
             name: 'dataSource',
-            title: '按钮组',
+            title: 'dataSource',
             extraProps: {
               display: 'plain',
             },
@@ -163,7 +163,7 @@ export const buttonGroupConfigureProp: IProps = {
                     },
                   },
                   initialValue: () => ({
-                    children: '操作',
+                    children: 'operate',
                     type: 'normal',
                   }),
                 },

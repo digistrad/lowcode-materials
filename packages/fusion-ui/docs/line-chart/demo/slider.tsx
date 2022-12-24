@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { LineChart } from '@alifd/fusion-ui';
+import { LineChart } from '@dslc/fusion-ui';
 
 export default { title: 'LineChart' };
 

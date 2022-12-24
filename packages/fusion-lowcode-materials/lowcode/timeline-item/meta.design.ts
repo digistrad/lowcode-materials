@@ -137,5 +137,5 @@ export default {
     },
   },
   icon: '',
-  category: 'null',
+  category: 'Display',
 };

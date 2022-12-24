@@ -148,7 +148,7 @@ export const formItemsProps = {
             items: [
               {
                 name: 'componentName',
-                title: '表单项组件',
+                title: 'Component',
                 display: 'inline',
                 defaultValue: 'FormInput',
                 important: true,
@@ -161,7 +161,7 @@ export const formItemsProps = {
                         .components.filter((item) => item.isFormItemComponent)
                         .map((item) => {
                           return {
-                            title: item.title || item.componentName,
+                            title: item.title.match(/[\u3400-\u9FBF]/) ? item.componentName : item.title,
                             value: item.componentName,
                           };
                         }),

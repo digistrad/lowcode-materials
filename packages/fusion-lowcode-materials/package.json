@@ -1,6 +1,6 @@
 {
   "name": "@dslc/lowcode-materials",
-  "version": "1.0.15",
+  "version": "1.0.18",
   "description": "Fusion Next for LowCode",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -64,8 +64,8 @@
     }
   ],
   "componentConfig": {
-    "materialSchema": "https://unpkg.com/@dslc/lowcode-materials@1.0.15/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@dslc/lowcode-materials@1.0.18/build/lowcode/assets-prod.json"
   },
   "license": "MIT",
-  "homepage": "https://unpkg.com/@dslc/lowcode-materials@1.0.15/build/index.html"
+  "homepage": "https://unpkg.com/@dslc/lowcode-materials@1.0.18/build/index.html"
 }

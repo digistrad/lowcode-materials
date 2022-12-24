@@ -1,7 +1,7 @@
 module.exports = {
   componentName: 'NextText',
   title: '文本',
-  category: '基础元素',
+  category: 'Basic',
   group: 'Featured',
   npm: {
     package: '@dslc/lowcode-materials',

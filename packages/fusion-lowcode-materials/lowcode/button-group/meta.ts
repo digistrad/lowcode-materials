@@ -77,5 +77,5 @@ module.exports = {
     ],
   },
   icon: '',
-  category: '常用',
+  category: 'Common',
 };

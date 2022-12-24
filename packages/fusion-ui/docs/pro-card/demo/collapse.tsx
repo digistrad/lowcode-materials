@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ProCard } from '@alifd/fusion-ui';
+import { ProCard } from '@dslc/fusion-ui';
 import { Typography, Button, Box } from '@alifd/next';
 
 const { CardSection } = ProCard;

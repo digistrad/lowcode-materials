@@ -405,6 +405,6 @@ export default {
     },
   },
   icon: '',
-  category: 'Input',
+  category: 'Navigation',
   snippets,
 };

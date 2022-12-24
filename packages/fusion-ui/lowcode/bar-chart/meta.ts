@@ -5,7 +5,7 @@ import { wrapWithCard } from '../pro-card/meta';
 const BarChartMeta: ComponentMetadata = {
   componentName: 'BarChart',
   title: '条形图',
-  category: '图表',
+  category: 'Chart',
   group: 'Featured',
   docUrl: '',
   screenshot: '',

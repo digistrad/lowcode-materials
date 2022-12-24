@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: '复选按钮',
+    title: 'Checkbox',
     screenshot:
       'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_menu.png',
     schema: {
@@ -11,7 +11,7 @@ module.exports = [
     },
   },
   {
-    title: '复选按钮组',
+    title: 'CheckboxGroup',
     screenshot: 'https://img.alicdn.com/tfs/TB1EJN7uYY1gK0jSZTEXXXDQVXa-112-64.png',
     schema: {
       componentName: 'CheckboxGroup',
@@ -19,15 +19,15 @@ module.exports = [
         prefix: 'next-',
         dataSource: [
           {
-            label: '选项一',
+            label: 'option one',
             value: '1',
           },
           {
-            label: '选项二',
+            label: 'option two',
             value: '2',
           },
           {
-            label: '选项三',
+            label: 'option three',
             value: '3',
           },
         ],

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { PageHeader } from '@alifd/fusion-ui';
+import { PageHeader } from '@dslc/fusion-ui';
 import { Breadcrumb } from '@alifd/next';
 
 export default { title: 'PageHeader' };

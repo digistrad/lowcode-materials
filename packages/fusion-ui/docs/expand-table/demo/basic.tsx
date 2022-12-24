@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ExpandTable } from '@alifd/fusion-ui';
+import { ExpandTable } from '@dslc/fusion-ui';
 
 export default { title: 'ExpandTable' };
 

@@ -7,7 +7,7 @@ export const wrapFormItemProps = (props: IProps[]) => {
     ...formItemProps,
     {
       name: 'componentProps',
-      title: '组件配置',
+      title: 'Component Configuration',
       extraProps: {
         display: 'accordion',
         defaultCollapsed: true,

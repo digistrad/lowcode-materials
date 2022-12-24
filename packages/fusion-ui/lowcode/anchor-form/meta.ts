@@ -7,8 +7,8 @@ const _cardProps = CardProps.slice(1);
 
 const AnchorFormMeta: IComponentDescription = {
   componentName: 'AnchorForm',
-  title: '电梯表单',
-  category: '表单类',
+  title: 'AnchorForm',
+  category: 'Form',
   group: 'Featured',
   docUrl: '',
   screenshot:

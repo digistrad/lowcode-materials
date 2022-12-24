@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { DonutChart } from '@alifd/fusion-ui';
+import { DonutChart } from '@dslc/fusion-ui';
 
 export default { title: 'DonutChart' };
 

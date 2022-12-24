@@ -4,7 +4,7 @@ import { createDataSource } from '../cascader-select/adaptor';
 export default {
   group: 'Atomic',
   componentName: 'Cascader',
-  title: '级联',
+  title: 'Cascader',
   docUrl: '',
   screenshot: '',
   npm: {

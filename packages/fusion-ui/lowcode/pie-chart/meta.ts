@@ -5,7 +5,7 @@ import { wrapWithCard } from '../pro-card/meta';
 const pieChartMeta: ComponentMetadata = {
   componentName: 'PieChart',
   title: '饼图',
-  category: '图表',
+  category: 'Chart',
   group: 'Featured',
   docUrl: '',
   screenshot: '',

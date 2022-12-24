@@ -47,7 +47,7 @@ const snippets: ISnippet[] = [
 const ProFormMeta: IComponentDescription[] = [
   {
     componentName: 'ProForm',
-    category: '表单类',
+    category: 'Form',
     title: '高级表单',
     group: 'Featured',
     docUrl: '',
