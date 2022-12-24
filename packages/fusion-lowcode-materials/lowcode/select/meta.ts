@@ -242,6 +242,6 @@ module.exports = {
     },
   },
   icon: '',
-  category: '信息输入',
+  category: 'Input',
   snippets: require('./snippets'),
 };

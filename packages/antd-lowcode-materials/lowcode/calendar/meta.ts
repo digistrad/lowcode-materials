@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Calendar',
   title: 'Calendar',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'defaultValue',

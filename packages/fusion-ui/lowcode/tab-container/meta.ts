@@ -38,7 +38,7 @@ const TabContainerMeta: ComponentMetadata[] = [
   {
     componentName: 'TabContainer',
     title: '选项卡',
-    category: '布局容器类',
+    category: 'Layout',
     group: 'Featured',
     docUrl: '',
     screenshot:

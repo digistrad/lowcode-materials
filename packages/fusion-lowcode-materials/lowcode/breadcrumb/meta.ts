@@ -251,6 +251,6 @@ module.exports = {
     },
   },
   icon: '',
-  category: '引导',
+  category: 'Guide',
   snippets: require('./snippets'),
 };

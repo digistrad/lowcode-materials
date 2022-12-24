@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Statistic',
   title: '统计数值',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'decimalSeparator',

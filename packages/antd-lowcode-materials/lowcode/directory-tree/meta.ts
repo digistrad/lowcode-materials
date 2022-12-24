@@ -4,6 +4,7 @@ import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 const DirectoryTreeMeta: ComponentMetadata = {
   "componentName": "DirectoryTree",
   "title": "DirectoryTree",
+  "category":"Other",
   "docUrl": "",
   "screenshot": "",
   "devMode": "proCode",

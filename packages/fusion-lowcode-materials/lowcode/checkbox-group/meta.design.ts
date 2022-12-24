@@ -159,5 +159,5 @@ export default {
     },
   },
   icon: '',
-  category: '信息输入',
+  category: 'Input',
 };

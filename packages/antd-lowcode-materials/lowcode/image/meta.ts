@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Image',
   title: '图片',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'src',

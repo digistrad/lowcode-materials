@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Table',
   title: 'Table',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       title: 'Data Source',

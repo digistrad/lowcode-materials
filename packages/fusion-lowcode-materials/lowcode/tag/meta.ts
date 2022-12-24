@@ -134,6 +134,6 @@ module.exports = {
     },
   },
   icon: '',
-  category: '信息展示',
+  category: 'Display',
   snippets: require('./snippets'),
 };

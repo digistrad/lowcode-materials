@@ -4,6 +4,7 @@ import { ComponentMetadata, Snippet } from '@alilc/lowcode-types';
 const SubMenuMeta: ComponentMetadata = {
   "componentName": "SubMenu",
   "title": "SubMenu",
+  "category":"Navigation",
   "docUrl": "",
   "screenshot": "",
   "devMode": "proCode",

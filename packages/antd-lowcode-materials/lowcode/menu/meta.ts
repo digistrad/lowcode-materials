@@ -6,7 +6,7 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'Menu',
-  title: '导航菜单',
+  title: 'Menu',
   category: 'Navigation',
   props: [
     {

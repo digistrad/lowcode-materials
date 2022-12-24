@@ -418,6 +418,6 @@ module.exports = {
   },
 
   icon: 'https://img.alicdn.com/tfs/TB1oH02u2b2gK0jSZK9XXaEgFXa-112-64.png',
-  category: '信息输入',
+  category: 'Input',
   snippets: require('./snippets'),
 };

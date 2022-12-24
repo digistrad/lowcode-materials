@@ -53,7 +53,7 @@ const meta = {
       componentName: 'Anchor',
       group: 'Featured',
       title: '电梯容器',
-      category: '布局容器类',
+      category: 'Layout',
       docUrl: '',
       screenshot:
         'https://img.alicdn.com/imgextra/i3/O1CN01aDpmze26zlTZVDhtR_!!6000000007733-2-tps-112-112.png',

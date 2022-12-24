@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Avatar',
   title: 'Avatar',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'icon',

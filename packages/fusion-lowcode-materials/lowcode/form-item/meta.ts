@@ -805,5 +805,5 @@ module.exports = {
     },
   },
   icon: 'https://img.alicdn.com/tfs/TB1nYqOuW61gK0jSZFlXXXDKFXa-112-64.png',
-  category: '信息输入',
+  category: 'Input',
 };

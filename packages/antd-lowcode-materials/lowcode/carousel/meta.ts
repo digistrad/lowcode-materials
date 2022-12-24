@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Carousel',
   title: 'Carousel',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'afterChange',

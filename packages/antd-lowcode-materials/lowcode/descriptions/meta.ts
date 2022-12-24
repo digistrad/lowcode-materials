@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Descriptions',
   title: 'Descriptions',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'title',

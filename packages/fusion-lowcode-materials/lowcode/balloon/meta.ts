@@ -219,6 +219,6 @@ module.exports = {
     },
   },
   icon: '',
-  category: '信息反馈',
+  category: 'Feedback',
   snippets: require('./snippets'),
 };

@@ -297,6 +297,6 @@ export default {
     ],
   },
   icon: '',
-  category: '引导',
+  category: 'Guide',
   snippets,
 };

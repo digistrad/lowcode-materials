@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Timeline',
   title: '时间轴',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'steps',

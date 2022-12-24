@@ -123,6 +123,6 @@ module.exports = {
     },
   },
   icon: 'https://img.alicdn.com/imgextra/i4/O1CN01Rc4H6E1KHhpdjKn0n_!!6000000001139-55-tps-56-56.svg',
-  category: '信息展示',
+  category: 'Display',
   snippets: require('./snippets'),
 };

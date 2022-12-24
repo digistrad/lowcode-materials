@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Tag',
   title: '标签',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'children',

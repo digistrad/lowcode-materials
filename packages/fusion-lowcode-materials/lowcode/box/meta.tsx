@@ -2,7 +2,7 @@ module.exports = {
   group: 'Atomic',
   componentName: 'Box',
   title: '容器',
-  category: '布局容器类',
+  category: 'Layout',
   icon: 'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_table.png',
 
   docUrl: '',

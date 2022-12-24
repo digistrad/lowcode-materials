@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'List',
   title: '列表',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       title: '数据源',

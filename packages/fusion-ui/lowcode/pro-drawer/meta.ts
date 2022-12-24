@@ -407,7 +407,7 @@ const meta = {
     },
   },
   icon: '',
-  category: '布局容器类',
+  category: 'Layout',
 };
 
 const snippets = [

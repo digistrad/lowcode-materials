@@ -866,6 +866,6 @@ module.exports = {
     },
   },
   icon: 'https://alifd.oss-cn-hangzhou.aliyuncs.com/fusion-cool/icons/icon-light/ic_light_table.png',
-  category: '信息输入',
+  category: 'Input',
   snippets: require('./snippets'),
 };

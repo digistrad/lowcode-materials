@@ -4,7 +4,7 @@ import props from './common/props';
 
 const PageHeaderMeta: ComponentMetadata = {
   componentName: 'PageHeader',
-  category: '布局容器类',
+  category: 'Layout',
   group: 'Featured',
   title: '页头',
   docUrl: '',

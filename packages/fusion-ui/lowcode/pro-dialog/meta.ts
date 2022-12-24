@@ -443,7 +443,7 @@ const ProDialogMeta: ComponentMetadata = {
     },
   },
   icon: 'https://img.alicdn.com/imgextra/i1/O1CN01n5JLZG1aBmYZlckSx_!!6000000003292-55-tps-56-56.svg',
-  category: '布局容器类',
+  category: 'Layout',
 };
 const snippets: Snippet[] = [
   {

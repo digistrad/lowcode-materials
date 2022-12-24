@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Badge',
   title: 'Badge',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'color',

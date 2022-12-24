@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Card',
   title: 'Card',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'title',

@@ -4,7 +4,7 @@ export default {
   snippets,
   componentName: 'Comment',
   title: 'Comment',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'actions',

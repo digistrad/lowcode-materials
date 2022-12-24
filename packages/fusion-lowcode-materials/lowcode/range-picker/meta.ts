@@ -358,6 +358,6 @@ module.exports = {
       },
     ],
   },
-  category: '信息输入',
+  category: 'Input',
   icon: '',
 };

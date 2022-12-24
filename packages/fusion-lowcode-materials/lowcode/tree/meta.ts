@@ -302,6 +302,6 @@ export default {
     },
   },
   icon: '',
-  category: '信息展示',
+  category: 'Display',
   snippets,
 };

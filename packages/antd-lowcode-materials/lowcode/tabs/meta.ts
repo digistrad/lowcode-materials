@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Tabs',
   title: '标签页',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'items',

@@ -6,7 +6,7 @@ export default {
   snippets,
   componentName: 'Collapse',
   title: 'Accordion panel',
-  category: 'Data Display',
+  category: 'Display',
   props: [
     {
       name: 'bordered',
