@@ -83,20 +83,12 @@
     "webpack": "4.x"
   },
   "license": "MIT",
-<<<<<<< HEAD
   "homepage": "https://unpkg.com/@dslc/fusion-ui@1.0.7/build/docs/index.html?path=/story/protable--page",
-=======
-  "homepage": "https://unpkg.com/@alifd/fusion-ui@1.0.8/build/index.html",
->>>>>>> upstream/main
   "componentConfig": {
     "name": "FusionUI",
     "category": "精品物料库",
     "isComponentLibrary": true,
-<<<<<<< HEAD
     "materialSchema": "https://unpkg.com/@dslc/fusion-ui@1.0.27/build/lowcode/assets-prod.json"
-=======
-    "materialSchema": "https://alifd.alicdn.com/npm/@alifd/fusion-ui@1.0.8/build/lowcode/assets-prod.json"
->>>>>>> upstream/main
   },
   "husky": {
     "hooks": {
