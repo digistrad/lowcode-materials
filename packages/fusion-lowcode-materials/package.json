@@ -64,8 +64,15 @@
     }
   ],
   "componentConfig": {
+<<<<<<< HEAD
     "materialSchema": "https://unpkg.com/@dslc/lowcode-materials@1.0.20/build/lowcode/assets-prod.json"
   },
   "license": "MIT",
   "homepage": "https://unpkg.com/@dslc/lowcode-materials@1.0.20/build/index.html"
+=======
+    "materialSchema": "https://alifd.alicdn.com/npm/@alilc/lowcode-materials@1.0.6/build/lowcode/assets-prod.json"
+  },
+  "license": "MIT",
+  "homepage": "https://unpkg.com/@alilc/lowcode-materials@1.0.6/build/index.html"
+>>>>>>> upstream/main
 }
