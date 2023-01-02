@@ -1,6 +1,6 @@
 export default [
   {
-    title: '页头',
+    title: 'Header',
     screenshot: 'https://alifd.alicdn.com/fusion-cool/icons/icon-antd/page-header-1.jpg',
     schema: {
       componentName: 'PageHeader',

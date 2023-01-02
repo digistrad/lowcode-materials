@@ -3,22 +3,22 @@ import snippets from './snippets';
 export default {
   snippets,
   componentName: 'PageHeader',
-  title: '页头',
+  title: 'Header',
   category: 'Navigation',
   props: [
     {
       name: 'title',
-      title: { label: 'Title', tip: '自定义标题文字' },
+      title: { label: 'Title', tip: 'custom header text' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'subTitle',
-      title: { label: '二级标题', tip: '自定义的二级标题文字' },
+      title: { label: 'subTitle', tip: 'Customized secondary title text' },
       propType: { type: 'oneOfType', value: ['string', 'node'] },
     },
     {
       name: 'ghost',
-      title: { label: 'ghost风格', tip: 'ghost风格' },
+      title: { label: 'ghostStyle', tip: 'Ghost style' },
       propType: 'bool',
       defaultValue: true,
     },
@@ -32,22 +32,22 @@ export default {
     // },
     {
       name: 'tags',
-      title: { label: 'tag 列表', tip: 'title 旁的 tag 列表' },
+      title: { label: 'tags', tip: 'A list of tags next to the title' },
       propType: 'node',
     },
     {
       name: 'extra',
-      title: { label: '操作区', tip: '操作区，位于 title 行的行尾' },
+      title: { label: 'extra', tip: 'Action area, at the end of the title line' },
       propType: 'node',
     },
     {
       name: 'footer',
-      title: { label: '页脚', tip: 'PageHeader 的页脚，一般用于渲染 TabBar' },
+      title: { label: 'footer', tip: 'The footer of PageHeader, generally used to render TabBar' },
       propType: 'node',
     },
     {
       name: 'avatar',
-      title: { label: '头像', tip: '标题栏旁的头像' },
+      title: { label: 'avatar', tip: 'Avatar next to the title bar' },
       propType: 'object',
       supportVariable: false,
       setter: [
@@ -58,7 +58,7 @@ export default {
               items: [
                 {
                   name: 'src',
-                  title: { label: '地址', tip: '头像地址' },
+                  title: { label: 'address', tip: 'Avatar address' },
                   setter: {
                     componentName: 'StringSetter',
                   },
@@ -72,7 +72,7 @@ export default {
     },
     {
       name: 'breadcrumb',
-      title: { label: '面包屑的配置', tip: '面包屑的配置' },
+      title: { label: 'breadcrumb', tip: 'breadcrumb' },
       propType: 'object',
       supportVariable: false,
       setter: [
@@ -83,7 +83,7 @@ export default {
               items: [
                 {
                   name: 'routes',
-                  title: { label: '路由栈信息', tip: '路由栈信息' },
+                  title: { label: 'routes', tip: 'routing stack information' },
                   setter: {
                     componentName: 'ArraySetter',
                     props: {
@@ -100,15 +100,15 @@ export default {
                               {
                                 name: 'path',
                                 defaultValue: 'path',
-                                title: { label: '路径', tip: 'path | 路径' },
+                                title: { label: 'path', tip: 'path' },
                                 setter: 'StringSetter',
                               },
                               {
                                 name: 'breadcrumbName',
                                 defaultValue: 'pathName',
                                 title: {
-                                  label: '名称',
-                                  tip: 'breadcrumbName | 名称',
+                                  label: 'name',
+                                  tip: 'breadcrumbName',
                                 },
                                 setter: 'StringSetter',
                               },
@@ -128,7 +128,7 @@ export default {
     },
     {
       name: 'onBack',
-      title: { label: '返回按钮的点击事件', tip: '返回按钮的点击事件' },
+      title: { label: 'onBack', tip: 'Back button click event' },
       propType: 'func',
     },
   ],
@@ -138,7 +138,7 @@ export default {
       events: [
         {
           name: 'onBack',
-          template: "onBack(${extParams}){\n// 返回按钮的点击事件\nconsole.log('onBack');}",
+          template: "onBack(${extParams}){\n//Click event of the back button\nconsole.log('onBack');}",
         },
       ],
     },

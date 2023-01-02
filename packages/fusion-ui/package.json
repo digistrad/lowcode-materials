@@ -1,6 +1,6 @@
 {
   "name": "@dslc/fusion-ui",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "A component library based on Fusion Next",
   "files": [
     "docs/",
@@ -87,7 +87,7 @@
     "name": "FusionUI",
     "category": "精品物料库",
     "isComponentLibrary": true,
-    "materialSchema": "https://unpkg.com/@dslc/fusion-ui@1.0.26/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@dslc/fusion-ui@1.0.27/build/lowcode/assets-prod.json"
   },
   "husky": {
     "hooks": {

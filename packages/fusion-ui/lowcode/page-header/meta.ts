@@ -6,7 +6,7 @@ const PageHeaderMeta: ComponentMetadata = {
   componentName: 'PageHeader',
   category: 'Layout',
   group: 'Featured',
-  title: '页头',
+  title: 'Header',
   docUrl: '',
   icon: 'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',
   devMode: 'procode',
@@ -209,24 +209,24 @@ const PageHeaderMeta: ComponentMetadata = {
 
 const snippets: Snippet[] = [
   {
-    title: '页头',
+    title: 'Header',
     screenshot:
       'https://img.alicdn.com/imgextra/i2/O1CN01q3ZRHx24rrQ9ysyU8_!!6000000007445-55-tps-56-56.svg',
     schema: {
       componentName: 'PageHeader',
-      title: '页头',
+      title: 'Header',
       props: {
         title: 'This is a designer title',
-        subTitle: '',
-        breadcrumb: ['首页', '列表'],
+        subTitle: 'and this is the subtitle',
+        breadcrumb: ['front page', 'the list'],
         operations: [
           {
-            content: '自定义',
+            content: 'custom',
             action: 'custom',
             type: 'secondary',
           },
           {
-            content: '自定义',
+            content: 'custom',
             action: 'custom',
             type: 'secondary',
           },

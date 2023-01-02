@@ -4,7 +4,7 @@ import { wrapWithCard } from '../pro-card/meta';
 
 const AreaChartMeta: ComponentMetadata = {
   componentName: 'AreaChart',
-  title: '面积图',
+  title: 'Area Chart',
   category: 'Chart',
   group: 'Featured',
   docUrl: '',
@@ -61,27 +61,27 @@ const AreaChartMeta: ComponentMetadata = {
         type: 'group',
         display: 'accordion',
         title: {
-          label: '数据',
+          label: 'data',
         },
         items: [
           {
             name: 'data',
-            title: '图表数据',
+            title: 'chart data',
             setter: 'JsonSetter',
           },
           {
             name: 'xField',
             title: {
-              label: 'x轴字段名',
-              tip: 'x 方向映射对应的数据字段名',
+              label: 'xField',
+              tip: 'x The data field name corresponding to the direction mapping',
             },
             setter: 'StringSetter',
           },
           {
             name: 'yField',
             title: {
-              label: 'y轴字段名',
-              tip: 'y 方向映射所对应的数据字段名',
+              label: 'yField',
+              tip: 'y The data field name corresponding to the direction mapping',
             },
             setter: 'StringSetter',
           },
@@ -93,32 +93,32 @@ const AreaChartMeta: ComponentMetadata = {
         type: 'group',
         display: 'accordion',
         title: {
-          label: '图形属性',
+          label: 'Chart properties',
         },
         items: [
           {
             name: 'color',
-            title: '颜色',
+            title: 'color',
             setter: 'ColorSetter',
           },
           {
             name: 'line.size',
-            title: '粗细',
+            title: 'line.size',
             setter: 'NumberSetter',
           },
           {
             name: 'smooth',
-            title: '平滑',
+            title: 'smooth',
             setter: 'BoolSetter',
           },
           {
             name: 'point.visible',
-            title: '显示点',
+            title: 'point.visible',
             setter: 'BoolSetter',
           },
           {
             name: 'label.visible',
-            title: '显示标签',
+            title: 'label.visible',
             setter: 'BoolSetter',
           },
         ],
@@ -128,7 +128,7 @@ const AreaChartMeta: ComponentMetadata = {
 };
 const snippets: Snippet[] = [
   {
-    title: '面积图',
+    title: 'Area Chart',
     screenshot:
       'https://img.alicdn.com/imgextra/i2/O1CN012P76ko1dqUbwwmuF8_!!6000000003787-55-tps-56-56.svg',
     schema: {

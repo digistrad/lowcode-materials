@@ -4,7 +4,7 @@ import { wrapWithCard } from '../pro-card/meta';
 
 const pieChartMeta: ComponentMetadata = {
   componentName: 'PieChart',
-  title: '饼图',
+  title: 'Pie Chart',
   category: 'Chart',
   group: 'Featured',
   docUrl: '',
@@ -61,28 +61,28 @@ const pieChartMeta: ComponentMetadata = {
         type: 'group',
         display: 'accordion',
         title: {
-          label: '图例',
+          label: 'Legend',
         },
         items: [
           {
             name: 'legend.position',
-            title: '位置',
+            title: 'legend.position',
             setter: {
               componentName: 'SelectSetter',
               props: {
                 options: [
-                  { title: '左', value: 'left' },
-                  { title: '左上', value: 'left-top' },
-                  { title: '左下', value: 'left-bottom' },
-                  { title: '右', value: 'right' },
-                  { title: '右上', value: 'right-top' },
-                  { title: '右下', value: 'right-bottom' },
-                  { title: '上', value: 'top' },
-                  { title: '上左', value: 'top-left' },
-                  { title: '上右', value: 'top-right' },
-                  { title: '下', value: 'bottom' },
-                  { title: '下左', value: 'bottom-left' },
-                  { title: '下右', value: 'bottom-right' },
+                  { title: 'left', value: 'left' },
+                  { title: 'left-top', value: 'left-top' },
+                  { title: 'left-bottom', value: 'left-bottom' },
+                  { title: 'right', value: 'right' },
+                  { title: 'right-top', value: 'right-top' },
+                  { title: 'right-bottom', value: 'right-bottom' },
+                  { title: 'top', value: 'top' },
+                  { title: 'top-left', value: 'top-left' },
+                  { title: 'top-right', value: 'top-right' },
+                  { title: 'bottom', value: 'bottom' },
+                  { title: 'bottom-left', value: 'bottom-left' },
+                  { title: 'bottom-right', value: 'bottom-right' },
                 ],
               },
             },
@@ -95,27 +95,27 @@ const pieChartMeta: ComponentMetadata = {
         type: 'group',
         display: 'accordion',
         title: {
-          label: '数据',
+          label: 'data',
         },
         items: [
           {
             name: 'data',
-            title: '图表数据',
+            title: 'chart data',
             setter: 'JsonSetter',
           },
           {
             name: 'angleField',
             title: {
-              label: '值字段名',
-              tip: '扇形切片大小（弧度）所对应的数据字段名',
+              label: 'angleField',
+              tip: 'The data field name corresponding to the fan slice size (radian)',
             },
             setter: 'StringSetter',
           },
           {
             name: 'colorField',
             title: {
-              label: '分类字段名',
-              tip: '扇形颜色映射对应的数据字段名',
+              label: 'colorField',
+              tip: 'The data field name corresponding to the sector color map',
             },
             setter: 'StringSetter',
           },
@@ -127,12 +127,12 @@ const pieChartMeta: ComponentMetadata = {
         type: 'group',
         display: 'accordion',
         title: {
-          label: '图形属性',
+          label: 'Chart properties',
         },
         items: [
           {
             name: 'color',
-            title: '颜色',
+            title: 'color',
             setter: {
               componentName: 'ArraySetter',
               props: {
@@ -148,25 +148,25 @@ const pieChartMeta: ComponentMetadata = {
             type: 'group',
             display: 'accordion',
             title: {
-              label: '标签',
+              label: 'Label',
             },
             items: [
               {
                 name: 'label.visible',
-                title: '显示',
+                title: 'label.visible',
                 setter: 'BoolSetter',
               },
               {
                 name: 'label.type',
-                title: '位置',
+                title: 'label.type',
                 setter: {
                   componentName: 'SelectSetter',
                   props: {
                     options: [
-                      { title: '内部', value: 'inner' },
-                      { title: '外部', value: 'outer' },
-                      { title: '外部圆形排布', value: 'outer-center' },
-                      { title: '蜘蛛布局', value: 'spider' },
+                      { title: 'inner', value: 'inner' },
+                      { title: 'outer', value: 'outer' },
+                      { title: 'outer-center', value: 'outer-center' },
+                      { title: 'spider', value: 'spider' },
                     ],
                   },
                 },
@@ -181,13 +181,13 @@ const pieChartMeta: ComponentMetadata = {
 
 const snippets = [
   {
-    title: '饼图',
+    title: 'Pie Chart',
     name: 'PieChart',
     screenshot:
       'https://img.alicdn.com/imgextra/i4/O1CN018rBRGK24fx7hzkITN_!!6000000007419-55-tps-56-56.svg',
     schema: {
       componentName: 'PieChart',
-      title: '饼图',
+      title: 'Pie Chart',
       props: {
         legend: {
           position: 'top-left',
